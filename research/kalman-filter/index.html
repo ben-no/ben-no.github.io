@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Benjamin Noack - Kalman Filtering</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+<!--  <link href="/site/css/bootstrap.min.css " rel="stylesheet">   -->
+  <link rel="stylesheet" href="/site/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/site/images/favicon.ico" />      
+  <link rel="canonical" href="http://yourdomain.com/site/research/kalman-filter/">
+  <link rel="alternate" type="application/rss+xml" title="Benjamin Noack" href="http://yourdomain.com/site/feed.xml" />
+</head>
+
+
+  <body>
+
+      
+  
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="color-bar-top"></div>    
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/site/"><img src="/site/images/logo.png " height='30' width='79' alt='logo'/></a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <li ><a href='/site/'>HOME</a></li>
+
+
+            
+    
+    
+        
+
+            
+    
+    
+        
+
+            
+    
+    
+        
+
+            
+    
+    
+        
+
+            
+    
+    
+        
+                 
+        <li class="dropdown active"><a href="/site/research/">RESEARCH</a>
+                
+                
+                    
+            <ul class="dropdown-menu">
+                                
+                <li><a href="/site/research/kalman-filter/">Kalman Filter</a></li>
+                    
+                
+                                
+                <li><a href="/site/research/uncertainty-quantification/">Uncertainty Quantification</a></li>
+                    
+                
+                                
+                <li><a href="/site/research/sensor-networks/">Sensor Networks</a></li>
+                    
+                
+                                
+                <li><a href="/site/research/reconstruction/">Large-scale Systems</a></li>
+                    
+                
+                                
+                <li><a href="/site/research/nonlinear-state-estimation/">Nonlinear Estimation</a></li>
+                    
+                
+                                
+                <li><a href="/site/research/event-based-estimation/">Event-based Estimation</a></li>
+                       
+            </ul>
+                    
+                
+        </li>  
+            
+        
+
+            
+    
+    
+        
+                          
+        <li ><a href="/site/publications/">PUBLICATIONS</a></li> 
+            
+        
+
+            
+    
+    
+        
+                          
+        <li ><a href="/site/contact/">CONTACT</a></li> 
+            
+        
+  
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+<div id='navbar-indicator'></div>
+</div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+    <div class="col-md-12">
+        <div class="box">   
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src= "/site/images/research/KFscheme.jpg"  class="img-responsive">
+                </div><div class="col-sm-8">
+                    <div class="heading_bg"><h1>Kalman Filtering</h1></div>
+                    <p>The Kalman Filter algorithm recursively estimates the uncertain state variables of a dynamic process from noisy observations. A process model, which governs the time evolution of the state, is used in the prediction step to calculate an estimate for the subsequent time step. The predicted estimate then serves as prior information in the filtering step and is updated using current observations and the corresponding sensor models. This algorithm embodies an optimal solution to the state estimation problem when system dynamics and observation models are linear and the error statistics of the noise terms are known. Kalman filters have quickly evolved into an important tool for a wide range of sensor data fusion applications.</p>
+
+<p>My research focuses on how to characterize different types of <a href="/site/research/#UQ">estimation uncertainties</a>, how to 
+<a href="/site/research/#SN">distribute and fuse</a> Kalman filter estimates, and how to apply Kalman filters to <a href="/site/research/#NE">nonlinear estimation</a> problems.</p>
+
+<!--more-->
+
+<div class="heading_bg"><h1 id="related-publications">related publications</h1></div>
+
+<div id="2012">
+<ol class="bibliography">
+<li><a class="bibanchor" name="CDC12_Noack"></a><div class="bibentry"><div class="bibtitle">Optimal Kalman Gains for Combined Stochastic and Set-Membership State Estimation</div><p class="bibauthor">Benjamin Noack, Florian Pfaff, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 51st IEEE Conference on Decision and Control (CDC 2012)</span>, Maui, Hawaii, USA</p><p>December, 2012</p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>In state estimation theory, two directions are mainly followed in order to model disturbances and errors. Either uncertainties are modeled as stochastic quantities or they are characterized by their membership to a set. Both approaches have distinct advantages and disadvantages making each one inherently better suited to model different sources of estimation uncertainty. This paper is dedicated to the task of combining stochastic and set-membership estimation methods. A Kalman gain is derived that minimizes the mean squared error in the presence of both stochastic and additional unknown but bounded uncertainties, which are represented by Gaussian random variables and ellipsoidal sets, respectively. As a result, a generalization of the well-known Kalman filtering scheme is attained that reduces to the standard Kalman filter in the absence of set-membership uncertainty and that otherwise becomes the intersection of sets in case of vanishing stochastic uncertainty. The proposed concept also allows to prioritize either the minimization of the stochastic uncertainty or the minimization of the set-membership uncertainty.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{CDC12_Noack,
+  title = {{Optimal Kalman Gains for Combined Stochastic and Set-Membership State Estimation}},
+  author = {Noack, Benjamin and Pfaff, Florian and Hanebeck, Uwe D.},
+  booktitle = {Proceedings of the 51st IEEE Conference on Decision and Control (CDC 2012)},
+  year = {2012},
+  address = {Maui, Hawaii, USA},
+  month = {dec},
+}
+</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/CDC12_Noack.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
+<li><a class="bibanchor" name="Fusion09_Noack"></a><div class="bibentry"><div class="bibtitle">State Estimation with Sets of Densities considering Stochastic and Systematic Errors</div><p class="bibauthor">Benjamin Noack, Vesa Klumpp, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 12th International Conference on Information Fusion (Fusion 2009)</span>, Seattle, Washington, USA</p><p>July, 2009</p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>In practical applications, state estimation requires the consideration of 
+stochastic and systematic errors. If both error types are present, an exact 
+probabilistic description of the state estimate is not possible, so that 
+common Bayesian estimators have to be questioned. This paper introduces a 
+theoretical concept, which allows for incorporating unknown but bounded errors 
+into a Bayesian inference scheme by utilizing sets of densities. In order to 
+derive a tractable estimator, the Kalman filter is applied to ellipsoidal sets 
+of means, which are used to bound additive systematic errors. Also, an 
+extension to nonlinear system and observation models with ellipsoidal error 
+bounds is presented. The derived estimator is motivated by means of two 
+example applications.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Fusion09_Noack,
+  title = {{State Estimation with Sets of Densities considering Stochastic and Systematic Errors}},
+  author = {Noack, Benjamin and Klumpp, Vesa and Hanebeck, Uwe D.},
+  booktitle = {Proceedings of the 12th International Conference on Information Fusion (Fusion 2009)},
+  year = {2009},
+  address = {Seattle, Washington, USA},
+  month = {jul},
+}
+</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/Fusion09_Noack.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
+</ol></div>
+<div id="2009">
+<ol class="bibliography">
+<li><a class="bibanchor" name="CDC12_Noack"></a><div class="bibentry"><div class="bibtitle">Optimal Kalman Gains for Combined Stochastic and Set-Membership State Estimation</div><p class="bibauthor">Benjamin Noack, Florian Pfaff, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 51st IEEE Conference on Decision and Control (CDC 2012)</span>, Maui, Hawaii, USA</p><p>December, 2012</p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>In state estimation theory, two directions are mainly followed in order to model disturbances and errors. Either uncertainties are modeled as stochastic quantities or they are characterized by their membership to a set. Both approaches have distinct advantages and disadvantages making each one inherently better suited to model different sources of estimation uncertainty. This paper is dedicated to the task of combining stochastic and set-membership estimation methods. A Kalman gain is derived that minimizes the mean squared error in the presence of both stochastic and additional unknown but bounded uncertainties, which are represented by Gaussian random variables and ellipsoidal sets, respectively. As a result, a generalization of the well-known Kalman filtering scheme is attained that reduces to the standard Kalman filter in the absence of set-membership uncertainty and that otherwise becomes the intersection of sets in case of vanishing stochastic uncertainty. The proposed concept also allows to prioritize either the minimization of the stochastic uncertainty or the minimization of the set-membership uncertainty.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{CDC12_Noack,
+  title = {{Optimal Kalman Gains for Combined Stochastic and Set-Membership State Estimation}},
+  author = {Noack, Benjamin and Pfaff, Florian and Hanebeck, Uwe D.},
+  booktitle = {Proceedings of the 51st IEEE Conference on Decision and Control (CDC 2012)},
+  year = {2012},
+  address = {Maui, Hawaii, USA},
+  month = {dec},
+}
+</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/CDC12_Noack.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
+<li><a class="bibanchor" name="Fusion09_Noack"></a><div class="bibentry"><div class="bibtitle">State Estimation with Sets of Densities considering Stochastic and Systematic Errors</div><p class="bibauthor">Benjamin Noack, Vesa Klumpp, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 12th International Conference on Information Fusion (Fusion 2009)</span>, Seattle, Washington, USA</p><p>July, 2009</p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>In practical applications, state estimation requires the consideration of 
+stochastic and systematic errors. If both error types are present, an exact 
+probabilistic description of the state estimate is not possible, so that 
+common Bayesian estimators have to be questioned. This paper introduces a 
+theoretical concept, which allows for incorporating unknown but bounded errors 
+into a Bayesian inference scheme by utilizing sets of densities. In order to 
+derive a tractable estimator, the Kalman filter is applied to ellipsoidal sets 
+of means, which are used to bound additive systematic errors. Also, an 
+extension to nonlinear system and observation models with ellipsoidal error 
+bounds is presented. The derived estimator is motivated by means of two 
+example applications.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Fusion09_Noack,
+  title = {{State Estimation with Sets of Densities considering Stochastic and Systematic Errors}},
+  author = {Noack, Benjamin and Klumpp, Vesa and Hanebeck, Uwe D.},
+  booktitle = {Proceedings of the 12th International Conference on Information Fusion (Fusion 2009)},
+  year = {2009},
+  address = {Seattle, Washington, USA},
+  month = {jul},
+}
+</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/Fusion09_Noack.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
+</ol></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+
+    
+
+<div class="container">
+
+        <div class="box footer">  
+            
+            <div class="row">
+                <div class="col-md-2">  
+                    <h4><small>Benjamin Noack</small></h4>
+                    
+                </div>  
+                
+                <div class="col-md-offset-1 col-md-9">  
+                <div class="row">
+                    <div class="col-sm-6">   
+                        <h4><small>pages</small></h4>
+                         <ul class="list-inline">
+                            <li><a href="/">home</a></li>
+                             
+                             
+                            
+                             
+                            
+                             
+                            
+                             
+                            
+                             
+                            <li><a href="/site/research/">research</a></li>
+                             
+                            
+                             
+                            <li><a href="/site/publications/">publications</a></li>
+                             
+                            
+                             
+                            <li><a href="/site/contact/">contact</a></li>
+                             
+                            
+                             <li><a href="/site/impressum/">impressum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">     
+                        <h4><small>links</small></h4>
+                        <ul class="list-inline">
+                            <li><a href="http://isas.uka.de" target="_blank">ISAS lab</a></li>
+                            <li><a href="http://scholar.google.de/citations?user=PmRJJN4AAAAJ&hl" target="_blank">google scholar</a></li>
+                            <li><a href="https://www.researchgate.net/profile/Benjamin_Noack2" target="_blank">researchgate</a></li>  
+                            <li><a href="https://www.linkedin.com/profile/view?id=80186045" target="_blank">linkedin</a></li>
+                        </ul>
+                    </div> 
+                </div>
+                </div>
+                
+            </div> 
+            
+        </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/site/js/bootstrap.min.js"></script>
+<script src="/site/js/navindicator.js"></script>
+<script src="/site/js/bibdetails.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Benjamin Noack</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://yourdomain.com/site/</link>
+    <atom:link href="http://yourdomain.com/site/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 27 Jul 2015 17:31:47 +0200</pubDate>
+    <lastBuildDate>Mon, 27 Jul 2015 17:31:47 +0200</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+      <item>
+        <title>Three papers for the MFI conference in San Diego, USA, have been accepted.</title>
+        <description>&lt;p&gt;Three papers for the MFI conference in San Diego, USA, have been accepted.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Jun 2015 14:49:02 +0200</pubDate>
+        <link>http://yourdomain.com/site/posts/2015/06/20/MFI15/</link>
+        <guid isPermaLink="true">http://yourdomain.com/site/posts/2015/06/20/MFI15/</guid>
+        <category>conferences</category>
+      </item>
+      <item>
+        <title>Our paper for the FUSION conference in Washington D.C., USA, has been accepted.</title>
+        <description>&lt;p&gt;Our paper for the FUSION conference in Washington D.C., USA, has been accepted.&lt;/p&gt;
+&lt;!--more--&gt;
+</description>
+        <pubDate>Fri, 01 May 2015 00:00:00 +0200</pubDate>
+        <link>http://yourdomain.com/site/posts/2015/05/01/FUSION2015/</link>
+        <guid isPermaLink="true">http://yourdomain.com/site/posts/2015/05/01/FUSION2015/</guid>
+        <category>conferences</category>
+      </item>
+      <item>
+        <title>DFG project </title>
+        <description>&lt;p&gt;DFG project “LM&lt;sup&gt;2&lt;/sup&gt;MSE State Estimation” starts today.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;The project&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Nov 2014 00:00:00 +0100</pubDate>
+        <link>http://yourdomain.com/site/posts/2014/11/01/DFG_Project/</link>
+        <guid isPermaLink="true">http://yourdomain.com/site/posts/2014/11/01/DFG_Project/</guid>
+        <category>projects</category>
+      </item>
+      <item>
+        <title>Three papers for the FUSION conference in Salamanca, Spain, have been accepted.</title>
+        <description>&lt;p&gt;Three papers for the FUSION conference in Salamanca, Spain, have been accepted.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 12 May 2014 14:49:02 +0200</pubDate>
+        <link>http://yourdomain.com/site/posts/2014/05/12/FUSION2014/</link>
+        <guid isPermaLink="true">http://yourdomain.com/site/posts/2014/05/12/FUSION2014/</guid>
+        <category>conferences</category>
+      </item>
+      <item>
+        <title>Our paper for the IFAC world congress in Capetown, South Africa, has been accepted.</title>
+        <description>&lt;p&gt;Our paper for the IFAC world congress in Capetown, South Africa, has been accepted.&lt;/p&gt;
+&lt;!--more--&gt;
+</description>
+        <pubDate>Thu, 13 Feb 2014 00:00:00 +0100</pubDate>
+        <link>http://yourdomain.com/site/posts/2014/02/13/IFAC2014/</link>
+        <guid isPermaLink="true">http://yourdomain.com/site/posts/2014/02/13/IFAC2014/</guid>
+        <category>conferences</category>
+      </item>
+  </channel>
+</rss>

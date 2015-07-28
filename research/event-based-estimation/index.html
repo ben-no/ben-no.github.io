@@ -153,9 +153,11 @@
                     <img src= "/images/research/eventbased.jpg"  class="img-responsive">
                 </div><div class="col-sm-8">
                     <div class="heading_bg"><h1>Event-based Estimation</h1></div>
-                    <p>In order to reduce the amount of data to be transferred in networked systems, event-triggered transmission strategies can be employed. Sensor observations is not periodically sent to the estimator</p>
-
-<p>implicit measurement information</p>
+                    <p>In order to reduce the amount of data to be transferred in networked systems, event-triggered transmission strategies can be employed. 
+Although sensor observations are only sent to the estimator when an event triggers a transmission, 
+the estimator is to be designed to provide stable results periodically in time. In order to avoid an unstable behavior, the event-triggering criterion is turned into implicit measurement information, which is denoted as <em>negative information</em> and modeled as <a href="/research/#UQ">set-membership information</a>. 
+The estimation problem can be solved by a hybrid <a href="/research/#KF">Kalman filter</a>, which employs a stochastic representation for modeling
+sensor noise and a set-​membership representation for incorporating implicit measurement information derived from event-sampling criteria.</p>
 
 
                 </div>

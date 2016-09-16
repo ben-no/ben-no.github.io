@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Benjamin Noack - Kalman Filtering</title>
-  <meta name="description" content="Website of Benjamin Noack. On this website, you can find information about my work and research interests.
-">
+  <meta name="description" content="The Kalman Filter algorithm recursively estimates the uncertain state variables of a dynamic process from noisy observations. A process model, which governs ...">
 
 <!--  <link href="/css/bootstrap.min.css " rel="stylesheet">   -->
   <link rel="stylesheet" href="/css/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />      
   <link rel="canonical" href="http://www.bennoack.net/research/kalman-filter/">
   <link rel="alternate" type="application/rss+xml" title="Benjamin Noack" href="http://www.bennoack.net/feed.xml" />
+    
+    
 </head>
 
 
-  <body>
+<body>
 
-      
+
   
+ 
+
+
+
+
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="color-bar-top"></div>    
@@ -69,46 +75,79 @@
     
     
         
+
+            
+    
+    
+        
+
+            
+    
+    
+        
+
+            
+    
+    
+        
                  
         <li class="dropdown active"><a href="/research/">RESEARCH</a>
                 
-                
+				
                     
             <ul class="dropdown-menu">
                         
                     
                 
+                
+                    
                 <li><a href="/research/#KF">Kalman Filtering</a></li>
                     
+                    
                 
                         
                     
                 
+                
+                    
                 <li><a href="/research/#UQ">Uncertainty Quantification</a></li>
                     
+                    
                 
                         
                     
                 
+                
+                    
                 <li><a href="/research/#SN">Sensor Networks</a></li>
                     
+                    
                 
                         
                     
                 
+                
+                    
                 <li><a href="/research/#RC">Large-scale Systems</a></li>
                     
+                    
                 
                         
                     
                 
+                
+                    
                 <li><a href="/research/#NE">Nonlinear Estimation</a></li>
                     
+                    
                 
                         
                     
                 
+                
+                    
                 <li><a href="/research/#EB">Event-based Estimation</a></li>
+                    
                        
             </ul>
                     
@@ -121,8 +160,33 @@
     
     
         
-                          
-        <li ><a href="/publications/">PUBLICATIONS</a></li> 
+                 
+        <li class="dropdown"><a href="/publications/">PUBLICATIONS</a>
+                
+				
+                    
+            <ul class="dropdown-menu">
+                        
+                    
+                
+                
+                    
+                <li><a href="/publications/by-year/">By Year</a></li>
+                    
+                    
+                
+                        
+                    
+                
+                
+                    
+                <li><a href="/publications/by-type/">By Type</a></li>
+                    
+                       
+            </ul>
+                    
+                
+        </li>  
             
         
 
@@ -144,8 +208,8 @@
 
 
 
-    <div class="container">
-        <div class="row">
+<div class="container">
+<div class="row">
     <div class="col-md-12">
         <div class="box">   
             <div class="row">
@@ -162,36 +226,6 @@
 
 <div class="heading_bg"><h1 id="related-publications">related publications</h1></div>
 
-<ol class="bibliography">
-<li><a class="bibanchor" name="CDC12_Noack"></a><div class="bibentry"><div class="bibtitle">Optimal Kalman Gains for Combined Stochastic and Set-Membership State Estimation</div><p class="bibauthor">Benjamin Noack, Florian Pfaff, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 51st IEEE Conference on Decision and Control (CDC 2012)</span>, Maui, Hawaii, USA</p><p><span class="bibdate">December, 2012</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>In state estimation theory, two directions are mainly followed in order to model disturbances and errors. Either uncertainties are modeled as stochastic quantities or they are characterized by their membership to a set. Both approaches have distinct advantages and disadvantages making each one inherently better suited to model different sources of estimation uncertainty. This paper is dedicated to the task of combining stochastic and set-membership estimation methods. A Kalman gain is derived that minimizes the mean squared error in the presence of both stochastic and additional unknown but bounded uncertainties, which are represented by Gaussian random variables and ellipsoidal sets, respectively. As a result, a generalization of the well-known Kalman filtering scheme is attained that reduces to the standard Kalman filter in the absence of set-membership uncertainty and that otherwise becomes the intersection of sets in case of vanishing stochastic uncertainty. The proposed concept also allows to prioritize either the minimization of the stochastic uncertainty or the minimization of the set-membership uncertainty.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{CDC12_Noack,
-  title = {{Optimal Kalman Gains for Combined Stochastic and Set-Membership State Estimation}},
-  author = {Noack, Benjamin and Pfaff, Florian and Hanebeck, Uwe D.},
-  booktitle = {Proceedings of the 51st IEEE Conference on Decision and Control (CDC 2012)},
-  year = {2012},
-  address = {Maui, Hawaii, USA},
-  month = {dec},
-}
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/CDC12_Noack.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-<li><a class="bibanchor" name="Fusion09_Noack"></a><div class="bibentry"><div class="bibtitle">State Estimation with Sets of Densities considering Stochastic and Systematic Errors</div><p class="bibauthor">Benjamin Noack, Vesa Klumpp, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 12th International Conference on Information Fusion (Fusion 2009)</span>, Seattle, Washington, USA</p><p><span class="bibdate">July, 2009</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>In practical applications, state estimation requires the consideration of 
-stochastic and systematic errors. If both error types are present, an exact 
-probabilistic description of the state estimate is not possible, so that 
-common Bayesian estimators have to be questioned. This paper introduces a 
-theoretical concept, which allows for incorporating unknown but bounded errors 
-into a Bayesian inference scheme by utilizing sets of densities. In order to 
-derive a tractable estimator, the Kalman filter is applied to ellipsoidal sets 
-of means, which are used to bound additive systematic errors. Also, an 
-extension to nonlinear system and observation models with ellipsoidal error 
-bounds is presented. The derived estimator is motivated by means of two 
-example applications.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Fusion09_Noack,
-  title = {{State Estimation with Sets of Densities considering Stochastic and Systematic Errors}},
-  author = {Noack, Benjamin and Klumpp, Vesa and Hanebeck, Uwe D.},
-  booktitle = {Proceedings of the 12th International Conference on Information Fusion (Fusion 2009)},
-  year = {2009},
-  address = {Seattle, Washington, USA},
-  month = {jul},
-}
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/Fusion09_Noack.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-</ol>
 
                 </div>
             </div>
@@ -201,10 +235,12 @@ example applications.</p></div><div class="purebibtexentry"><pre class="purebibt
 
 
 
-    </div>
+</div>
+
+
 
     
-
+                  
 <div class="container">
 
         <div class="box footer">  
@@ -222,6 +258,12 @@ example applications.</p></div><div class="purebibtexentry"><pre class="purebibt
                          <ul class="list-inline">
                             <li><a href="/">home</a></li>
                              
+                             
+                            
+                             
+                            
+                             
+                            
                              
                             
                              
@@ -265,13 +307,40 @@ example applications.</p></div><div class="purebibtexentry"><pre class="purebibt
 
 </div>
 
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/navindicator.js"></script>
 <script src="/js/bibdetails.js"></script>
 
 
 
-  </body>
+
+
+
+
+
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.bennoack.de/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.bennoack.de/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+
+
+
+</body>
 
 </html>

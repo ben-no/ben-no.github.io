@@ -13,6 +13,3 @@ C = TA*sqrt(DA)*(TBT*DBT/TBT)*sqrt(DA)/TA;
 % c = xa + (CA-C)/(CA+CB-2*C)*(xb-xa); % inversion of possibly singular matrix 
 R = C + eps*eye(length(C)); % regularization
 c = xa + (CA-R)/(CA+CB-2*R)*(xb-xa);
-
-
-

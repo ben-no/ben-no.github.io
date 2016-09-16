@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,12 +8,12 @@
   <meta name="description" content="Website of Benjamin Noack. On this website, you can find information about my work and research interests.
 ">
 <!--  <link href="/css/bootstrap.min.css " rel="stylesheet">   -->
-  <link rel="stylesheet" href="/Valeo2015/main.css">
+  <link rel="stylesheet" href="/css/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />      
-  <link rel="canonical" href="http://www.bennoack.net/">
+  <link rel="canonical" href="http://www.bennoack.net/ICI/">
   <link rel="alternate" type="application/rss+xml" title="Benjamin Noack" href="http://www.bennoack.net/feed.xml" />
 </head>
-  <body>
+<body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="color-bar-top"></div>    
   <div class="container">
@@ -28,7 +28,7 @@
     </div>
     <div class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">
-        <li class='active'><a href='/'>HOME</a></li>
+        <li ><a href='/'>HOME</a></li>
         <li class="dropdown"><a href="/research/">RESEARCH</a>
             <ul class="dropdown-menu">
                 <li><a href="/research/#KF">Kalman Filtering</a></li>
@@ -39,7 +39,12 @@
                 <li><a href="/research/#EB">Event-based Estimation</a></li>
             </ul>
         </li>  
-        <li ><a href="/publications/">PUBLICATIONS</a></li> 
+        <li class="dropdown"><a href="/publications/">PUBLICATIONS</a>
+            <ul class="dropdown-menu">
+                <li><a href="/publications/by-year/">By Year</a></li>
+                <li><a href="/publications/by-type/">By Type</a></li>
+            </ul>
+        </li>  
         <li ><a href="/contact/">CONTACT</a></li> 
       </ul>
     </div><!--/.nav-collapse -->
@@ -62,15 +67,15 @@
         <div class="col-md-9">
               <div class="heading_bg"><h1 id="inverse-covariance-intersection">Inverse Covariance Intersection</h1></div>
 <h2 id="matlab-code">Matlab code</h2>
-<figure class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span>[c,C,omega] <span class="p">=</span><span class="w"> </span><span class="nf">ICI</span><span class="p">(</span>xA,CA,xB,CB<span class="p">)</span><span class="w"></span>
-<span class="c">% Inverse Covariance Intersection </span>
-<span class="c">%</span>
-<span class="c">% This function implements the ICI algorithm </span>
-<span class="c">% and fuses two estimates (xA,CA) and (xB,CB). </span>
-<span class="c">% It provides the fusion result (c,C) and the </span>
-<span class="c">% value of omega, which minimizes the trace of C. </span>
+<figure class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="k">function</span> <span class="p">[</span><span class="n">c</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">omega</span><span class="p">]</span> <span class="o">=</span> <span class="n">ICI</span><span class="p">(</span><span class="n">xA</span><span class="p">,</span><span class="n">CA</span><span class="p">,</span><span class="n">xB</span><span class="p">,</span><span class="n">CB</span><span class="p">)</span>
+<span class="c1">% Inverse Covariance Intersection </span>
+<span class="c1">%</span>
+<span class="c1">% This function implements the ICI algorithm </span>
+<span class="c1">% and fuses two estimates (xA,CA) and (xB,CB). </span>
+<span class="c1">% It provides the fusion result (c,C) and the </span>
+<span class="c1">% value of omega, which minimizes the trace of C. </span>
 
-<span class="c">% TO BE PUBLISHED...</span></code></pre></figure>
+<span class="c1">% TO BE PUBLISHED...</span></code></pre></figure>
 <h2 id="references">References</h2>
         </div>    
     </div>
@@ -108,7 +113,7 @@
             </div> 
         </div>
 </div>
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/navindicator.js"></script>
 <script src="/js/bibdetails.js"></script>
@@ -116,5 +121,20 @@
     $(function(){$('body').scrollspy({ target: '#scrollspy' }); 
                 });  
 </script>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.bennoack.de/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.bennoack.de/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
 </body>
 </html>

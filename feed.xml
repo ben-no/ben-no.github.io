@@ -6,9 +6,60 @@
 </description>
     <link>http://www.bennoack.net/</link>
     <atom:link href="http://www.bennoack.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 Sep 2015 18:45:50 +0200</pubDate>
-    <lastBuildDate>Mon, 28 Sep 2015 18:45:50 +0200</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Fri, 16 Sep 2016 13:21:29 +0200</pubDate>
+    <lastBuildDate>Fri, 16 Sep 2016 13:21:29 +0200</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+      <item>
+        <title>Mfi2016</title>
+        <description>&lt;p&gt;Four papers for the MFI conference in Baden-Baden, Germany, have been accepted.&lt;/p&gt;
+&lt;!--more--&gt;
+</description>
+        <pubDate>Mon, 18 Jul 2016 00:00:00 +0200</pubDate>
+        <link>http://www.bennoack.net/posts/2016/07/18/MFI2016/</link>
+        <guid isPermaLink="true">http://www.bennoack.net/posts/2016/07/18/MFI2016/</guid>
+        <category>conferences</category>
+      </item>
+      <item>
+        <title>Fusion2016</title>
+        <description>&lt;p&gt;Two papers for the FUSION conference in Heidelberg, Germany, have been accepted.&lt;/p&gt;
+&lt;!--more--&gt;
+</description>
+        <pubDate>Mon, 09 May 2016 00:00:00 +0200</pubDate>
+        <link>http://www.bennoack.net/posts/2016/05/09/FUSION2016/</link>
+        <guid isPermaLink="true">http://www.bennoack.net/posts/2016/05/09/FUSION2016/</guid>
+        <category>conferences</category>
+      </item>
+      <item>
+        <title>BMWi project </title>
+        <description>&lt;p&gt;BMWi project “Fertigung und Entwicklung von Tanks unter Industrie4.0-Bedingungen” starts today.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;The project&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
+        <link>http://www.bennoack.net/posts/2016/01/01/BMWi2016/</link>
+        <guid isPermaLink="true">http://www.bennoack.net/posts/2016/01/01/BMWi2016/</guid>
+        <category>projects</category>
+      </item>
+      <item>
+        <title>New Article</title>
+        <description>&lt;p&gt;Article for tm - technisches messen (teme) has been accepted.&lt;/p&gt;
+&lt;!--more--&gt;
+</description>
+        <pubDate>Wed, 16 Dec 2015 00:00:00 +0100</pubDate>
+        <link>http://www.bennoack.net/posts/2015/12/16/TM2015/</link>
+        <guid isPermaLink="true">http://www.bennoack.net/posts/2015/12/16/TM2015/</guid>
+        <category>publications</category>
+      </item>
+      <item>
+        <title>New Book Chapter</title>
+        <description>&lt;p&gt;Book chapter in &lt;a href=&quot;http://www.crcnetbase.com/isbn/9781482256567&quot;&gt;Event-Based Control and Signal Processing&lt;/a&gt; is out.&lt;/p&gt;
+&lt;!--more--&gt;
+</description>
+        <pubDate>Tue, 24 Nov 2015 00:00:00 +0100</pubDate>
+        <link>http://www.bennoack.net/posts/2015/11/24/CRC2015/</link>
+        <guid isPermaLink="true">http://www.bennoack.net/posts/2015/11/24/CRC2015/</guid>
+        <category>publications</category>
+      </item>
       <item>
         <title>IGF project </title>
         <description>&lt;p&gt;IGF project “Inside Schüttgut” starts today.&lt;/p&gt;
@@ -21,7 +72,7 @@
         <category>projects</category>
       </item>
       <item>
-        <title>IGF project </title>
+        <title>New Book Chapter</title>
         <description>&lt;p&gt;Book chapter in &lt;a href=&quot;http://www.crcnetbase.com/doi/book/10.1201/b18851&quot;&gt;Multisensor Data Fusion: From Algorithms and Architectural Design to Applications&lt;/a&gt; is out.&lt;/p&gt;
 &lt;!--more--&gt;
 </description>
@@ -35,8 +86,8 @@
         <description>&lt;p&gt;Three papers for the MFI conference in San Diego, USA, have been accepted.&lt;/p&gt;
 </description>
         <pubDate>Sat, 20 Jun 2015 14:49:02 +0200</pubDate>
-        <link>http://www.bennoack.net/posts/2015/06/20/MFI15/</link>
-        <guid isPermaLink="true">http://www.bennoack.net/posts/2015/06/20/MFI15/</guid>
+        <link>http://www.bennoack.net/posts/2015/06/20/MFI2015/</link>
+        <guid isPermaLink="true">http://www.bennoack.net/posts/2015/06/20/MFI2015/</guid>
         <category>conferences</category>
       </item>
       <item>
@@ -59,25 +110,6 @@
         <link>http://www.bennoack.net/posts/2014/11/01/DFG_Project/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2014/11/01/DFG_Project/</guid>
         <category>projects</category>
-      </item>
-      <item>
-        <title>Three papers for the FUSION conference in Salamanca, Spain, have been accepted.</title>
-        <description>&lt;p&gt;Three papers for the FUSION conference in Salamanca, Spain, have been accepted.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 12 May 2014 14:49:02 +0200</pubDate>
-        <link>http://www.bennoack.net/posts/2014/05/12/FUSION2014/</link>
-        <guid isPermaLink="true">http://www.bennoack.net/posts/2014/05/12/FUSION2014/</guid>
-        <category>conferences</category>
-      </item>
-      <item>
-        <title>Our paper for the IFAC world congress in Capetown, South Africa, has been accepted.</title>
-        <description>&lt;p&gt;Our paper for the IFAC world congress in Capetown, South Africa, has been accepted.&lt;/p&gt;
-&lt;!--more--&gt;
-</description>
-        <pubDate>Thu, 13 Feb 2014 00:00:00 +0100</pubDate>
-        <link>http://www.bennoack.net/posts/2014/02/13/IFAC2014/</link>
-        <guid isPermaLink="true">http://www.bennoack.net/posts/2014/02/13/IFAC2014/</guid>
-        <category>conferences</category>
       </item>
   </channel>
 </rss>

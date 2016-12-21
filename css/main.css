@@ -4257,18 +4257,32 @@ hr {
   background: white;
   width: 33.3333%;
   position: relative; }
+/**
+ * News
+ */
 .news-list li {
-  padding: 0 0 5px 20px;
+  padding: 0 0 10px 20px;
   display: block;
   position: relative; }
 .news-list li:before {
   font-family: 'Glyphicons Halflings';
   position: absolute;
   left: 0px;
-  top: 3px; }
-.news-icon li:before {
+  top: 3px;
   color: #4C7A98;
   content: '\e109'; }
+.news-list .label {
+  background-color: #4C7A98;
+  display: inline;
+  padding: .2em .6em .2em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em; }
 .research-overview {
   width: 100%;
   min-height: 500px;

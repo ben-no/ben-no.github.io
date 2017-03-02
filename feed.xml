@@ -6,16 +6,26 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Dec 2016 16:35:56 +0100</pubDate>
-    <lastBuildDate>Sat, 24 Dec 2016 16:35:56 +0100</lastBuildDate>
-    <generator>Jekyll v3.3.1</generator>
+    <pubDate>Thu, 02 Mar 2017 14:27:05 +0100</pubDate>
+    <lastBuildDate>Thu, 02 Mar 2017 14:27:05 +0100</lastBuildDate>
+    <generator>Jekyll v3.4.0</generator>
       <item>
         <title>Automatica article</title>
-        <description>&lt;p&gt;Our Automatica article “Decentralized Data Fusion with Inverse Covariance Intersection” has been accepted.&lt;/p&gt;
+        <description>&lt;p&gt;Our Automatica article “Decentralized Data Fusion with Inverse Covariance Intersection” is out.
+&lt;br /&gt;&lt;a href=&quot;https://authors.elsevier.com/a/1UeYT1AMus5LA&quot; target=&quot;_blank&quot;&gt;&lt;span style=&quot;color:red&quot;&gt;Free download until April 21, 2017.&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sat, 26 Nov 2016 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/posts/2016/11/26/Automatica/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/2016/11/26/Automatica/</guid>
+        <pubDate>Thu, 02 Mar 2017 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/posts/2017/03/02/Automatica/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/2017/03/02/Automatica/</guid>
+        <category>articles</category>
+      </item>
+      <item>
+        <title>IFAC Wolrd Congress</title>
+        <description>&lt;p&gt;Our paper for the 20th IFAC World Congress in Toulouse, France, has been accepted.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 27 Feb 2017 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/posts/2017/02/27/IFAC2017/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/2017/02/27/IFAC2017/</guid>
         <category>conferences</category>
       </item>
       <item>
@@ -116,7 +126,7 @@ effected by wind via a wireless sensor network.&lt;/p&gt;&lt;/div&gt;&lt;div cla
         <category>publication</category>
       </item>
       <item>
-        <title>IGF project </title>
+        <title>IGF project</title>
         <description>&lt;p&gt;IGF project “Inside Schüttgut” starts today.&lt;/p&gt;
 &lt;!--more--&gt;
 &lt;p&gt;The project&lt;/p&gt;
@@ -135,15 +145,6 @@ effected by wind via a wireless sensor network.&lt;/p&gt;&lt;/div&gt;&lt;div cla
         <link>http://localhost:4000/posts/2015/08/01/CRC2015/</link>
         <guid isPermaLink="true">http://localhost:4000/posts/2015/08/01/CRC2015/</guid>
         <category>publications</category>
-      </item>
-      <item>
-        <title>Three papers for the MFI conference in San Diego, USA, have been accepted.</title>
-        <description>&lt;p&gt;Three papers for the MFI conference in San Diego, USA, have been accepted.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 20 Jun 2015 14:49:02 +0200</pubDate>
-        <link>http://localhost:4000/posts/2015/06/20/MFI2015/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/2015/06/20/MFI2015/</guid>
-        <category>conferences</category>
       </item>
   </channel>
 </rss>

@@ -6,9 +6,18 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Dec 2016 18:42:22 +0100</pubDate>
-    <lastBuildDate>Wed, 21 Dec 2016 18:42:22 +0100</lastBuildDate>
+    <pubDate>Sat, 24 Dec 2016 16:35:56 +0100</pubDate>
+    <lastBuildDate>Sat, 24 Dec 2016 16:35:56 +0100</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+      <item>
+        <title>Automatica article</title>
+        <description>&lt;p&gt;Our Automatica article “Decentralized Data Fusion with Inverse Covariance Intersection” has been accepted.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 26 Nov 2016 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/posts/2016/11/26/Automatica/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/2016/11/26/Automatica/</guid>
+        <category>conferences</category>
+      </item>
       <item>
         <title>Mfi2016</title>
         <description>&lt;p&gt;Four papers for the MFI conference in Baden-Baden, Germany, have been accepted.&lt;/p&gt;
@@ -134,16 +143,6 @@ effected by wind via a wireless sensor network.&lt;/p&gt;&lt;/div&gt;&lt;div cla
         <pubDate>Sat, 20 Jun 2015 14:49:02 +0200</pubDate>
         <link>http://localhost:4000/posts/2015/06/20/MFI2015/</link>
         <guid isPermaLink="true">http://localhost:4000/posts/2015/06/20/MFI2015/</guid>
-        <category>conferences</category>
-      </item>
-      <item>
-        <title>Our paper for the FUSION conference in Washington D.C., USA, has been accepted.</title>
-        <description>&lt;p&gt;Our paper for the FUSION conference in Washington D.C., USA, has been accepted.&lt;/p&gt;
-&lt;!--more--&gt;
-</description>
-        <pubDate>Fri, 01 May 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/posts/2015/05/01/FUSION2015/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/2015/05/01/FUSION2015/</guid>
         <category>conferences</category>
       </item>
   </channel>

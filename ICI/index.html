@@ -9,9 +9,12 @@
 ">
 <!--  <link href="/css/bootstrap.min.css " rel="stylesheet">   -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />      
-  <link rel="canonical" href="http://localhost:4000/ICI/">
-  <link rel="alternate" type="application/rss+xml" title="Benjamin Noack" href="http://localhost:4000/feed.xml" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+  <link rel="canonical" href="http://www.bennoack.net/ICI/">
+  <link rel="alternate" type="application/rss+xml" title="Benjamin Noack" href="http://www.bennoack.net/feed.xml" />
+  <script type="text/javascript"
+   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,/js/mathmacros.js">
+  </script>
 </head>
 <body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -29,7 +32,7 @@
     <div class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">
         <li ><a href='/'>HOME</a></li>
-        <li class="dropdown"><a href="/research/">RESEARCH</a>
+        <li class="dropdown active"><a href="/research/">RESEARCH</a>
             <ul class="dropdown-menu">
                 <li><a href="/research/#KF">Kalman Filtering</a></li>
                 <li><a href="/research/#UQ">Uncertainty Quantification</a></li>
@@ -68,6 +71,16 @@
               <div class="heading_bg"><h1 id="inverse-covariance-intersection">Inverse Covariance Intersection</h1></div>
 <p>In order to optimally fuse two state estimates, their error cross-covariance matrix must be available. Since this matrix is often unknown to the fusion center, conservative fusion rules are employed that provide consistent fusion results irrespective of possible correlations.</p>
 <p>A well-known conservative fusion rule is Covariance Intersection (CI), which meets certain optimality criteria as shown in <a href="#SPL15_Reinhardt">(Reinhardt, Noack, Arambel, &amp; Hanebeck, 2015)</a> but can provide too conservative fusion results in typical estimation scenarios. With the introduction of <strong>Inverse Covariance Intersection (ICI)</strong>, less conservative results can be computed. This improvement is achieved by tailoring ICI to the treatment of unknown common information. The derivation of ICI is explained in <a href="#Automatica17_Noack">(Noack, Sijs, Reinhardt, &amp; Hanebeck, 2017)</a>.</p>
+<p>Two estimates <code class="MathJax_Preview">\mvec{x}_\sA</code><script type="math/tex">\mvec{x}_\sA</script> and <code class="MathJax_Preview">\mvec{x}_\sB</code><script type="math/tex">\mvec{x}_\sB</script> with corresponding error covariance matrices <code class="MathJax_Preview">\mat{C}_\sA</code><script type="math/tex">\mat{C}_\sA</script> and <code class="MathJax_Preview">\mat{C}_\sB</code><script type="math/tex">\mat{C}_\sB</script> can be fused with ICI according to</p>
+<pre class="MathJax_Preview"><code>\begin{align}
+   \mvec{x}_\ICI &amp;= \mat{K}_\ICI\,\mvec{x}_\sA + \mat{L}_\ICI\,\mvec{x}_\sB \ ,\\
+   \mat{C}_\ICI\inv &amp;= \mat{C}_\sA\inv + \mat{C}_\sB\inv - \left( \omega \mat{C}_\sA + (1-\omega)\mat{C}_\sB\right)\inv \ .
+\end{align}</code></pre><script type="math/tex; mode=display">% <![CDATA[
+\begin{align}
+   \mvec{x}_\ICI &= \mat{K}_\ICI\,\mvec{x}_\sA + \mat{L}_\ICI\,\mvec{x}_\sB \ ,\\
+   \mat{C}_\ICI\inv &= \mat{C}_\sA\inv + \mat{C}_\sB\inv - \left( \omega \mat{C}_\sA + (1-\omega)\mat{C}_\sB\right)\inv \ .
+\end{align} %]]></script>
+<p>The fusion gains <code class="MathJax_Preview">\mat{K}_\ICI</code><script type="math/tex">\mat{K}_\ICI</script> and <code class="MathJax_Preview">\mat{L}_\ICI</code><script type="math/tex">\mat{L}_\ICI</script> are given by</p>
 <h2 id="matlab-code">Matlab code</h2>
 <figure class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="k">function</span> <span class="p">[</span><span class="n">c</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">omega</span><span class="p">]</span> <span class="o">=</span> <span class="n">ICI</span><span class="p">(</span><span class="n">xA</span><span class="p">,</span><span class="n">CA</span><span class="p">,</span><span class="n">xB</span><span class="p">,</span><span class="n">CB</span><span class="p">)</span>
 <span class="c1">% Inverse Covariance Intersection </span>
@@ -91,7 +104,7 @@
         <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omega</span><span class="p">)</span><span class="o">*</span><span class="nb">inv</span><span class="p">(</span><span class="n">omega</span><span class="o">*</span><span class="n">CA</span><span class="o">+</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omega</span><span class="p">)</span><span class="o">*</span><span class="n">CB</span><span class="p">));</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="n">KICI</span><span class="o">*</span><span class="n">xA</span> <span class="o">+</span> <span class="n">LICI</span><span class="o">*</span><span class="n">xB</span><span class="p">;</span></code></pre></figure>
-<p><a href="/data/ICI/ICI.m">Download</a></p>
+<p><a href="/data/ICI/ICI.m" download="ICI.m">Download</a></p>
 <h2 id="references">References</h2>
 <ol class="bibliography">
 <li><a class="bibanchor" name="Automatica17_Noack"></a><div class="bibentry"><div class="bibtitle">Decentralized Data Fusion with Inverse Covariance Intersection</div><p class="bibauthor">Benjamin Noack, Joris Sijs, Marc Reinhardt, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">In Automatica</span>, vol. 79</p><p><span class="bibdate">May, 2017</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>In distributed and decentralized state estimation systems, fusion methods are employed to systematically combine multiple estimates of the state into a single, more accurate estimate. An often encountered
@@ -108,9 +121,9 @@ inverse covariance intersection method, fusion results prove to be more accurate
   pages = {35--41},
   volume = {79},
   doi = {10.1016/j.automatica.2017.01.019},
-  url = {<a target="_blank" href="https://authors.elsevier.com/a/1UeYT1AMus5LA">https://authors.elsevier.com/a/1UeYT1AMus5LA</a>},
+  url = {<a target="_blank" href="http://dx.doi.org/10.1016/j.automatica.2017.01.019">http://dx.doi.org/10.1016/j.automatica.2017.01.019</a>},
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a href="http://www.bennoack.net/ICI"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> further info</a></li><li class="biblink"><a target="_blank" href="https://authors.elsevier.com/a/1UeYT1AMus5LA"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> www</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
+</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a href="http://www.bennoack.net/ICI"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> info page</a></li><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/Automatica17_Noack.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink"><a target="_blank" href="http://dx.doi.org/10.1016/j.automatica.2017.01.019"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> www</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
 <li><a class="bibanchor" name="SPL15_Reinhardt"></a><div class="bibentry"><div class="bibtitle">Minimum Covariance Bounds for the Fusion under Unknown Correlations</div><p class="bibauthor">Marc Reinhardt, Benjamin Noack, Pablo O. Arambel, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">In IEEE Signal Processing Letters</span>, vol. 22</p><p><span class="bibdate">September, 2015</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>One of the key challenges in distributed linear estimation is the systematic fusion of estimates. While the fusion gains that minimize the mean squared error of the fused estimate for known correlations have been established, no analogous statement could be obtained so far for unknown correlations. In this contribution, we derive the gains that minimize the bound on the true covariance of the fused estimate and prove that Covariance Intersection (CI) is the optimal bounding algorithm for two estimates under completely unknown correlations. When combining three or more variables, the CI equations are not necessarily optimal, as shown by a counterexample.</p></div><div class="purebibtexentry"><pre class="purebibtex">@article{SPL15_Reinhardt,
   title = {{Minimum Covariance Bounds for the Fusion under Unknown Correlations}},
   author = {Reinhardt, Marc and Noack, Benjamin and Arambel, Pablo O. and Hanebeck, Uwe D.},
@@ -130,14 +143,14 @@ inverse covariance intersection method, fusion results prove to be more accurate
 </div>
 </div>
 <div class="container">
-        <div class="box footer">  
+        <div class="box footer">
             <div class="row">
-                <div class="col-md-2">  
+                <div class="col-md-2">
                     <h4><small>Benjamin Noack</small></h4>
-                </div>  
-                <div class="col-md-offset-1 col-md-9">  
+                </div>
+                <div class="col-md-offset-1 col-md-9">
                 <div class="row">
-                    <div class="col-sm-6">   
+                    <div class="col-sm-6">
                         <h4><small>pages</small></h4>
                          <ul class="list-inline">
                             <li><a href="/">home</a></li>
@@ -147,27 +160,27 @@ inverse covariance intersection method, fusion results prove to be more accurate
                              <li><a href="/impressum/">impressum</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-6">     
+                    <div class="col-sm-6">
                         <h4><small>links</small></h4>
                         <ul class="list-inline">
                             <li><a href="http://isas.uka.de" target="_blank">ISAS lab</a></li>
                             <li><a href="http://scholar.google.de/citations?user=PmRJJN4AAAAJ&hl" target="_blank">google scholar</a></li>
-                            <li><a href="https://www.researchgate.net/profile/Benjamin_Noack2" target="_blank">researchgate</a></li>  
+                            <li><a href="https://www.researchgate.net/profile/Benjamin_Noack2" target="_blank">researchgate</a></li>
                             <li><a href="https://www.linkedin.com/profile/view?id=80186045" target="_blank">linkedin</a></li>
                         </ul>
-                    </div> 
+                    </div>
                 </div>
                 </div>
-            </div> 
+            </div>
         </div>
 </div>
-<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/navindicator.js"></script>
 <script src="/js/bibdetails.js"></script>
 <script type="text/javascript">
-    $(function(){$('body').scrollspy({ target: '#scrollspy' }); 
-                });  
+    $(function(){$('body').scrollspy({ target: '#scrollspy' });
+                });
 </script>
 <!-- Piwik -->
 <script type="text/javascript">

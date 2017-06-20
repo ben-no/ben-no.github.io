@@ -18,7 +18,7 @@
 </head>
 <body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="color-bar-top"></div>    
+  <div class="color-bar-top"></div>
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -41,14 +41,14 @@
                 <li><a href="/research/#NE">Nonlinear Estimation</a></li>
                 <li><a href="/research/#EB">Event-based Estimation</a></li>
             </ul>
-        </li>  
+        </li>
         <li class="dropdown"><a href="/publications/">PUBLICATIONS</a>
             <ul class="dropdown-menu">
                 <li><a href="/publications/by-year/">By Year</a></li>
                 <li><a href="/publications/by-type/">By Type</a></li>
             </ul>
-        </li>  
-        <li ><a href="/contact/">CONTACT</a></li> 
+        </li>
+        <li ><a href="/contact/">CONTACT</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -62,7 +62,7 @@
 				<ul class="sidenav nav"><li>
 <a href="#inverse-covariance-intersection">Inverse Covariance Intersection</a><ul class="nav">
 <li><a href="#matlab-code">Matlab code</a></li>
-<li><a href="#main-reference">Main Reference</a></li>
+<li><a href="#main-references">Main References</a></li>
 <li><a href="#further-references">Further References</a></li>
 </ul>
 </li></ul>
@@ -71,7 +71,7 @@
         <div class="col-md-9">
               <div class="heading_bg"><h1 id="inverse-covariance-intersection">Inverse Covariance Intersection</h1></div>
 <p>In order to optimally fuse two state estimates, their error cross-covariance matrix must be available. Since this matrix is often unknown to the fusion center, conservative fusion rules are employed that provide consistent fusion results irrespective of possible correlations.</p>
-<p>A well-known conservative fusion rule is Covariance Intersection (CI), which meets certain optimality criteria as shown in <a href="#SPL15_Reinhardt">(Reinhardt, Noack, Arambel, &amp; Hanebeck, 2015)</a> but can provide too conservative fusion results in typical estimation scenarios. With the introduction of <strong>Inverse Covariance Intersection (ICI)</strong>, less conservative results can be computed. This improvement is achieved by tailoring ICI to the treatment of unknown common information. The derivation of ICI is explained in <a href="#Automatica17_Noack">(Noack, Sijs, Reinhardt, &amp; Hanebeck, 2017)</a>.</p>
+<p>A well-known conservative fusion rule is Covariance Intersection (CI), which meets certain optimality criteria as shown in <a href="#SPL15_Reinhardt">(Reinhardt, Noack, Arambel, &amp; Hanebeck, 2015)</a> but can provide too conservative fusion results in typical estimation scenarios. With the introduction of <strong>Inverse Covariance Intersection (ICI)</strong>, less conservative results can be computed. This improvement is achieved by tailoring ICI to the treatment of unknown common information. The derivation of ICI is explained in <a href="#Automatica17_Noack">(Noack, Sijs, Reinhardt, &amp; Hanebeck, 2017)</a>. Recently, a more general study on ICI in <a href="#Fusion17_Noack">(Noack, Sijs, &amp; Hanebeck, 2017)</a> shows that ICI can also be applied to other types of correlations.</p>
 <p>Two estimates <code class="MathJax_Preview">\mvec{x}_\sA</code><script type="math/tex">\mvec{x}_\sA</script> and <code class="MathJax_Preview">\mvec{x}_\sB</code><script type="math/tex">\mvec{x}_\sB</script> with corresponding error covariance matrices <code class="MathJax_Preview">\mat{C}_\sA</code><script type="math/tex">\mat{C}_\sA</script> and <code class="MathJax_Preview">\mat{C}_\sB</code><script type="math/tex">\mat{C}_\sB</script> can be fused with ICI according to</p>
 <pre class="MathJax_Preview"><code>\begin{align}
    \mvec{x}_\ICI &amp;= \mat{K}_\ICI\,\mvec{x}_\sA + \mat{L}_\ICI\,\mvec{x}_\sB \ ,\\
@@ -114,9 +114,18 @@
         <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omega</span><span class="p">)</span><span class="o">*</span><span class="nb">inv</span><span class="p">(</span><span class="n">omega</span><span class="o">*</span><span class="n">CA</span><span class="o">+</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omega</span><span class="p">)</span><span class="o">*</span><span class="n">CB</span><span class="p">));</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="n">KICI</span><span class="o">*</span><span class="n">xA</span> <span class="o">+</span> <span class="n">LICI</span><span class="o">*</span><span class="n">xB</span><span class="p">;</span></code></pre></figure>
-<p><a href="/data/ICI/ICI.m" download="ICI.m">Download</a></p>
-<h2 id="main-reference">Main Reference</h2>
+<p><a href="/data/ICI/ICI.m" download="ICI.m">Download</a> or <a href="https://github.com/KIT-ISAS/ICI">GitHub</a></p>
+<h2 id="main-references">Main References</h2>
 <ol class="bibliography">
+<li><a class="bibanchor" name="Fusion17_Noack"></a><div class="bibentry"><div class="bibtitle">Inverse Covariance Intersection: New Insights and Properties (to appear)</div><p class="bibauthor">Benjamin Noack, Joris Sijs, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 20th International Conference on Information Fusion (Fusion 2017)</span>, Xi’an, China</p><p><span class="bibdate">July, 2017</span></p><div class="bibentry-details"><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Fusion17_Noack,
+  author = {Noack, Benjamin and Sijs, Joris and Hanebeck, Uwe D.},
+  title = {{Inverse Covariance Intersection: New Insights and Properties (to appear)}},
+  booktitle = {Proceedings of the 20th International Conference on Information Fusion (Fusion 2017)},
+  year = {2017},
+  address = {Xi'an, China},
+  month = {jul},
+}
+</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
 <li><a class="bibanchor" name="Automatica17_Noack"></a><div class="bibentry"><div class="bibtitle">Decentralized Data Fusion with Inverse Covariance Intersection</div><p class="bibauthor">Benjamin Noack, Joris Sijs, Marc Reinhardt, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">In Automatica</span>, vol. 79</p><p><span class="bibdate">May, 2017</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>In distributed and decentralized state estimation systems, fusion methods are employed to systematically combine multiple estimates of the state into a single, more accurate estimate. An often encountered
 problem in the fusion process relates to unknown common information that is shared by the estimates to be fused and is responsible for correlations. If the correlation structure is unknown to the fusion method,
 conservative strategies are typically pursued. As such, the parameterization introduced by the ellipsoidal intersection method has been a novel approach to describe unknown correlations, though suitable

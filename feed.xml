@@ -6,14 +6,14 @@
 </description>
     <link>http://www.bennoack.net/</link>
     <atom:link href="http://www.bennoack.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Jul 2017 16:56:40 +0200</pubDate>
-    <lastBuildDate>Mon, 17 Jul 2017 16:56:40 +0200</lastBuildDate>
-    <generator>Jekyll v3.5.0</generator>
+    <pubDate>Wed, 16 Aug 2017 19:53:59 +0100</pubDate>
+    <lastBuildDate>Wed, 16 Aug 2017 19:53:59 +0100</lastBuildDate>
+    <generator>Jekyll v3.5.2</generator>
       <item>
         <title>Automatica article</title>
         <description>&lt;p&gt;Three papers for the FUSION conference in Xi’an, China, have been accepted.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 10 May 2017 00:00:00 +0200</pubDate>
+        <pubDate>Wed, 10 May 2017 00:00:00 +0100</pubDate>
         <link>http://www.bennoack.net/posts/2017/05/10/FUSION/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2017/05/10/FUSION/</guid>
         <category>conferences</category>
@@ -22,7 +22,7 @@
         <title>Automatica article</title>
         <description>&lt;p&gt;Automatica article “Decentralized Data Fusion with Inverse Covariance Intersection” added.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 02 Mar 2017 00:00:00 +0100</pubDate>
+        <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
         <link>http://www.bennoack.net/posts/2017/03/02/Automatica/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2017/03/02/Automatica/</guid>
         <category>articles</category>
@@ -31,7 +31,7 @@
         <title>IFAC Wolrd Congress</title>
         <description>&lt;p&gt;Our paper for the 20th IFAC World Congress in Toulouse, France, has been accepted.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 27 Feb 2017 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
         <link>http://www.bennoack.net/posts/2017/02/27/IFAC2017/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2017/02/27/IFAC2017/</guid>
         <category>conferences</category>
@@ -41,7 +41,7 @@
         <description>&lt;p&gt;Four papers for the MFI conference in Baden-Baden, Germany, have been accepted.&lt;/p&gt;
 &lt;!--more--&gt;
 </description>
-        <pubDate>Mon, 18 Jul 2016 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 18 Jul 2016 00:00:00 +0100</pubDate>
         <link>http://www.bennoack.net/posts/2016/07/18/MFI2016/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2016/07/18/MFI2016/</guid>
         <category>conferences</category>
@@ -51,7 +51,7 @@
         <description>&lt;p&gt;GAČR-DFG project “Cooperative Approaches to Design of Nonlinear Filters” with the Department of Computer Science and Engineering at the  University of West Bohemia starts today.&lt;/p&gt;
 &lt;!--more--&gt;
 </description>
-        <pubDate>Fri, 01 Jul 2016 00:00:00 +0200</pubDate>
+        <pubDate>Fri, 01 Jul 2016 00:00:00 +0100</pubDate>
         <link>http://www.bennoack.net/posts/2016/07/01/GACR-DFG/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2016/07/01/GACR-DFG/</guid>
         <category>project</category>
@@ -61,7 +61,7 @@
         <description>&lt;p&gt;Two papers for the FUSION conference in Heidelberg, Germany, have been accepted.&lt;/p&gt;
 &lt;!--more--&gt;
 </description>
-        <pubDate>Mon, 09 May 2016 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 09 May 2016 00:00:00 +0100</pubDate>
         <link>http://www.bennoack.net/posts/2016/05/09/FUSION2016/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2016/05/09/FUSION2016/</guid>
         <category>conferences</category>
@@ -72,7 +72,7 @@
 &lt;!--more--&gt;
 &lt;p&gt;The project&lt;/p&gt;
 </description>
-        <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
         <link>http://www.bennoack.net/posts/2016/01/01/BMWi2016/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2016/01/01/BMWi2016/</guid>
         <category>projects</category>
@@ -82,7 +82,7 @@
         <description>&lt;p&gt;Article for tm - technisches messen (teme) has been accepted.&lt;/p&gt;
 &lt;!--more--&gt;
 </description>
-        <pubDate>Wed, 16 Dec 2015 00:00:00 +0100</pubDate>
+        <pubDate>Wed, 16 Dec 2015 00:00:00 +0000</pubDate>
         <link>http://www.bennoack.net/posts/2015/12/16/TM2015/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2015/12/16/TM2015/</guid>
         <category>publications</category>
@@ -128,7 +128,7 @@ effected by wind via a wireless sensor network.&lt;/p&gt;&lt;/div&gt;&lt;div cla
 &lt;/pre&gt;&lt;div class=&quot;select_all&quot;&gt;select all&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;ul class=&quot;biblinks&quot;&gt;&lt;li class=&quot;biblink&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.crcnetbase.com/isbn/9781482256567&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-globe&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; www&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;biblink bibmore&quot;&gt;&lt;span class=&quot;arrowdown&quot;&gt;&lt;/span&gt; more&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Tue, 24 Nov 2015 00:00:00 +0100</pubDate>
+        <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
         <link>http://www.bennoack.net/posts/2015/11/24/CRC2015/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2015/11/24/CRC2015/</guid>
         <category>publication</category>
@@ -139,7 +139,7 @@ effected by wind via a wireless sensor network.&lt;/p&gt;&lt;/div&gt;&lt;div cla
 &lt;!--more--&gt;
 &lt;p&gt;The project&lt;/p&gt;
 </description>
-        <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
+        <pubDate>Tue, 01 Sep 2015 00:00:00 +0100</pubDate>
         <link>http://www.bennoack.net/posts/2015/09/01/IGF2015/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2015/09/01/IGF2015/</guid>
         <category>projects</category>

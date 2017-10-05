@@ -6,14 +6,41 @@
 </description>
     <link>http://www.bennoack.net/</link>
     <atom:link href="http://www.bennoack.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 16 Aug 2017 19:53:59 +0100</pubDate>
-    <lastBuildDate>Wed, 16 Aug 2017 19:53:59 +0100</lastBuildDate>
+    <pubDate>Thu, 05 Oct 2017 18:48:19 +0200</pubDate>
+    <lastBuildDate>Thu, 05 Oct 2017 18:48:19 +0200</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
       <item>
-        <title>Automatica article</title>
+        <title>Rtip</title>
+        <description>&lt;p&gt;Article for the Journal of Real-Time Image Processing has been accepted.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 02 Oct 2017 00:00:00 +0200</pubDate>
+        <link>http://www.bennoack.net/posts/2017/10/02/RTIP/</link>
+        <guid isPermaLink="true">http://www.bennoack.net/posts/2017/10/02/RTIP/</guid>
+        <category>articles</category>
+      </item>
+      <item>
+        <title>Mfi</title>
+        <description>&lt;p&gt;Three papers for the MFI conference in Daegu, Korea, have been accepted.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 18 Sep 2017 00:00:00 +0200</pubDate>
+        <link>http://www.bennoack.net/posts/2017/09/18/MFI/</link>
+        <guid isPermaLink="true">http://www.bennoack.net/posts/2017/09/18/MFI/</guid>
+        <category>conferences</category>
+      </item>
+      <item>
+        <title>Tm</title>
+        <description>&lt;p&gt;Article for tm - Technisches Messen (teme) has been accepted.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 08 Sep 2017 00:00:00 +0200</pubDate>
+        <link>http://www.bennoack.net/posts/2017/09/08/TM/</link>
+        <guid isPermaLink="true">http://www.bennoack.net/posts/2017/09/08/TM/</guid>
+        <category>articles</category>
+      </item>
+      <item>
+        <title>Fusion</title>
         <description>&lt;p&gt;Three papers for the FUSION conference in Xi’an, China, have been accepted.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 10 May 2017 00:00:00 +0100</pubDate>
+        <pubDate>Wed, 10 May 2017 00:00:00 +0200</pubDate>
         <link>http://www.bennoack.net/posts/2017/05/10/FUSION/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2017/05/10/FUSION/</guid>
         <category>conferences</category>
@@ -22,7 +49,7 @@
         <title>Automatica article</title>
         <description>&lt;p&gt;Automatica article “Decentralized Data Fusion with Inverse Covariance Intersection” added.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
+        <pubDate>Thu, 02 Mar 2017 00:00:00 +0100</pubDate>
         <link>http://www.bennoack.net/posts/2017/03/02/Automatica/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2017/03/02/Automatica/</guid>
         <category>articles</category>
@@ -31,7 +58,7 @@
         <title>IFAC Wolrd Congress</title>
         <description>&lt;p&gt;Our paper for the 20th IFAC World Congress in Toulouse, France, has been accepted.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 27 Feb 2017 00:00:00 +0100</pubDate>
         <link>http://www.bennoack.net/posts/2017/02/27/IFAC2017/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2017/02/27/IFAC2017/</guid>
         <category>conferences</category>
@@ -41,7 +68,7 @@
         <description>&lt;p&gt;Four papers for the MFI conference in Baden-Baden, Germany, have been accepted.&lt;/p&gt;
 &lt;!--more--&gt;
 </description>
-        <pubDate>Mon, 18 Jul 2016 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 18 Jul 2016 00:00:00 +0200</pubDate>
         <link>http://www.bennoack.net/posts/2016/07/18/MFI2016/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2016/07/18/MFI2016/</guid>
         <category>conferences</category>
@@ -51,7 +78,7 @@
         <description>&lt;p&gt;GAČR-DFG project “Cooperative Approaches to Design of Nonlinear Filters” with the Department of Computer Science and Engineering at the  University of West Bohemia starts today.&lt;/p&gt;
 &lt;!--more--&gt;
 </description>
-        <pubDate>Fri, 01 Jul 2016 00:00:00 +0100</pubDate>
+        <pubDate>Fri, 01 Jul 2016 00:00:00 +0200</pubDate>
         <link>http://www.bennoack.net/posts/2016/07/01/GACR-DFG/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2016/07/01/GACR-DFG/</guid>
         <category>project</category>
@@ -61,7 +88,7 @@
         <description>&lt;p&gt;Two papers for the FUSION conference in Heidelberg, Germany, have been accepted.&lt;/p&gt;
 &lt;!--more--&gt;
 </description>
-        <pubDate>Mon, 09 May 2016 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 09 May 2016 00:00:00 +0200</pubDate>
         <link>http://www.bennoack.net/posts/2016/05/09/FUSION2016/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2016/05/09/FUSION2016/</guid>
         <category>conferences</category>
@@ -72,76 +99,9 @@
 &lt;!--more--&gt;
 &lt;p&gt;The project&lt;/p&gt;
 </description>
-        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
         <link>http://www.bennoack.net/posts/2016/01/01/BMWi2016/</link>
         <guid isPermaLink="true">http://www.bennoack.net/posts/2016/01/01/BMWi2016/</guid>
-        <category>projects</category>
-      </item>
-      <item>
-        <title>New Article</title>
-        <description>&lt;p&gt;Article for tm - technisches messen (teme) has been accepted.&lt;/p&gt;
-&lt;!--more--&gt;
-</description>
-        <pubDate>Wed, 16 Dec 2015 00:00:00 +0000</pubDate>
-        <link>http://www.bennoack.net/posts/2015/12/16/TM2015/</link>
-        <guid isPermaLink="true">http://www.bennoack.net/posts/2015/12/16/TM2015/</guid>
-        <category>publications</category>
-      </item>
-      <item>
-        <title>Book Chapter</title>
-        <description>&lt;p&gt;Book chapter in &lt;a href=&quot;http://www.crcnetbase.com/isbn/9781482256567&quot;&gt;Event-Based Control and Signal Processing&lt;/a&gt; is out.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;Our chapter &lt;em&gt;Time-Periodic State Estimation with Event-Based Measurement Updates&lt;/em&gt; appeared in the Book &lt;em&gt;Event-Based Control and Signal Processing&lt;/em&gt; edited by Marek Miskowicz.&lt;/p&gt;
-&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
-&lt;ol class=&quot;bibliography&quot;&gt;
-&lt;li&gt;&lt;a class=&quot;bibanchor&quot; name=&quot;CRC15_Sijs&quot;&gt;&lt;/a&gt;&lt;div class=&quot;bibentry&quot;&gt;&lt;div class=&quot;bibtitle&quot;&gt;Time-Periodic State Estimation with Event-Based Measurement Updates&lt;/div&gt;&lt;p class=&quot;bibauthor&quot;&gt;Joris Sijs, Benjamin Noack, Mircea Lazar, and Uwe D. Hanebeck &lt;/p&gt;&lt;p&gt;&lt;span class=&quot;bibbooktitle&quot;&gt;Chapter in Event-Based Control and Signal Processing (Marek Miskowicz,  eds.)&lt;/span&gt;, &lt;span class=&quot;publisher&quot;&gt;CRC Press&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;bibdate&quot;&gt;November, 2015&lt;/span&gt;&lt;/p&gt;&lt;div class=&quot;bibentry-details&quot;&gt;&lt;div class=&quot;bibentry-abstract&quot;&gt;&lt;span class=&quot;bibentry-label&quot;&gt;Abstract: &lt;/span&gt; &lt;p&gt;To reduce the amount of data transfers
-in networked systems, measurements can be taken at
-an event on the sensor value rather than periodically
-in time. Yet, this could lead to a divergence of estimation results when only the received measurement
-values are exploited in a state estimation procedure.
-A solution to this issue has been found by developing
-estimators that perform a state update at both the event
-instants as well as periodically in time: when an event
-occurs the estimated state is updated using the measurement received, while at periodic instants the update is
-based on knowledge that the sensor value lies within a
-bounded subset of the measurement space. Several solutions for event-based state estimation will be presented
-in this chapter, either based on stochastic representations
-of random vectors, on deterministic representations of
-random vectors or on a mixture of the two. All solutions aim to limit the required computational resources
-by deriving explicit solutions for computing estimation
-results. Yet, the main achievement for each estimation
-solution is that stability of the estimation results are (not directly) dependent on the employed event sampling
-strategy. As such, changing the event sampling strategy does not imply to change the event-based estimator
-as well. This aspect is also illustrated in a case study
-of tracking the distribution of a chemical compound
-effected by wind via a wireless sensor network.&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;purebibtexentry&quot;&gt;&lt;pre class=&quot;purebibtex&quot;&gt;@inbook{CRC15_Sijs,
-  title = {Event-Based Control and Signal Processing},
-  author = {Sijs, Joris and Noack, Benjamin and Lazar, Mircea and Hanebeck, Uwe D.},
-  chapter = {{Time-Periodic State Estimation with Event-Based Measurement Updates}},
-  editor = {Miskowicz, Marek},
-  pages = {261--279},
-  publisher = {CRC Press},
-  year = {2015},
-  month = {nov},
-  url = {&lt;a target=&quot;_blank&quot; href=&quot;http://www.crcnetbase.com/isbn/9781482256567&quot;&gt;http://www.crcnetbase.com/isbn/9781482256567&lt;/a&gt;},
-}
-&lt;/pre&gt;&lt;div class=&quot;select_all&quot;&gt;select all&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;ul class=&quot;biblinks&quot;&gt;&lt;li class=&quot;biblink&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.crcnetbase.com/isbn/9781482256567&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-globe&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; www&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;biblink bibmore&quot;&gt;&lt;span class=&quot;arrowdown&quot;&gt;&lt;/span&gt; more&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
-        <link>http://www.bennoack.net/posts/2015/11/24/CRC2015/</link>
-        <guid isPermaLink="true">http://www.bennoack.net/posts/2015/11/24/CRC2015/</guid>
-        <category>publication</category>
-      </item>
-      <item>
-        <title>IGF project</title>
-        <description>&lt;p&gt;IGF project “Inside Schüttgut” starts today.&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;The project&lt;/p&gt;
-</description>
-        <pubDate>Tue, 01 Sep 2015 00:00:00 +0100</pubDate>
-        <link>http://www.bennoack.net/posts/2015/09/01/IGF2015/</link>
-        <guid isPermaLink="true">http://www.bennoack.net/posts/2015/09/01/IGF2015/</guid>
         <category>projects</category>
       </item>
   </channel>

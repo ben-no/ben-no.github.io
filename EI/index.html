@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Benjamin Noack</title>
   <meta name="description" content="Website of Benjamin Noack. On this website, you can find information about my work and research interests.
 ">
+
 <!--  <link href="/css/bootstrap.min.css " rel="stylesheet">   -->
   <link rel="stylesheet" href="/css/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
   <link rel="canonical" href="http://www.bennoack.net/EI/">
   <link rel="alternate" type="application/rss+xml" title="Benjamin Noack" href="http://www.bennoack.net/feed.xml" />
+
+
+
+
 </head>
+
+
 <body>
+
+
+
+
+
+
+
+
+
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="color-bar-top"></div>
   <div class="container">
@@ -29,52 +47,214 @@
     <div class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">
         <li ><a href='/'>HOME</a></li>
+
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+            
         <li class="dropdown"><a href="/research/">RESEARCH</a>
+                
+				
+                    
             <ul class="dropdown-menu">
+                    
+
+                
+
+                    
                 <li><a href="/research/#KF">Kalman Filtering</a></li>
+                    
+                    
+                
+                    
+
+                
+
+                    
                 <li><a href="/research/#UQ">Uncertainty Quantification</a></li>
+                    
+                    
+                
+                    
+
+                
+
+                    
                 <li><a href="/research/#SN">Sensor Networks</a></li>
+                    
+                    
+                
+                    
+
+                
+
+                    
                 <li><a href="/research/#RC">Large-scale Systems</a></li>
+                    
+                    
+                
+                    
+
+                
+
+                    
                 <li><a href="/research/#NE">Nonlinear Estimation</a></li>
+                    
+                    
+                
+                    
+
+                
+
+                    
                 <li><a href="/research/#EB">Event-based Estimation</a></li>
+                    
+                    
             </ul>
+                    
+                
         </li>
+            
+        
+
+    
+    
+    
+        
+            
         <li class="dropdown"><a href="/publications/">PUBLICATIONS</a>
+                
+				
+                    
             <ul class="dropdown-menu">
-                <li><a href="/publications/by-year/">By Year</a></li>
+                    
+
+                
+
+                    
+                    
+                    
+                <li><a href="/publications/">By Year</a></li>
+                    
                 <li><a href="/publications/by-type/">By Type</a></li>
+                    
+                    
             </ul>
+                    
+                
         </li>
+            
+        
+
+    
+    
+    
+        
+            
         <li ><a href="/contact/">CONTACT</a></li>
+            
+        
+
       </ul>
     </div><!--/.nav-collapse -->
   </div>
 <div id='navbar-indicator'></div>
 </div>
+
+
 <div class="container">
 <div class="box">
     <div class="row">
         <div class="col-md-3">
-            <div id="scrollspy" class="sidenav hidden-xs hidden-sm"  data-spy="affix" data-offset-top="10" data-offset-bottom="200">
-				<ul class="sidenav nav">
-<li>
+
+
+            <div id="scrollspy" class="sidenav hidden-xs hidden-sm"  data-spy="affix" data-offset-top="10" data-offset-bottom="300">
+				<ul class="sidenav nav"><li>
 <a href="#reformulations-of-ellipsoidal-intersection">Reformulations of EI</a><ul class="nav">
 <li><a href="#original-formulation">Original Formulation</a></li>
 <li><a href="#bar-shalomcampo-fusion-rule">Bar-Shalom/Campo Fusion Rule</a></li>
 <li><a href="#direct-computation">Direct Computation</a></li>
-</ul>
-</li>
 <li><a href="#references">References</a></li>
 </ul>
+</li></ul>
             </div>
+
         </div>
-        <div class="col-md-9">
+
+        <div class="col-md-9 content">
+              
 <div class="heading_bg"><h1 data-toc="Reformulations of EI" id="reformulations-of-ellipsoidal-intersection">Reformulations of Ellipsoidal Intersection</h1></div>
-<p>Ellipsoidal intersection (EI) has been proposed in <a href="#Sijs2012_Automatica">(Sijs &amp; Lazar, 2012)</a> for applications in decentralized data fusion.
+
+<p>Ellipsoidal intersection (EI) has been proposed in <a name="Sijs2012_Automatica_ref1" href="#Sijs2012_Automatica">[1]</a> for applications in decentralized data fusion.
 The EI fusion rule relies on the computation of a common estimate that can be subtracted from the (naive) fusion result.</p>
+
 <h2 id="original-formulation">Original Formulation</h2>
+
 <h3 id="matlab-code">Matlab code</h3>
-<figure class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="k">function</span> <span class="p">[</span><span class="n">c</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">Gamma</span><span class="p">]</span> <span class="o">=</span> <span class="n">EI</span><span class="p">(</span><span class="n">xA</span><span class="p">,</span><span class="n">CA</span><span class="p">,</span><span class="n">xB</span><span class="p">,</span><span class="n">CB</span><span class="p">)</span>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="rouge-code"><pre><span class="k">function</span> <span class="p">[</span><span class="n">c</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">Gamma</span><span class="p">]</span> <span class="o">=</span> <span class="n">EI</span><span class="p">(</span><span class="n">xA</span><span class="p">,</span><span class="n">CA</span><span class="p">,</span><span class="n">xB</span><span class="p">,</span><span class="n">CB</span><span class="p">)</span>
 <span class="c1">% This function implements the EI algorithm and fuses two estimates</span>
 <span class="c1">% (a,A) and (b,B) together to provide a new estimate (c,C). A common</span>
 <span class="c1">% estimate (gamma, Gamma) is computed and subtracted from the fusion</span>
@@ -93,13 +273,34 @@ The EI fusion rule relies on the computation of a common estimate that can be su
 <span class="c1">% New mean</span>
 <span class="n">R</span> <span class="o">=</span> <span class="nb">eps</span><span class="o">*</span><span class="nb">eye</span><span class="p">(</span><span class="nb">length</span><span class="p">(</span><span class="n">C</span><span class="p">));</span> <span class="c1">% regularization</span>
 <span class="nb">gamma</span> <span class="o">=</span> <span class="nb">inv</span><span class="p">(</span><span class="n">Ai</span><span class="o">+</span><span class="n">Bi</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="nb">inv</span><span class="p">(</span><span class="n">Gamma</span><span class="p">)</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">R</span><span class="p">)</span><span class="o">*</span><span class="p">((</span><span class="n">Bi</span><span class="o">-</span><span class="nb">inv</span><span class="p">(</span><span class="n">Gamma</span><span class="p">)</span><span class="o">+</span><span class="n">R</span><span class="p">)</span><span class="o">*</span><span class="n">xA</span> <span class="o">+</span> <span class="p">(</span><span class="n">Ai</span><span class="o">-</span><span class="nb">inv</span><span class="p">(</span><span class="n">Gamma</span><span class="p">)</span><span class="o">+</span><span class="n">R</span><span class="p">)</span><span class="o">*</span><span class="n">xB</span><span class="p">);</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">C</span><span class="o">*</span><span class="p">(</span><span class="n">CA</span><span class="p">\</span><span class="n">xA</span><span class="o">+</span><span class="n">CB</span><span class="p">\</span><span class="n">xB</span><span class="o">-</span><span class="n">Gamma</span><span class="p">\</span><span class="nb">gamma</span><span class="p">);</span></code></pre></figure>
+<span class="n">c</span> <span class="o">=</span> <span class="n">C</span><span class="o">*</span><span class="p">(</span><span class="n">CA</span><span class="p">\</span><span class="n">xA</span><span class="o">+</span><span class="n">CB</span><span class="p">\</span><span class="n">xB</span><span class="o">-</span><span class="n">Gamma</span><span class="p">\</span><span class="nb">gamma</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
 <p><a href="/data/EI/EI.m" download="EI.m">Download</a></p>
+
 <hr />
 <p><br /></p>
-<p>Two different formulations of EI are proposed in <a href="#MFI16_Noack">(Noack, Sijs, &amp; Hanebeck, 2016)</a>.</p>
+
+<p>Two different formulations of EI are proposed in <a name="MFI16_Noack_ref1" href="#MFI16_Noack">[2]</a>.</p>
+
 <h2 id="bar-shalomcampo-fusion-rule">Bar-Shalom/Campo Fusion Rule</h2>
-<figure class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="k">function</span> <span class="p">[</span><span class="n">c</span><span class="p">,</span><span class="n">C</span><span class="p">]</span> <span class="o">=</span> <span class="n">EIv2</span><span class="p">(</span><span class="n">xa</span><span class="p">,</span><span class="n">CA</span><span class="p">,</span><span class="n">xb</span><span class="p">,</span><span class="n">CB</span><span class="p">)</span>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="k">function</span> <span class="p">[</span><span class="n">c</span><span class="p">,</span><span class="n">C</span><span class="p">]</span> <span class="o">=</span> <span class="n">EIv2</span><span class="p">(</span><span class="n">xa</span><span class="p">,</span><span class="n">CA</span><span class="p">,</span><span class="n">xb</span><span class="p">,</span><span class="n">CB</span><span class="p">)</span>
 <span class="c1">% Ellipsoidal Intersection </span>
 <span class="c1">%</span>
 <span class="c1">% This function implements the EI algorithm </span>
@@ -113,10 +314,33 @@ The EI fusion rule relies on the computation of a common estimate that can be su
 <span class="n">C</span> <span class="o">=</span> <span class="n">TA</span><span class="o">*</span><span class="nb">sqrt</span><span class="p">(</span><span class="n">DA</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">TBT</span><span class="o">*</span><span class="n">DBT</span><span class="p">/</span><span class="n">TBT</span><span class="p">)</span><span class="o">*</span><span class="nb">sqrt</span><span class="p">(</span><span class="n">DA</span><span class="p">)/</span><span class="n">TA</span><span class="p">;</span>
 <span class="c1">% c = xa + (CA-C)/(CA+CB-2*C)*(xb-xa); % inversion of possibly singular matrix </span>
 <span class="n">R</span> <span class="o">=</span> <span class="n">C</span> <span class="o">+</span> <span class="nb">eps</span><span class="o">*</span><span class="nb">eye</span><span class="p">(</span><span class="nb">length</span><span class="p">(</span><span class="n">C</span><span class="p">));</span> <span class="c1">% regularization</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">xa</span> <span class="o">+</span> <span class="p">(</span><span class="n">CA</span><span class="o">-</span><span class="n">R</span><span class="p">)/(</span><span class="n">CA</span><span class="o">+</span><span class="n">CB</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">R</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">xb</span><span class="o">-</span><span class="n">xa</span><span class="p">);</span></code></pre></figure>
+<span class="n">c</span> <span class="o">=</span> <span class="n">xa</span> <span class="o">+</span> <span class="p">(</span><span class="n">CA</span><span class="o">-</span><span class="n">R</span><span class="p">)/(</span><span class="n">CA</span><span class="o">+</span><span class="n">CB</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">R</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">xb</span><span class="o">-</span><span class="n">xa</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
 <p><a href="/data/EI/EIv2.m" download="EIv2.m">Download</a></p>
+
 <h2 id="direct-computation">Direct Computation</h2>
-<figure class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="k">function</span> <span class="p">[</span><span class="n">c</span><span class="p">,</span><span class="n">C</span><span class="p">]</span> <span class="o">=</span> <span class="n">EIv3</span><span class="p">(</span><span class="n">xA</span><span class="p">,</span><span class="n">CA</span><span class="p">,</span><span class="n">xB</span><span class="p">,</span><span class="n">CB</span><span class="p">)</span>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre><span class="k">function</span> <span class="p">[</span><span class="n">c</span><span class="p">,</span><span class="n">C</span><span class="p">]</span> <span class="o">=</span> <span class="n">EIv3</span><span class="p">(</span><span class="n">xA</span><span class="p">,</span><span class="n">CA</span><span class="p">,</span><span class="n">xB</span><span class="p">,</span><span class="n">CB</span><span class="p">)</span>
 <span class="c1">% Ellipsoidal Intersection </span>
 <span class="c1">%</span>
 <span class="c1">% This function implements the EI algorithm </span>
@@ -134,77 +358,145 @@ The EI fusion rule relies on the computation of a common estimate that can be su
 <span class="n">KA</span> <span class="o">=</span> <span class="nb">diag</span><span class="p">((</span><span class="n">DA</span><span class="o">&lt;</span><span class="n">DB</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">DA</span><span class="o">==</span><span class="n">DB</span><span class="p">));</span>
 <span class="n">KB</span> <span class="o">=</span> <span class="nb">diag</span><span class="p">((</span><span class="n">DA</span><span class="o">&gt;</span><span class="n">DB</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">DA</span><span class="o">==</span><span class="n">DB</span><span class="p">));</span>
 
-<span class="n">c</span> <span class="o">=</span> <span class="n">T</span><span class="p">\(</span><span class="n">KA</span><span class="o">.*</span><span class="p">(</span><span class="n">T</span><span class="o">*</span><span class="n">xA</span><span class="p">)</span> <span class="o">+</span> <span class="n">KB</span><span class="o">.*</span><span class="p">(</span><span class="n">T</span><span class="o">*</span><span class="n">xB</span><span class="p">));</span></code></pre></figure>
+<span class="n">c</span> <span class="o">=</span> <span class="n">T</span><span class="p">\(</span><span class="n">KA</span><span class="o">.*</span><span class="p">(</span><span class="n">T</span><span class="o">*</span><span class="n">xA</span><span class="p">)</span> <span class="o">+</span> <span class="n">KB</span><span class="o">.*</span><span class="p">(</span><span class="n">T</span><span class="o">*</span><span class="n">xB</span><span class="p">));</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 <p><a href="/data/EI/EIv3.m" download="EIv3.m">Download</a></p>
-<div class="heading_bg"><h1 id="references">References</h1></div>
-<ol class="bibliography">
-<li><a class="bibanchor" name="MFI16_Noack"></a><div class="bibentry"><div class="bibtitle">Algebraic Analysis of Data Fusion with Ellipsoidal Intersection</div><p class="bibauthor">Benjamin Noack, Joris Sijs, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 2015 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2016)</span>, Baden-Baden, Germany</p><p><span class="bibdate">September, 2016</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>For decentralized fusion problems, ellipsoidal intersection has been proposed as an efficient fusion rule that provides less conservative results as compared to the well-know covariance intersection method. Ellipsoidal intersection relies on the computation of a common estimate that is shared by the estimates to be fused. In this paper, an algebraic reformulation of ellipsoidal intersection is discussed that circumvents the computation of the common estimate. It is shown that ellipsoidal intersection corresponds to an internal ellipsoidal approximation of the intersection of covariance ellipsoids. An interesting result is that ellipsoidal intersection can be computed with the aid of the Bar-Shalom/Campo fusion formulae. This is achieved by assuming a specific correlation structure between the estimates to be fused.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{MFI16_Noack,
-  title = {{Algebraic Analysis of Data Fusion with Ellipsoidal Intersection}},
-  author = {Noack, Benjamin and Sijs, Joris and Hanebeck, Uwe D.},
-  booktitle = {Proceedings of the 2015 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2016)},
-  year = {2016},
-  address = {Baden-Baden, Germany},
-  month = {sep},
-}
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a href="http://www.bennoack.net/EI"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> info page</a></li><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/MFI16_Noack.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-</ol>
-<ol class="bibliography">
-<li><a class="bibanchor" name="Sijs2012_Automatica"></a><div class="bibentry"><div class="bibtitle">State-fusion with Unknown Correlation: Ellipsoidal Intersection</div><p class="bibauthor">Joris Sijs and Mircea Lazar </p><p><span class="bibbooktitle">In Automatica</span>, vol. 48</p><p><span class="bibdate">August, 2012</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>This article focuses on the problem of fusing two prior Gaussian estimates into a single estimate, when the correlation is unknown. Existing solutions either lead to a conservative fusion result, as the chosen parametrization focuses on the fusion formulas instead of correlations, or they are computationally expensive. The contribution of this article is a novel parametrization, in which the correlation is explicitly characterized a priori to deriving the fusion formulas. Then, maximizing the correlation ensures that the fusion result is based on independent parts of the prior estimates and, simultaneously, addresses the fact that the correlation is unknown. In addition, a guaranteed improvement of the accuracy after fusion is attained. An illustrative example demonstrates the benefits of the proposed method compared to an existing fusion method.</p></div><div class="purebibtexentry"><pre class="purebibtex">@article{Sijs2012_Automatica,
-  title = {{State-fusion with Unknown Correlation: Ellipsoidal Intersection}},
-  author = {Sijs, Joris and Lazar, Mircea},
-  journal = {Automatica},
-  year = {2012},
-  month = {aug},
-  number = {8},
-  pages = {1874--1878},
-  volume = {48},
-}
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-</ol>
-        </div>    
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li><b>[1]</b>
+
+
+<sup>(
+    
+    <a href="#Sijs2012_Automatica_ref1" class="backref">a</a>
+    
+    
+    )
+</sup>
+
+
+<span id="Sijs2012_Automatica">J. Sijs and M. Lazar, <b>State-fusion with Unknown Correlation: Ellipsoidal Intersection</b>, <i>Automatica</i>, vol. 48, no. 8, pp. 1874–1878, Aug. 2012.</span>
+
+
+</li>
+<li><b>[2]</b>
+
+
+<sup>(
+    
+    <a href="#MFI16_Noack_ref1" class="backref">a</a>
+    
+    
+    )
+</sup>
+
+
+<span id="MFI16_Noack">B. Noack, J. Sijs, and U. D. Hanebeck, <b>Algebraic Analysis of Data Fusion with Ellipsoidal Intersection</b>, in <i>Proceedings of the 2016 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2016)</i>, Baden-Baden, Germany, Sep. 2016.</span>
+
+
+<span class="plainm">
+    <a href="/publications#MFI16_Noack">
+    <span class="glyphicon glyphicon glyphicon-arrow-right" aria-hidden="true"></span> more
+    </a>
+</span>
+
+</li></ol>
+
+        </div>
     </div>
 </div>
+
 </div>
+
+
+
+
 <div class="container">
-        <div class="box footer">
-            <div class="row">
-                <div class="col-md-2">
-                    <h4><small>Benjamin Noack</small></h4>
+
+        <div class="footer box">
+            <div class="row row-eq-height">
+                <div class="col-xs-4 col-sm-6">
+                    <h4>Benjamin Noack</h4>
+                    <br>
+                    <img src="/images/WatermarkBN.svg" class="img-responsive" style="max-height: 100px; margin-right:20px;"/>
                 </div>
-                <div class="col-md-offset-1 col-md-9">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h4><small>pages</small></h4>
-                         <ul class="list-inline">
+
+                <div class="col-xs-4 col-sm-3">
+                    <h4>pages</h4>
+                         <ul class="list-unstyled">
                             <li><a href="/">home</a></li>
+                             
+                             
+                            
+                             
+                            
+                             
+                            
+                             
+                            
+                             
+                            
+                             
+                            
+                             
+                            
+                             
+                            
+                             
                             <li><a href="/research/">research</a></li>
+                             
+                            
+                             
                             <li><a href="/publications/">publications</a></li>
+                             
+                            
+                             
                             <li><a href="/contact/">contact</a></li>
+                             
+                            
                              <li><a href="/impressum/">impressum</a></li>
                         </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <h4><small>links</small></h4>
-                        <ul class="list-inline">
-                            <li><a href="http://isas.uka.de" target="_blank">ISAS lab</a></li>
-                            <li><a href="http://scholar.google.de/citations?user=PmRJJN4AAAAJ&hl" target="_blank">google scholar</a></li>
-                            <li><a href="https://www.researchgate.net/profile/Benjamin_Noack2" target="_blank">researchgate</a></li>
-                            <li><a href="https://www.linkedin.com/profile/view?id=80186045" target="_blank">linkedin</a></li>
-                        </ul>
-                    </div>
                 </div>
+                <div class="col-xs-4 col-sm-3">
+                    <h4>links</h4>
+                      <ul class="list-unstyled">
+                          
+                              <li><a href="http://isas.uka.de" target="_blank">ISAS lab</a></li>
+                          
+                              <li><a href="http://scholar.google.de/citations?user=PmRJJN4AAAAJ&hl" target="_blank">google scholar</a></li>
+                          
+                              <li><a href="https://www.researchgate.net/profile/Benjamin_Noack2" target="_blank">researchgate</a></li>
+                          
+                              <li><a href="https://de.linkedin.com/in/benjaminnoack" target="_blank">linkedin</a></li>
+                          
+                      </ul>
+                      <small> last modified 09/05/2018</small>
                 </div>
-            </div>
+
+
         </div>
+    </div>
 </div>
+
 <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/navindicator.js"></script>
-<script src="/js/bibdetails.js"></script>
+<script src="/js/copyBib.js"></script>
+
+
+
+
+
 <script type="text/javascript">
     $(function(){$('body').scrollspy({ target: '#scrollspy' });
                 });
 </script>
+
+
+
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
@@ -220,5 +512,9 @@ The EI fusion rule relies on the computation of a common estimate that can be su
 </script>
 <noscript><p><img src="//www.bennoack.de/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
+
+
+
 </body>
+
 </html>

@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Benjamin Noack - Research</title>
   <meta name="description" content="Website of Benjamin Noack. On this website, you can find information about my work and research interests.
 ">
+
 <!--  <link href="/css/bootstrap.min.css " rel="stylesheet">   -->
   <link rel="stylesheet" href="/css/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
   <link rel="canonical" href="http://www.bennoack.net/research/">
   <link rel="alternate" type="application/rss+xml" title="Benjamin Noack" href="http://www.bennoack.net/feed.xml" />
+
+
+
+
 </head>
+
+
 <body>
+
+
+
+
+
+
+
+
+
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="color-bar-top"></div>
   <div class="container">
@@ -29,29 +47,171 @@
     <div class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">
         <li ><a href='/'>HOME</a></li>
+
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+
+    
+    
+    
+        
+            
         <li class="dropdown active"><a href="/research/">RESEARCH</a>
+                
+				
+                    
             <ul class="dropdown-menu">
+                    
+
+                
+
+                    
                 <li><a href="/research/#KF">Kalman Filtering</a></li>
+                    
+                    
+                
+                    
+
+                
+
+                    
                 <li><a href="/research/#UQ">Uncertainty Quantification</a></li>
+                    
+                    
+                
+                    
+
+                
+
+                    
                 <li><a href="/research/#SN">Sensor Networks</a></li>
+                    
+                    
+                
+                    
+
+                
+
+                    
                 <li><a href="/research/#RC">Large-scale Systems</a></li>
+                    
+                    
+                
+                    
+
+                
+
+                    
                 <li><a href="/research/#NE">Nonlinear Estimation</a></li>
+                    
+                    
+                
+                    
+
+                
+
+                    
                 <li><a href="/research/#EB">Event-based Estimation</a></li>
+                    
+                    
             </ul>
+                    
+                
         </li>
+            
+        
+
+    
+    
+    
+        
+            
         <li class="dropdown"><a href="/publications/">PUBLICATIONS</a>
+                
+				
+                    
             <ul class="dropdown-menu">
-                <li><a href="/publications/by-year/">By Year</a></li>
+                    
+
+                
+
+                    
+                    
+                    
+                <li><a href="/publications/">By Year</a></li>
+                    
                 <li><a href="/publications/by-type/">By Type</a></li>
+                    
+                    
             </ul>
+                    
+                
         </li>
+            
+        
+
+    
+    
+    
+        
+            
         <li ><a href="/contact/">CONTACT</a></li>
+            
+        
+
       </ul>
     </div><!--/.nav-collapse -->
   </div>
 <div id='navbar-indicator'></div>
 </div>
+
+
 <div class="container">
+
+
+
+
+
+
+
 <div class="box"><a name="KF"></a>   
 	<div class="row row-sm-flex-center">
 		<div class="col-sm-4 ">
@@ -59,11 +219,29 @@
 		</div><div class="col-sm-8  flex-top">
 			<div class="heading_bg"><h1>Kalman Filtering</h1></div>
 			<p>The Kalman Filter algorithm recursively estimates the uncertain state variables of a dynamic process from noisy observations. A process model, which governs the time evolution of the state, is used in the prediction step to calculate an estimate for the subsequent time step. The predicted estimate then serves as prior information in the filtering step and is updated using current observations and the corresponding sensor models. This algorithm embodies an optimal solution to the state estimation problem when system dynamics and observation models are linear and the error statistics of the noise terms are known. Kalman filters have quickly evolved into an important tool for a wide range of sensor data fusion applications.</p>
+
 <p>My research focuses on how to characterize different types of <a href="/research/#UQ">estimation uncertainties</a>, how to 
 <a href="/research/#SN">distribute and fuse</a> Kalman filter estimates, and how to apply Kalman filters to <a href="/research/#NE">nonlinear estimation</a> problems.</p>
+
+ 
+
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="box"><a name="UQ"></a>   
 	<div class="row row-sm-flex-center">
 		<div class="col-sm-4 col-sm-push-8">
@@ -72,9 +250,25 @@
 			<div class="heading_bg"><h1>Uncertainty Quantification</h1></div>
 			<p>In control and estimation theory, an uncertain quantity is often expressed in terms of either a random variable or an unknown but bounded error. Hence, stochastic and set-membership models of uncertainty are the methods of choice. In combination with each other, both directions of describing uncertainties enable a flexible and comprehensive modeling of different sources of estimation uncertainty. However, common estimation techniques require the user to choose between either one uncertainty model or the other.
 Much of my research is devoted to generalizations of the <a href="/research/#KF">Kalman filter</a> algorithm in order to allow for a simultaneous treatment of stochastic and set-membership uncertainties</p>
+ 
+
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="box"><a name="SN"></a>   
 	<div class="row row-sm-flex-center">
 		<div class="col-sm-4 ">
@@ -82,9 +276,28 @@ Much of my research is devoted to generalizations of the <a href="/research/#KF"
 		</div><div class="col-sm-8  flex-top">
 			<div class="heading_bg"><h1>Estimation in Sensor Networks</h1></div>
 			<p>Distributed and decentralized state estimation techniques become increasingly important in view of the trend towards network-based multi-sensor systems. Networks of multiple sensors offer several advantages over centralized systems including scalability, robustness to node failures, and the ability to monitor <a href="/research/#RC">large-scale phenomena</a>. Instead of continuously transmitting measurements to a central estimation system, it is usually preferred to compute state estimates  at the sensor nodes and to transmit these estimates only when a global fusion result is demanded. The major challenge in distributed information processing is the correct treatment of dependencies between the estimates to be fused. In particular, I am interested in deriving conservative and constistent fusion methods that can be applied to estimates with an unknown dependency structure.</p>
+
+ 
+
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="box"><a name="RC"></a>   
 	<div class="heading_bg"><h1>Reconstruction of Large-scale Systems</h1></div>
 	<div style="position:relative">
@@ -97,10 +310,22 @@ sensor observations. This approach not only reduces the computational pressure o
 In the situation of unequal state representations, the role of state fusion is not only to provide an improved estimate
 but also to assemble an estimate for the entire state from the locally computed lower-dimensional estimates. In particular, the treatment of correlations between overlapping parts is a key challenge. 
 My research focuses on designing distributed <a href="/research/#KF">Kalman filtering</a> techniques that can either exploit known correlations or employ conservative bounds on unknown correlations.</p>
+
+
 		</div>
 		<img style="margin-top:15px; margin-bottom:15px" class="rg-img img-responsive" src="/images/research/reconstruction.gif" alt="Reconstruction of Large-scale Systems"/>
+		
 	</div>
 </div>
+  
+
+
+
+
+
+
+
+
 <div class="box"><a name="NE"></a>   
 	<div class="row row-sm-flex-center">
 		<div class="col-sm-4 col-sm-push-8">
@@ -108,10 +333,28 @@ My research focuses on designing distributed <a href="/research/#KF">Kalman filt
 		</div><div class="col-sm-8 col-sm-pull-4 flex-top">
 			<div class="heading_bg"><h1>Nonlinear State Estimation</h1></div>
 			<p>For linear process and sensor models, the <a href="/research/#KF">Kalman filter</a> represents an optimal solution with respect to the mean squared error. Linear filtering techniques can also be applied to nonlinear estimation problems by determining the necessary covariance matrices or by linearizing the models. In many situations, linear estimates may provide insufficient information about the state, in particular when the conditional probability density of the state is multi-modal. Particle representations and finite-dimensional series expansions are often employed to obtain tractable approximations of the conditional probability density.</p>
+
 <p>I am interested in combining nonlinear estimation techniques with <a href="/research/#SN">distributed fusion</a> architectures. The parameterization and approximation of nonlinear dependencies is particularly challenging as the dependency structure is related to a high-dimensional joint probability density. In nonlinear contexts, it is still an open question how a conservative approximation has to look like.</p>
+
+ 
+
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="box"><a name="EB"></a>   
 	<div class="row row-sm-flex-center">
 		<div class="col-sm-4 ">
@@ -123,46 +366,105 @@ Although sensor observations are only sent to the estimator when an event trigge
 the estimator is to be designed to provide stable results periodically in time. In order to avoid an unstable behavior, the event-triggering criterion is turned into implicit measurement information, which is denoted as <em>negative information</em> and modeled as <a href="/research/#UQ">set-membership information</a>. 
 The estimation problem can be solved by a hybrid <a href="/research/#KF">Kalman filter</a>, which employs a stochastic representation for modeling
 sensor noise and a set-​membership representation for incorporating implicit measurement information derived from event-sampling criteria.</p>
+
+ 
+
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
 </div>
+
+
+
+
 <div class="container">
-        <div class="box footer">
-            <div class="row">
-                <div class="col-md-2">
-                    <h4><small>Benjamin Noack</small></h4>
+
+        <div class="footer box">
+            <div class="row row-eq-height">
+                <div class="col-xs-4 col-sm-6">
+                    <h4>Benjamin Noack</h4>
+                    <br>
+                    <img src="/images/WatermarkBN.svg" class="img-responsive" style="max-height: 100px; margin-right:20px;"/>
                 </div>
-                <div class="col-md-offset-1 col-md-9">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h4><small>pages</small></h4>
-                         <ul class="list-inline">
+
+                <div class="col-xs-4 col-sm-3">
+                    <h4>pages</h4>
+                         <ul class="list-unstyled">
                             <li><a href="/">home</a></li>
+                             
+                             
+                            
+                             
+                            
+                             
+                            
+                             
+                            
+                             
+                            
+                             
+                            
+                             
+                            
+                             
+                            
+                             
                             <li><a href="/research/">research</a></li>
+                             
+                            
+                             
                             <li><a href="/publications/">publications</a></li>
+                             
+                            
+                             
                             <li><a href="/contact/">contact</a></li>
+                             
+                            
                              <li><a href="/impressum/">impressum</a></li>
                         </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <h4><small>links</small></h4>
-                        <ul class="list-inline">
-                            <li><a href="http://isas.uka.de" target="_blank">ISAS lab</a></li>
-                            <li><a href="http://scholar.google.de/citations?user=PmRJJN4AAAAJ&hl" target="_blank">google scholar</a></li>
-                            <li><a href="https://www.researchgate.net/profile/Benjamin_Noack2" target="_blank">researchgate</a></li>
-                            <li><a href="https://www.linkedin.com/profile/view?id=80186045" target="_blank">linkedin</a></li>
-                        </ul>
-                    </div>
                 </div>
+                <div class="col-xs-4 col-sm-3">
+                    <h4>links</h4>
+                      <ul class="list-unstyled">
+                          
+                              <li><a href="http://isas.uka.de" target="_blank">ISAS lab</a></li>
+                          
+                              <li><a href="http://scholar.google.de/citations?user=PmRJJN4AAAAJ&hl" target="_blank">google scholar</a></li>
+                          
+                              <li><a href="https://www.researchgate.net/profile/Benjamin_Noack2" target="_blank">researchgate</a></li>
+                          
+                              <li><a href="https://de.linkedin.com/in/benjaminnoack" target="_blank">linkedin</a></li>
+                          
+                      </ul>
+                      <small> last modified 09/05/2018</small>
                 </div>
-            </div>
+
+
         </div>
+    </div>
 </div>
+
 <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/navindicator.js"></script>
-<script src="/js/bibdetails.js"></script>
+<script src="/js/copyBib.js"></script>
+
+
+
+
+
+
+
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
@@ -178,5 +480,9 @@ sensor noise and a set-​membership representation for incorporating implicit m
 </script>
 <noscript><p><img src="//www.bennoack.de/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
+
+
+
 </body>
+
 </html>

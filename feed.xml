@@ -6,13 +6,60 @@
 </description>
     <link>http://www.bennoack.net/</link>
     <atom:link href="http://www.bennoack.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 09 May 2018 21:16:12 +0200</pubDate>
-    <lastBuildDate>Wed, 09 May 2018 21:16:12 +0200</lastBuildDate>
-    <generator>Jekyll v3.8.1</generator>
+    <pubDate>Tue, 17 Jul 2018 17:54:58 +0200</pubDate>
+    <lastBuildDate>Tue, 17 Jul 2018 17:54:58 +0200</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>IET article</title>
+        <description>&lt;p&gt;Our article for the IET Signal Processing journal has been accepted.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;IET Signal Processing article “On Directional Splitting of Gaussian Density in Nonlinear Random Variable Transformation” has been accepted.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 21 Jun 2018 00:00:00 +0200</pubDate>
+        <link>http://www.bennoack.net/posts/2018/06/21/IETSP/</link>
+        <guid isPermaLink="true">http://www.bennoack.net/posts/2018/06/21/IETSP/</guid>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>Fusion2018</title>
+        <description>&lt;p&gt;Three papers for the FUSION conference in Cambridge, United Kingdom, have been accepted.&lt;/p&gt;
+
+&lt;!--more--&gt;
+</description>
+        <pubDate>Tue, 01 May 2018 00:00:00 +0200</pubDate>
+        <link>http://www.bennoack.net/posts/2018/05/01/FUSION2018/</link>
+        <guid isPermaLink="true">http://www.bennoack.net/posts/2018/05/01/FUSION2018/</guid>
+        
+        
+        <category>conferences</category>
+        
+      </item>
+    
+      <item>
+        <title>Sensors article</title>
+        <description>&lt;p&gt;Our article for the Sensors journal has been accepted.&lt;/p&gt;
+
+&lt;!--more--&gt;
+</description>
+        <pubDate>Tue, 27 Mar 2018 00:00:00 +0200</pubDate>
+        <link>http://www.bennoack.net/posts/2018/03/27/Sensors/</link>
+        <guid isPermaLink="true">http://www.bennoack.net/posts/2018/03/27/Sensors/</guid>
+        
+        
+        <category>articles</category>
+        
+      </item>
     
       <item>
         <title>Rtip</title>
-        <description>&lt;p&gt;Article for the Journal of Real-Time Image Processing has been accepted.&lt;/p&gt;
+        <description>&lt;p&gt;Our article for the Journal of Real-Time Image Processing has been accepted.&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Oct 2017 00:00:00 +0200</pubDate>
         <link>http://www.bennoack.net/posts/2017/10/02/RTIP/</link>
@@ -101,55 +148,6 @@
         
         
         <category>conferences</category>
-        
-      </item>
-    
-      <item>
-        <title>BMWi project </title>
-        <description>&lt;p&gt;GAČR-DFG project “Cooperative Approaches to Design of Nonlinear Filters” with the Department of Computer Science and Engineering at the  University of West Bohemia starts today.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-</description>
-        <pubDate>Fri, 01 Jul 2016 00:00:00 +0200</pubDate>
-        <link>http://www.bennoack.net/posts/2016/07/01/GACR-DFG/</link>
-        <guid isPermaLink="true">http://www.bennoack.net/posts/2016/07/01/GACR-DFG/</guid>
-        
-        
-        <category>project</category>
-        
-      </item>
-    
-      <item>
-        <title>Fusion2016</title>
-        <description>&lt;p&gt;Two papers for the FUSION conference in Heidelberg, Germany, have been accepted.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-</description>
-        <pubDate>Mon, 09 May 2016 00:00:00 +0200</pubDate>
-        <link>http://www.bennoack.net/posts/2016/05/09/FUSION2016/</link>
-        <guid isPermaLink="true">http://www.bennoack.net/posts/2016/05/09/FUSION2016/</guid>
-        
-        
-        <category>conferences</category>
-        
-      </item>
-    
-      <item>
-        <title>BMWi project </title>
-        <description>&lt;p&gt;BMWi project “Fertigung und Entwicklung von Tanks unter Industrie4.0-Bedingungen” starts today.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;The project&lt;/p&gt;
-</description>
-        <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://www.bennoack.net/posts/2016/01/01/BMWi2016/</link>
-        <guid isPermaLink="true">http://www.bennoack.net/posts/2016/01/01/BMWi2016/</guid>
-        
-        
-        <category>projects</category>
         
       </item>
     

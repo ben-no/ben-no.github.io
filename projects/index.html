@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Benjamin Noack - Tm</title>
-  <meta name="description" content="Article for tm - Technisches Messen (teme) has been accepted.">
+  <title>Benjamin Noack - Projects</title>
+  <meta name="description" content="Website of Benjamin Noack. On this website, you can find information about my work and research interests.
+">
 
 <!--  <link href="/css/bootstrap.min.css " rel="stylesheet">   -->
   <link rel="stylesheet" href="/css/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
-  <link rel="canonical" href="http://www.bennoack.net/posts/2017/09/08/TM/">
+  <link rel="canonical" href="http://www.bennoack.net/projects/">
   <link rel="alternate" type="application/rss+xml" title="Benjamin Noack" href="http://www.bennoack.net/feed.xml" />
 
 
@@ -201,7 +202,7 @@
     
         
             
-        <li ><a href="/projects/">PROJECTS</a></li>
+        <li class="active"><a href="/projects/">PROJECTS</a></li>
             
         
 
@@ -233,18 +234,49 @@
 <div class="container">
 <div class="box">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-3">
 
 
-            <header class="post-header">
-                <div class="heading_bg"><h1 class="post-title">Tm</h1></div>
-                <p class="post-meta">Sep 8, 2017</p>
-            </header>
+            <div id="scrollspy" class="sidenav hidden-xs hidden-sm"  data-spy="affix" data-offset-top="10" data-offset-bottom="300">
+				<ul class="sidenav nav">
+<li>
+<a href="#running-projects">Running Projects</a><ul class="nav">
+<li><a href="#lm2mse-estimation">LM2MSE Estimation</a></li>
+<li><a href="#inside-sch%C3%BCttgut">Inside Schüttgut</a></li>
+<li><a href="#assistive-system">Assistive System</a></li>
+</ul>
+</li>
+<li>
+<a href="#past-projects">Past Projects</a><ul class="nav">
+<li><a href="#start-up-funding">Start-up Funding</a></li>
+<li><a href="#research-training-group-1194">Research Training Group 1194</a></li>
+</ul>
+</li>
+<li><a href="#service">Service</a></li>
+</ul>
+            </div>
 
-            <article class="post-content">
-                <p>Article for tm - Technisches Messen (teme) has been accepted.</p>
+        </div>
 
-            </article>
+        <div class="col-md-9 content">
+              <div class="heading_bg"><h1 id="running-projects">Running Projects</h1></div>
+
+<h2 id="lm2mse-estimation">LM<sup>2</sup>MSE Estimation</h2>
+<p>Eine in vielen Anwendungen zu lösende Aufgabe ist die Bestimmung eines Schätzwertes für den Zustand eines dynamischen Prozesses. Zu den bekanntesten Ansätzen, um aus fehlerhaften Beobachtungen einen Schätzwert zu gewinnen, zählt das Kalman-Filter. Eine der wesentlichen Einschränkungen dieses Ansatzes ist weniger die zugrunde liegende Annahme normalverteilter Störeinflüsse, sondern allgemeiner die Voraussetzung, dass ein rein zufälliges Fehlerverhalten vorliegen muss. Die im Kalman-Verfahren geforderte stochastische Beschreibung der Schätzunsicherheiten erweist sich als unzureichend, sobald Messunsicherheiten behandelt werden müssen, die keine eindeutige probabilistische Darstellung erlauben. Insbesondere zählen hierzu unbekannte systematische Messfehler, Quantisierungs- sowie Linearisierungsfehler oder Störeffekte durch eine unzuverlässige Datenübertragung. Das Kalman-Filter und ein Großteil bekannter Schätzverfahren erfordern eine rein stochastische Beschreibung dieser Fälle und erschweren damit die Behandlung vieler Schätzprobleme.</p>
+
+<p>funded by <img src="/images/logos/dfg_logo.gif" alt="DFG" /></p>
+
+<h2 id="inside-schüttgut">Inside Schüttgut</h2>
+
+<h2 id="assistive-system">Assistive System</h2>
+
+<div class="heading_bg"><h1 id="past-projects">Past Projects</h1></div>
+
+<h2 id="start-up-funding">Start-up Funding</h2>
+
+<h2 id="research-training-group-1194">Research Training Group 1194</h2>
+
+<div class="heading_bg"><h1 id="service">Service</h1></div>
 
         </div>
     </div>
@@ -342,6 +374,11 @@
 
 
 
+
+<script type="text/javascript">
+    $(function(){$('body').scrollspy({ target: '#scrollspy' });
+                });
+</script>
 
 
 

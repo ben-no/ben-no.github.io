@@ -768,7 +768,88 @@ This book focuses on a comprehensive study of state estimation techniques in cen
 
 </li></ol>
 <h2 id="article">journal articles</h2>
-<ol class="bibliography"><li><span id="IETSP2018_Dunik">J. Duník, O. Straka, B. Noack, J. Steinbring, and U. D. Hanebeck, <b>On Directional Splitting of Gaussian Density in Nonlinear Random Variable Transformation</b>, <i>IET Signal Processing</i>, Jul. 2018.</span><br />
+<ol class="bibliography"><li><span id="PowTec18_Pieper">C. Pieper, F. Pfaff, G. Maier, H. Kruggel-Emden, S. Wirtz, B. Noack, R. Gruna, V. Scherer, U. D. Hanebeck, T. Längle, and J. Beyerer, <b>Numerical Modelling of an Optical Belt Sorter Using a DEM–CFD Approach Coupled with Particle Tracking and Comparison with Experiments</b>, <i>Powder Technology</i>, vol. 370, pp. 181–193, Dec. 2018.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexPowTec18_Pieper"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+    
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrPowTec18_Pieper">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+    
+
+    
+    <a target="_blank" href="https://doi.org/10.1016/j.powtec.2018.09.003" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> www
+    </a>
+    
+
+    
+
+</div>
+
+
+<div class="modal fade" id="MbibtexPowTec18_Pieper" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bPowTec18_Pieper">@article{PowTec18_Pieper,
+  author = {Pieper, Christoph and Pfaff, Florian and Maier, Georg and Kruggel-Emden, Harald and Wirtz, Siegmar and Noack, Benjamin and Gruna, Robin and Scherer, Viktor and Hanebeck, Uwe D. and Längle, Thomas and Beyerer, Jürgen},
+  journal = {Powder Technology},
+  title = {Numerical Modelling of an Optical Belt Sorter Using a DEM–CFD Approach Coupled with Particle Tracking and Comparison with Experiments},
+  year = {2018},
+  month = dec,
+  pages = {181--193},
+  volume = {370},
+  doi = {10.1016/j.powtec.2018.09.003},
+  keywords = {Discrete Element Method, Computational Fluid Dynamics, Optical sorting, Non-spherical particles, Multiple object tracking},
+  url = {https://doi.org/10.1016/j.powtec.2018.09.003}
+}
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bPowTec18_Pieper')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrPowTec18_Pieper" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Numerical Modelling of an Optical Belt Sorter Using a DEM–CFD Approach Coupled with Particle Tracking and Comparison with Experiments</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>State-of-the-art optical sorting systems suffer from delays between the particle detection and separation stage, during which the material movement is not accounted for. Commonly line scan cameras, using simple assumptions to predict the future particle movement, are employed. In this study, a novel prediction approach is presented, where an area scan camera records the particle movement over multiple time steps and a tracking algorithm is used to reconstruct the corresponding paths to determine the time and position at which the material reaches the separation stage. In order to assess the benefit of such a model at different operating parameters, an automated optical belt sorter is numerically modelled and coupled with the tracking procedure. The Discrete Element Method (DEM) is used to describe the particle–particle as well as particle–wall interactions, while the air nozzles required for deflecting undesired material fractions are described with Computational Fluid Dynamics (CFD). The accuracy of the employed numerical approach is ensured by comparing the separation results of a predefined sorting task with experimental investigations. The quality of the aforementioned prediction models is compared when utilizing different belt lengths, nozzle activation durations, particle types, sampling frequencies and detection windows. Results show that the numerical model of the optical belt sorter is able to accurately describe the sorting system and is suitable for detailed investigation of various operational parameters. The proposed tracking prediction model was found to be superior to the common line scan camera method in all investigated scenarios. Its advantage is especially profound when difficult sorting conditions, e.g. short conveyor belt lengths or uncooperative moving bulk solids, apply.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="IETSP2018_Dunik">J. Duník, O. Straka, B. Noack, J. Steinbring, and U. D. Hanebeck, <b>On Directional Splitting of Gaussian Density in Nonlinear Random Variable Transformation</b>, <i>IET Signal Processing</i>, Jul. 2018.</span><br />
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
     
 
@@ -919,73 +1000,6 @@ non-Gaussianity. The proposed splitting directions are analysed and illustrated 
       </div>
       <div class="modal-body">
         <b>Abstract — </b>For multisensor data fusion, distributed state estimation techniques that enable a local processing of sensor data are the means of choice in order to minimize storage and communication costs. In particular, a distributed implementation of the optimal Kalman filter has recently been developed. A significant disadvantage of this algorithm is that the fusion center needs access to each node so as to compute a consistent state estimate, which requires full communication each time an estimate is requested. In this article, different extensions of the optimally distributed Kalman filter are proposed that employ data-driven transmission schemes in order to reduce communication expenses. As a first relaxation of the full-rate communication scheme, it can be shown that each node only has to transmit every second time step without endangering consistency of the fusion result. Also, two data-driven algorithms are introduced that even allow for lower transmission rates, and bounds are derived to guarantee consistent fusion results. Simulations demonstrate that the data-driven distributed filtering schemes can outperform a centralized Kalman filter that requires each measurement to be sent to the center node.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-</li>
-<li><span id="PowTec18_Pieper">C. Pieper, F. Pfaff, G. Maier, H. Kruggel-Emden, S. Wirtz, B. Noack, R. Gruna, V. Scherer, U. D. Hanebeck, T. Längle, and J. Beyerer, <b>Numerical Modelling of an Optical Belt Sorter Using a DEM–CFD Approach Coupled with a Particle Tracking Algorithm and Comparison with Experiments (to appear)</b>, <i>Powder Technology</i>, 2018.</span><br />
-<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-    
-
-    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexPowTec18_Pieper"><img src="/images/bibtex_white.svg" width="40" /></button>
-
-    
-
-    
-
-    
-
-</div>
-
-
-<div class="modal fade" id="MbibtexPowTec18_Pieper" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <img src="/images/bibtex.png" />
-      </div>
-      <div class="modal-body">
-        <pre id="bPowTec18_Pieper">@article{PowTec18_Pieper,
-  author = {Pieper, Christoph and Pfaff, Florian and Maier, Georg and Kruggel-Emden, Harald and Wirtz, Siegmar and Noack, Benjamin and Gruna, Robin and Scherer, Viktor and Hanebeck, Uwe D. and Längle, Thomas and Beyerer, Jürgen},
-  journal = {Powder Technology},
-  title = {Numerical Modelling of an Optical Belt Sorter Using a DEM–CFD Approach Coupled with a Particle Tracking Algorithm and Comparison with Experiments (to appear)},
-  year = {2018}
-}
-</pre>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" onclick="copyToClipboard('bPowTec18_Pieper')">Copy To Clipboard</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="MabstrPowTec18_Pieper" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="myModalLabel">Numerical Modelling of an Optical Belt Sorter Using a DEM–CFD Approach Coupled with a Particle Tracking Algorithm and Comparison with Experiments (to appear)</h5>
-      </div>
-      <div class="modal-body">
-        <b>Abstract — </b>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -1685,7 +1699,97 @@ inverse covariance intersection method, fusion results prove to be more accurate
 
 </li></ol>
 <h2 id="inproceedings">peer-reviewed conference papers</h2>
-<ol class="bibliography"><li><span id="FUSION18_Oezgen">S. Özgen, U. D. Hanebeck, B. Noack, M. Huber, F. Rosenthal, and J. Mayer, <b>Retrodiction of Data Association Probabilities via Convex Optimization</b>, in <i>Proceedings of the 21st International Conference on Information Fusion (Fusion 2018)</i>, Cambridge, United Kingdom, Jul. 2018.</span><br />
+<ol class="bibliography"><li><span id="SDF18_Li">K. Li, D. Frisch, S. Radtke, B. Noack, and U. D. Hanebeck, <b>Wavefront Orientation Estimation Based on Progressive Bingham Filtering</b>, in <i>Proceedings of the IEEE ISIF Workshop on Sensor Data Fusion: Trends, Solutions, Applications (SDF 2018)</i>, Oct. 2018.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexSDF18_Li"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+    
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrSDF18_Li">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+    
+
+    
+
+    
+    <a target="_blank" href="http://isas.uka.de/Publikationen/SDF18_Li.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+    
+
+</div>
+
+
+<div class="modal fade" id="MbibtexSDF18_Li" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bSDF18_Li">@inproceedings{SDF18_Li,
+  author = {Li, Kailai and Frisch, Daniel and Radtke, Susanne and Noack, Benjamin and Hanebeck, Uwe D.},
+  booktitle = {Proceedings of the IEEE ISIF Workshop on Sensor Data Fusion: Trends, Solutions, Applications (SDF 2018)},
+  month = oct,
+  title = {Wavefront Orientation Estimation Based on Progressive Bingham Filtering},
+  year = {2018}
+}
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bSDF18_Li')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrSDF18_Li" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Wavefront Orientation Estimation Based on Progressive Bingham Filtering</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>In this paper, we propose the Progressive Bingham
+Filter (PBF), a novel stochastic filtering algorithm for nonlinear
+spatial orientation estimation. As an extension of the orientation
+filter previously proposed only for the identity measurement
+model based on the Bingham distribution, our method is able to
+handle arbitrary measurement models. Instead of the sampling-
+approximation scheme used in the prediction step, a closed-
+form solution is possible when the system equation is based on
+the Hamilton product. Besides stochastic approaches, we also
+introduce the Spherical Averaging Method (SAM), which is an
+application of the Riemannian averaging technique. The two
+approaches are then applied to a specific problem where the
+wavefront orientation is estimated based on Time Differences of
+Arrival (TDOA) and evaluated in simulations. The results show
+theoretical competitiveness of the PBF.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="FUSION18_Oezgen">S. Özgen, U. D. Hanebeck, B. Noack, M. Huber, F. Rosenthal, and J. Mayer, <b>Retrodiction of Data Association Probabilities via Convex Optimization</b>, in <i>Proceedings of the 21st International Conference on Information Fusion (Fusion 2018)</i>, Cambridge, United Kingdom, Jul. 2018.</span><br />
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
     
 
@@ -6606,7 +6710,7 @@ example.
                               <li><a href="https://de.linkedin.com/in/benjaminnoack" target="_blank">linkedin</a></li>
                           
                       </ul>
-                      <small> last modified 09/10/2018</small>
+                      <small> last modified 11/10/2018</small>
                 </div>
 
 

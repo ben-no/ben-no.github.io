@@ -209,7 +209,9 @@
 <div class="box">
     <div class="row">
         <div class="col-md-3">
-            <div id="scrollspy" class="sidenav hidden-xs hidden-sm" data-spy="affix" data-offset-top="10" data-offset-bottom="200">
+
+
+            <div id="scrollspy" class="sidenav hidden-xs hidden-sm" data-spy="affix" data-offset-top="10" data-offset-bottom="300">
 				<ul class="sidenav nav">
 <li>
 <a href="#workshop--valeo">Workshop @ Valeo</a><ul class="nav">
@@ -227,16 +229,24 @@
 </li>
 </ul>
             </div>
+
         </div>
-        <div class="col-md-9">
+
+        <div class="col-md-9 content">
+
 <div class="heading_bg"><div class="heading_bg"><h1 id="workshop--valeo">Workshop @ Valeo</h1></div></div>
+
 <div class="well well-sm" style="padding-left: 1.5em">
   <p><em>November 4th, 2015</em> <br />
 Valeo, Bietigheim-Bissingen</p>
 </div>
+
 <hr />
+
 <h2 id="talk-1-mixed-uncertainties">Talk 1: Mixed Uncertainties</h2>
+
 <h3 id="kalman-filtering-under-mixed-stochastic-and-set-membership-uncertainties"><em>Kalman Filtering under Mixed Stochastic and Set-membership Uncertainties</em></h3>
+
 <div class="well well-sm" style="padding-left: 1.5em">
   <dl>
     <dt>Download presentation</dt>
@@ -244,180 +254,926 @@ Valeo, Bietigheim-Bissingen</p>
     <dd><a href="http://isas.uka.de/Material/publicMaterial/WorkshopValeo2015/Talks/Talk1.pdf">Complete version</a> (as presented, requires Acrobat Reader)</dd>
   </dl>
 </div>
-<p>The generalized Kalman filter algorithm is explained in <a href="#talk1-CDC12_Noack">(Noack, Pfaff, &amp; Hanebeck, 2012)</a> and in more detail in <a href="#talk1-Diss13_Noack">(Noack, 2013)</a>.</p>
-<p>The problem of data validation in the presence of stochastic and set-membership uncertainties has been discussed in <a href="#ref1-Fusion13_Pfaff">(Pfaff, Noack, &amp; Hanebeck, 2013)</a>, and the presented results can also be applied to gating. The incorporation of constraints on the state is considered in <a href="#ref1-MFI15_Noack">(Noack, Baum, &amp; Hanebeck, 2015)</a>. The concept derived in <a href="#ref1-Fusion13_Sijs">(Sijs, Noack, &amp; Hanebeck, 2013)</a> exploits missing but expected observations against the background of event-based state estimation.</p>
+
+<p>The generalized Kalman filter algorithm is explained in <a name="CDC12_Noack_ref1" href="#talk1-CDC12_Noack">[1]</a> and in more detail in <a name="Diss13_Noack_ref1" href="#talk1-Diss13_Noack">[2]</a>.</p>
+
+<p>The problem of data validation in the presence of stochastic and set-membership uncertainties has been discussed in <a name="Fusion13_Pfaff_ref1" href="#ref1-Fusion13_Pfaff">[3]</a>, and the presented results can also be applied to gating. The incorporation of constraints on the state is considered in <a name="MFI15_Noack_ref1" href="#ref1-MFI15_Noack">[4]</a>. The concept derived in <a name="Fusion13_Sijs_ref1" href="#ref1-Fusion13_Sijs">[5]</a> exploits missing but expected observations against the background of event-based state estimation.</p>
+
 <h3 id="references">References</h3>
-<ol class="bibliography">
-<li><a class="bibanchor" name="talk1-Diss13_Noack"></a><div class="bibentry"><div class="bibtitle">State Estimation for Distributed Systems with Stochastic and Set-membership Uncertainties</div><p class="bibauthor">Benjamin Noack </p><p><span class="publisher">PhD thesis, Karlsruhe Institute of Technology (KIT), Karlsruhe Series on Intelligent Sensor-Actuator-Systems 14</span></p><p><span class="bibdate">January, 2013</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>State estimation methods provide the means to extract usable information from sensor data – even in the presence of severe uncertainties. Their results are supposed to be informative and uncertainty-aware estimates at once. In particular, the clear tendency towards networked sensor systems gives rise to many additional challenges in developing
-state estimation methods.
-This book focuses on a comprehensive study of state estimation techniques in centralized, distributed, and decentralized systems with uncertainties being modeled and incorporated in a systematic fashion. We study an easy-to-implement estimation concept that generalizes and combines basic principles of Kalman filter theory and ellipsoidal calculus. By means of this method, stochastic and set-membership uncertainties can be taken into consideration simultaneously. We discuss different solutions to meet the increasing demand for implementing these estimation algorithms in distributed networked systems and investigate the problem of fusing estimates under unknown cross-correlations and nonlinear dependencies.</p></div><div class="purebibtexentry"><pre class="purebibtex">@phdthesis{Diss13_Noack,
+
+<ol class="bibliography"><li><span id="talk1-Diss13_Noack">B. Noack, <b>State Estimation for Distributed Systems with Stochastic and Set-membership Uncertainties</b>, Dissertation, Karlsruhe Institute of Technology (KIT), Karlsruhe Series on Intelligent Sensor-Actuator-Systems 14, Jan. 2013.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexDiss13_Noack"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrDiss13_Noack">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+    <a target="_blank" href="http://dx.doi.org/10.5445/KSP/1000036878" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> www
+    </a>
+
+
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexDiss13_Noack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bDiss13_Noack">@phdthesis{Diss13_Noack,
   title = ,
   author = {Noack, Benjamin},
   school = {Karlsruhe Institute of Technology (KIT), Karlsruhe Series on Intelligent Sensor-Actuator-Systems 14},
   year = {2013},
-  month = {jan},
+  month = jan,
   note = {ISBN 978-3-7315-0124-4},
   type = {Dissertation},
   doi = {10.5445/KSP/1000036878},
-  url = {<a target="_blank" href="http://dx.doi.org/10.5445/KSP/1000036878">http://dx.doi.org/10.5445/KSP/1000036878</a>},
+  url = {http://dx.doi.org/10.5445/KSP/1000036878}
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://dx.doi.org/10.5445/KSP/1000036878"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> www</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-<li><a class="bibanchor" name="talk1-CDC12_Noack"></a><div class="bibentry"><div class="bibtitle">Optimal Kalman Gains for Combined Stochastic and Set-Membership State Estimation</div><p class="bibauthor">Benjamin Noack, Florian Pfaff, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 51st IEEE Conference on Decision and Control (CDC 2012)</span>, Maui, Hawaii, USA</p><p><span class="bibdate">December, 2012</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>In state estimation theory, two directions are mainly followed in order to model disturbances and errors. Either uncertainties are modeled as stochastic quantities or they are characterized by their membership to a set. Both approaches have distinct advantages and disadvantages making each one inherently better suited to model different sources of estimation uncertainty. This paper is dedicated to the task of combining stochastic and set-membership estimation methods. A Kalman gain is derived that minimizes the mean squared error in the presence of both stochastic and additional unknown but bounded uncertainties, which are represented by Gaussian random variables and ellipsoidal sets, respectively. As a result, a generalization of the well-known Kalman filtering scheme is attained that reduces to the standard Kalman filter in the absence of set-membership uncertainty and that otherwise becomes the intersection of sets in case of vanishing stochastic uncertainty. The proposed concept also allows to prioritize either the minimization of the stochastic uncertainty or the minimization of the set-membership uncertainty.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{CDC12_Noack,
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bDiss13_Noack')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrDiss13_Noack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">State Estimation for Distributed Systems with Stochastic and Set-membership Uncertainties</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>State estimation methods provide the means to extract usable information from sensor data – even in the presence of severe uncertainties. Their results are supposed to be informative and uncertainty-aware estimates at once. In particular, the clear tendency towards networked sensor systems gives rise to many additional challenges in developing
+state estimation methods.
+This book focuses on a comprehensive study of state estimation techniques in centralized, distributed, and decentralized systems with uncertainties being modeled and incorporated in a systematic fashion. We study an easy-to-implement estimation concept that generalizes and combines basic principles of Kalman filter theory and ellipsoidal calculus. By means of this method, stochastic and set-membership uncertainties can be taken into consideration simultaneously. We discuss different solutions to meet the increasing demand for implementing these estimation algorithms in distributed networked systems and investigate the problem of fusing estimates under unknown cross-correlations and nonlinear dependencies.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="talk1-CDC12_Noack">B. Noack, F. Pfaff, and U. D. Hanebeck, <b>Optimal Kalman Gains for Combined Stochastic and Set-Membership State Estimation</b>, in <i>Proceedings of the 51st IEEE Conference on Decision and Control (CDC 2012)</i>, Maui, Hawaii, USA, Dec. 2012.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexCDC12_Noack"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrCDC12_Noack">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+
+
+    <a target="_blank" href="https://isas.uka.de/Publikationen/CDC12_Noack.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexCDC12_Noack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bCDC12_Noack">@inproceedings{CDC12_Noack,
   title = ,
   author = {Noack, Benjamin and Pfaff, Florian and Hanebeck, Uwe D.},
   booktitle = {Proceedings of the 51st IEEE Conference on Decision and Control (CDC 2012)},
   year = {2012},
   address = {Maui, Hawaii, USA},
-  month = {dec},
+  month = dec,
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/CDC12_Noack.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-</ol>
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bCDC12_Noack')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrCDC12_Noack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Optimal Kalman Gains for Combined Stochastic and Set-Membership State Estimation</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>In state estimation theory, two directions are mainly followed in order to model disturbances and errors. Either uncertainties are modeled as stochastic quantities or they are characterized by their membership to a set. Both approaches have distinct advantages and disadvantages making each one inherently better suited to model different sources of estimation uncertainty. This paper is dedicated to the task of combining stochastic and set-membership estimation methods. A Kalman gain is derived that minimizes the mean squared error in the presence of both stochastic and additional unknown but bounded uncertainties, which are represented by Gaussian random variables and ellipsoidal sets, respectively. As a result, a generalization of the well-known Kalman filtering scheme is attained that reduces to the standard Kalman filter in the absence of set-membership uncertainty and that otherwise becomes the intersection of sets in case of vanishing stochastic uncertainty. The proposed concept also allows to prioritize either the minimization of the stochastic uncertainty or the minimization of the set-membership uncertainty.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li></ol>
+
 <h3 id="additional-material">Additional Material</h3>
-<ol class="bibliography">
-<li><a class="bibanchor" name="ref1-MFI15_Noack"></a><div class="bibentry"><div class="bibtitle">State Estimation for Ellipsoidally Constrained Dynamic Systems with Set-membership Pseudo Measurements</div><p class="bibauthor">Benjamin Noack, Marcus Baum, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 2015 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems  (MFI 2015)</span>, San Diego, California, USA</p><p><span class="bibdate">September, 2015</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>In many dynamic systems, the evolution of the state is subject to specific constraints. In general, constraints cannot easily be integrated into the prediction-correction structure of the Kalman filter algorithm. Linear equality constraints are an exception to this rule and have been widely used and studied as they allow for simple closed-form expressions. A common approach is to reformulate equality constraints into pseudo measurements of the state to be estimated. However, equality constraints define deterministic relationships between state components which is an undesirable property in Kalman filtering as this leads to singular covariance matrices. A second problem relates to the knowledge required to identify and define precise constraints, which are met by the system state. In this article, ellipsoidal constraints are introduced that can be employed to model a bounded region, to which the system state is constrained. This concept constitutes an easy-to-use relaxation of equality constraints. In order to integrate ellipsoidal constraints into the Kalman filter structure, a generalized filter framework is utilized that relies on a combined stochastic and set-membership uncertainty representation.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{MFI15_Noack,
+
+<ol class="bibliography"><li><span id="ref1-MFI15_Noack">B. Noack, M. Baum, and U. D. Hanebeck, <b>State Estimation for Ellipsoidally Constrained Dynamic Systems with Set-membership Pseudo Measurements</b>, in <i>Proceedings of the 2015 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2015)</i>, San Diego, California, USA, Sep. 2015.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexMFI15_Noack"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrMFI15_Noack">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+
+
+    <a target="_blank" href="https://isas.uka.de/Publikationen/MFI15_Noack.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexMFI15_Noack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bMFI15_Noack">@inproceedings{MFI15_Noack,
   title = ,
   author = {Noack, Benjamin and Baum, Marcus and Hanebeck, Uwe D.},
-  booktitle = {Proceedings of the 2015 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems  (MFI 2015)},
+  booktitle = {Proceedings of the 2015 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2015)},
   year = {2015},
   address = {San Diego, California, USA},
-  month = {sep},
+  month = sep,
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/MFI15_Noack.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-<li><a class="bibanchor" name="ref1-Fusion13_Sijs"></a><div class="bibentry"><div class="bibtitle">Event-based State Estimation with Negative Information</div><p class="bibauthor">Joris Sijs, Benjamin Noack, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)</span>, Istanbul, Turkey</p><p><span class="bibdate">July, 2013</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>To reduce the amount of data transfer in networked systems, measurements are usually taken only when an event occurs rather than periodically in time. However, this complicates estimation problems considerably as it is not guaranteed that new sensor data will be sampled. Therefore, an existing state estimator is extended so to cope with event-based measurements successfully, i.e., curtail any diverging behavior in the estimation results. To that extent, a general formulation of event sampling is proposed. This formulation is used to set up a state estimator combining stochastic as well as set-membership measurement information according to a hybrid update: when an event occurs the estimated state is updated using the stochastic measurement received (positive information), while at periodic time instants no measurement is received (negative information) and the update is based on knowledge that the sensor value lies within a bounded subset of the measurement space. An illustrative example further shows that the developed estimator has an improved representation of estimation errors compared to a purely stochastic estimator for various event sampling strategies.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Fusion13_Sijs,
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bMFI15_Noack')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrMFI15_Noack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">State Estimation for Ellipsoidally Constrained Dynamic Systems with Set-membership Pseudo Measurements</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>In many dynamic systems, the evolution of the state is subject to specific constraints. In general, constraints cannot easily be integrated into the prediction-correction structure of the Kalman filter algorithm. Linear equality constraints are an exception to this rule and have been widely used and studied as they allow for simple closed-form expressions. A common approach is to reformulate equality constraints into pseudo measurements of the state to be estimated. However, equality constraints define deterministic relationships between state components which is an undesirable property in Kalman filtering as this leads to singular covariance matrices. A second problem relates to the knowledge required to identify and define precise constraints, which are met by the system state. In this article, ellipsoidal constraints are introduced that can be employed to model a bounded region, to which the system state is constrained. This concept constitutes an easy-to-use relaxation of equality constraints. In order to integrate ellipsoidal constraints into the Kalman filter structure, a generalized filter framework is utilized that relies on a combined stochastic and set-membership uncertainty representation.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="ref1-Fusion13_Sijs">J. Sijs, B. Noack, and U. D. Hanebeck, <b>Event-based State Estimation with Negative Information</b>, in <i>Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)</i>, Istanbul, Turkey, Jul. 2013.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexFusion13_Sijs"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrFusion13_Sijs">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+
+
+    <a target="_blank" href="https://isas.uka.de/Publikationen/Fusion13_Sijs.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexFusion13_Sijs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bFusion13_Sijs">@inproceedings{Fusion13_Sijs,
   title = ,
   author = {Sijs, Joris and Noack, Benjamin and Hanebeck, Uwe D.},
   booktitle = {Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)},
   year = {2013},
   address = {Istanbul, Turkey},
-  month = {jul},
+  month = jul,
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/Fusion13_Sijs.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-<li><a class="bibanchor" name="ref1-Fusion13_Pfaff"></a><div class="bibentry"><div class="bibtitle">Data Validation in the Presence of Stochastic and Set-membership Uncertainties</div><p class="bibauthor">Florian Pfaff, Benjamin Noack, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)</span>, Istanbul, Turkey</p><p><span class="bibdate">July, 2013</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>For systems suffering from different types of uncertainties, finding criteria for validating measurements can be challenging. In this paper, we regard both stochastic Gaussian noise with full or imprecise knowledge about correlations and unknown but bounded errors. The validation problems arising in the individual and combined cases are illustrated to convey different perspectives on the proposed conditions. Furthermore, hints are provided for the algorithmic implementation of the validation tests. Particular focus is put on ensuring a predefined lower bound for the probability of correctly classifying valid data.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Fusion13_Pfaff,
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bFusion13_Sijs')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrFusion13_Sijs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Event-based State Estimation with Negative Information</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>To reduce the amount of data transfer in networked systems, measurements are usually taken only when an event occurs rather than periodically in time. However, this complicates estimation problems considerably as it is not guaranteed that new sensor data will be sampled. Therefore, an existing state estimator is extended so to cope with event-based measurements successfully, i.e., curtail any diverging behavior in the estimation results. To that extent, a general formulation of event sampling is proposed. This formulation is used to set up a state estimator combining stochastic as well as set-membership measurement information according to a hybrid update: when an event occurs the estimated state is updated using the stochastic measurement received (positive information), while at periodic time instants no measurement is received (negative information) and the update is based on knowledge that the sensor value lies within a bounded subset of the measurement space. An illustrative example further shows that the developed estimator has an improved representation of estimation errors compared to a purely stochastic estimator for various event sampling strategies.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="ref1-Fusion13_Pfaff">F. Pfaff, B. Noack, and U. D. Hanebeck, <b>Data Validation in the Presence of Stochastic and Set-membership Uncertainties</b>, in <i>Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)</i>, Istanbul, Turkey, Jul. 2013.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexFusion13_Pfaff"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrFusion13_Pfaff">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+
+
+    <a target="_blank" href="https://isas.uka.de/Publikationen/Fusion13_Pfaff.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexFusion13_Pfaff" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bFusion13_Pfaff">@inproceedings{Fusion13_Pfaff,
   title = ,
   author = {Pfaff, Florian and Noack, Benjamin and Hanebeck, Uwe D.},
   booktitle = {Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)},
   year = {2013},
   address = {Istanbul, Turkey},
-  month = {jul},
+  month = jul,
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/Fusion13_Pfaff.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-</ol>
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bFusion13_Pfaff')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrFusion13_Pfaff" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Data Validation in the Presence of Stochastic and Set-membership Uncertainties</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>For systems suffering from different types of uncertainties, finding criteria for validating measurements can be challenging. In this paper, we regard both stochastic Gaussian noise with full or imprecise knowledge about correlations and unknown but bounded errors. The validation problems arising in the individual and combined cases are illustrated to convey different perspectives on the proposed conditions. Furthermore, hints are provided for the algorithmic implementation of the validation tests. Particular focus is put on ensuring a predefined lower bound for the probability of correctly classifying valid data.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li></ol>
+
 <hr />
+
 <h2 id="talk-2-extended-object-tracking">Talk 2: Extended Object Tracking</h2>
+
 <h3 id="partial-likelihood-for-unbiased-extended-object-tracking"><em>Partial Likelihood for Unbiased Extended Object Tracking</em></h3>
+
 <div class="well well-sm" style="padding-left: 1.5em">
   <dl>
     <dt>Download presentation</dt>
     <dd><a href="http://isas.uka.de/Material/publicMaterial/WorkshopValeo2015/Talks/PartialInformationModel.pptx">Powerpoint</a></dd>
   </dl>
 </div>
-<p>The partial likelihood method is described in <a href="#talk2-Fusion15_Faion">(Faion, Zea, Baum, &amp; Hanebeck, 2015)</a>.</p>
+
+<p>The partial likelihood method is described in <a name="Fusion15_Faion_ref1" href="#talk2-Fusion15_Faion">[6]</a>.</p>
+
 <h3 id="references-1">References</h3>
-<ol class="bibliography">
-<li><a class="bibanchor" name="talk2-Fusion15_Faion"></a><div class="bibentry"><div class="bibtitle">Partial Likelihood for Unbiased Extended Object Tracking</div><p class="bibauthor">Florian Faion, Antonio Zea, Marcus Baum, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 18th International Conference on Information Fusion (Fusion 2015)</span>, Washington D. C., USA</p><p><span class="bibdate">July, 2015</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>An extended object gives rise to several measurements that originate 
-	from unknown measurement sources on the object. In this paper, we 
-	consider the tracking and parameter estimation of extended objects that 
-	are modeled as a curve in 2D such as a circle or an ellipse. A standard 
-	model for such extended objects is to assume that the unknown 
-	measurement sources are uniformly distributed on the curve. We argue 
-	that the uniform distribution may not be the best choice in scenarios 
-	where the true distribution of the measurements significantly differs 
-	from a uniform distribution. Based on results from curve fitting and 
-	errors-in-variables models, we develop a partial likelihood that ignores 
-	the distribution of measurement sources and can be shown to outperform 
-	the likelihood for a uniform distribution in these scenarios. If the 
-	true measurement sources are in fact uniformly distributed, our new 
-	likelihood results in a slightly slower convergence but has the same 
-	asymptotic behavior.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Fusion15_Faion,
+
+<ol class="bibliography"><li><span id="talk2-Fusion15_Faion">F. Faion, A. Zea, M. Baum, and U. D. Hanebeck, <b>Partial Likelihood for Unbiased Extended Object Tracking</b>, in <i>Proceedings of the 18th International Conference on Information Fusion (Fusion 2015)</i>, Washington D. C., USA, Jul. 2015.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexFusion15_Faion"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrFusion15_Faion">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+
+
+    <a target="_blank" href="https://isas.uka.de/Publikationen/Fusion15_Faion.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexFusion15_Faion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bFusion15_Faion">@inproceedings{Fusion15_Faion,
   author = {Faion, Florian and Zea, Antonio and Baum, Marcus and Hanebeck, Uwe D.},
   title = ,
   booktitle = {Proceedings of the 18th International Conference on Information Fusion (Fusion 2015)},
   year = {2015},
   address = {Washington D. C., USA},
-  month = {jul},
+  month = jul,
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/Fusion15_Faion.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-</ol>
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bFusion15_Faion')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrFusion15_Faion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Partial Likelihood for Unbiased Extended Object Tracking</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>An extended object gives rise to several measurements that originate
+	from unknown measurement sources on the object. In this paper, we
+	consider the tracking and parameter estimation of extended objects that
+	are modeled as a curve in 2D such as a circle or an ellipse. A standard
+	model for such extended objects is to assume that the unknown
+	measurement sources are uniformly distributed on the curve. We argue
+	that the uniform distribution may not be the best choice in scenarios
+	where the true distribution of the measurements significantly differs
+	from a uniform distribution. Based on results from curve fitting and
+	errors-in-variables models, we develop a partial likelihood that ignores
+	the distribution of measurement sources and can be shown to outperform
+	the likelihood for a uniform distribution in these scenarios. If the
+	true measurement sources are in fact uniformly distributed, our new
+	likelihood results in a slightly slower convergence but has the same
+	asymptotic behavior.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li></ol>
+
 <hr />
+
 <h2 id="talk-3-distributed-kalman-filter">Talk 3: Distributed Kalman Filter</h2>
+
 <h3 id="on-optimal-distributed-kalman-filtering-in-non-ideal-situations"><em>On Optimal Distributed Kalman Filtering in Non-ideal Situations</em></h3>
+
 <div class="well well-sm" style="padding-left: 1.5em">
   <dl>
     <dt>Download presentation</dt>
     <dd><a href="http://isas.uka.de/Material/publicMaterial/WorkshopValeo2015/Talks/HKF.pptx">Powerpoint</a></dd>
   </dl>
 </div>
-<p>The idea of utilizing a hypothesis on the global measurement capacity has been presented in <a href="#talk3-MFI12_Reinhardt">(Reinhardt, Noack, &amp; Hanebeck, 2012)</a> where a debiasing matrix is derived that can be used when the hypothesis is not met. 
-An online adaptation of the hypothesis is discussed in <a href="#talk3-Fusion13_Reinhardt">(Reinhardt, Noack, &amp; Hanebeck, 2013)</a>.</p>
-<p>The presented work is an extension of the optimal distributed Kalman filter in <a href="#ref3-Govaers2012a">(Govaers &amp; Koch, 2012)</a> which is dependent upon precise knowledge about the network und locally used models.</p>
+
+<p>The idea of utilizing a hypothesis on the global measurement capacity has been presented in <a name="MFI12_Reinhardt_ref1" href="#talk3-MFI12_Reinhardt">[7]</a> where a debiasing matrix is derived that can be used when the hypothesis is not met.
+An online adaptation of the hypothesis is discussed in <a name="Fusion13_Reinhardt_ref1" href="#talk3-Fusion13_Reinhardt">[8]</a>.</p>
+
+<p>The presented work is an extension of the optimal distributed Kalman filter in <a name="Govaers2012a_ref1" href="#ref3-Govaers2012a">[9]</a> which is dependent upon precise knowledge about the network und locally used models.</p>
+
 <h3 id="references-2">References</h3>
-<ol class="bibliography">
-<li><a class="bibanchor" name="talk3-Fusion13_Reinhardt"></a><div class="bibentry"><div class="bibtitle">Advances in Hypothesizing Distributed Kalman Filtering</div><p class="bibauthor">Marc Reinhardt, Benjamin Noack, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)</span>, Istanbul, Turkey</p><p><span class="bibdate">July, 2013</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>In this paper, linear distributed estimation is revisited on the basis of the hypothesizing distributed Kalman filter and equations for a flexible application of the algorithm are derived. We propose a new approximation for the mean-squared-error matrix and present techniques for automatically improving the hypothesis about the global measurement model. Utilizing these extensions, the precision of the filter is improved so that it asymptotically yields optimal results for time-invariant models. Pseudo-code for the implementation of the algorithm is provided and the lossless inclusion of out-of-sequence measurements is discussed. An evaluation demonstrates the effect of the new extensions and compares the results to state-of-the-art methods.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Fusion13_Reinhardt,
+
+<ol class="bibliography"><li><span id="talk3-Fusion13_Reinhardt">M. Reinhardt, B. Noack, and U. D. Hanebeck, <b>Advances in Hypothesizing Distributed Kalman Filtering</b>, in <i>Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)</i>, Istanbul, Turkey, Jul. 2013.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexFusion13_Reinhardt"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrFusion13_Reinhardt">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+
+
+    <a target="_blank" href="https://isas.uka.de/Publikationen/Fusion13_Reinhardt.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexFusion13_Reinhardt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bFusion13_Reinhardt">@inproceedings{Fusion13_Reinhardt,
   title = ,
   author = {Reinhardt, Marc and Noack, Benjamin and Hanebeck, Uwe D.},
   booktitle = {Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)},
   year = {2013},
   address = {Istanbul, Turkey},
-  month = {jul},
+  month = jul,
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/Fusion13_Reinhardt.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-<li><a class="bibanchor" name="talk3-MFI12_Reinhardt"></a><div class="bibentry"><div class="bibtitle">The Hypothesizing Distributed Kalman Filter</div><p class="bibauthor">Marc Reinhardt, Benjamin Noack, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2012)</span>, Hamburg, Germany</p><p><span class="bibdate">September, 2012</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>This paper deals with distributed information processing in sensor networks. We propose the Hypothesizing Distributed Kalman Filter that incorporates an assumption of the global measurement model into the distributed estimation process. The procedure is based on the Distributed Kalman Filter and inherits its optimality when the assumption about the global measurement uncertainty is met. Recursive formulas for local processing as well as for fusion are derived. We show that the proposed algorithm yields the same results, no matter whether the measurements are processed locally or globally, even when the process noise is not negligible. For further processing of the estimates, a consistent bound for the error covariance matrix is derived. All derivations and explanations are illustrated by means of a new classification scheme for estimation processes.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{MFI12_Reinhardt,
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bFusion13_Reinhardt')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrFusion13_Reinhardt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Advances in Hypothesizing Distributed Kalman Filtering</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>In this paper, linear distributed estimation is revisited on the basis of the hypothesizing distributed Kalman filter and equations for a flexible application of the algorithm are derived. We propose a new approximation for the mean-squared-error matrix and present techniques for automatically improving the hypothesis about the global measurement model. Utilizing these extensions, the precision of the filter is improved so that it asymptotically yields optimal results for time-invariant models. Pseudo-code for the implementation of the algorithm is provided and the lossless inclusion of out-of-sequence measurements is discussed. An evaluation demonstrates the effect of the new extensions and compares the results to state-of-the-art methods.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="talk3-MFI12_Reinhardt">M. Reinhardt, B. Noack, and U. D. Hanebeck, <b>The Hypothesizing Distributed Kalman Filter</b>, in <i>Proceedings of the IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2012)</i>, Hamburg, Germany, Sep. 2012.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexMFI12_Reinhardt"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrMFI12_Reinhardt">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+
+
+    <a target="_blank" href="https://isas.uka.de/Publikationen/MFI12_Reinhardt.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexMFI12_Reinhardt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bMFI12_Reinhardt">@inproceedings{MFI12_Reinhardt,
   title = ,
   author = {Reinhardt, Marc and Noack, Benjamin and Hanebeck, Uwe D.},
   booktitle = {Proceedings of the IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2012)},
   year = {2012},
   address = {Hamburg, Germany},
-  month = {sep},
+  month = sep,
   annote = {<b>Nominee Best Student Paper Award</b>},
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/MFI12_Reinhardt.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-</ol>
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bMFI12_Reinhardt')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrMFI12_Reinhardt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">The Hypothesizing Distributed Kalman Filter</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>This paper deals with distributed information processing in sensor networks. We propose the Hypothesizing Distributed Kalman Filter that incorporates an assumption of the global measurement model into the distributed estimation process. The procedure is based on the Distributed Kalman Filter and inherits its optimality when the assumption about the global measurement uncertainty is met. Recursive formulas for local processing as well as for fusion are derived. We show that the proposed algorithm yields the same results, no matter whether the measurements are processed locally or globally, even when the process noise is not negligible. For further processing of the estimates, a consistent bound for the error covariance matrix is derived. All derivations and explanations are illustrated by means of a new classification scheme for estimation processes.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li></ol>
+
 <h3 id="external-references">External References</h3>
-<ol class="bibliography">
-<li><a class="bibanchor" name="ref3-Govaers2012a"></a><div class="bibentry"><div class="bibtitle">An Exact Solution to Track-to-track Fusion at Arbitrary Communication Rates</div><p class="bibauthor">Felix Govaers and Wolfgang Koch </p><p><span class="bibbooktitle">In IEEE Transactions on Aerospace and Electronic Systems</span>, vol. 48</p><p><span class="bibdate">July, 2012</span></p><div class="bibentry-details"><div class="purebibtexentry"><pre class="purebibtex">@article{Govaers2012a,
+
+<ol class="bibliography"><li><span id="ref3-Govaers2012a">F. Govaers and W. Koch, <b>An Exact Solution to Track-to-track Fusion at Arbitrary Communication Rates</b>, <i>IEEE Transactions on Aerospace and Electronic Systems</i>, vol. 48, no. 3, Jul. 2012.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexGovaers2012a"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+
+
+
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexGovaers2012a" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bGovaers2012a">@article{Govaers2012a,
   title = ,
   author = {Govaers, Felix and Koch, Wolfgang},
   journal = {IEEE Transactions on Aerospace and Electronic Systems},
   year = {2012},
-  month = {jul},
+  month = jul,
   number = {3},
-  volume = {48},
+  volume = {48}
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-</ol>
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bGovaers2012a')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrGovaers2012a" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">An Exact Solution to Track-to-track Fusion at Arbitrary Communication Rates</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li></ol>
+
 <hr />
+
 <h2 id="talk-4-negative-information">Talk 4: Negative Information</h2>
+
 <h3 id="exploiting-clutter-negative-information-for-enhanced-extended-object-tracking"><em>Exploiting Clutter: Negative Information for Enhanced Extended Object Tracking</em></h3>
+
 <div class="well well-sm" style="padding-left: 1.5em">
   <dl>
     <dt>Download presentation</dt>
     <dd><a href="http://isas.uka.de/Material/publicMaterial/WorkshopValeo2015/Talks/ExploitingClutter.pptx">Powerpoint</a></dd>
   </dl>
 </div>
-<p>The idea of utilizing negative information for extended object tracking is discussed in <a href="#talk4-Fusion15_Zea">(Zea, Faion, &amp; Hanebeck, 2015)</a>.</p>
+
+<p>The idea of utilizing negative information for extended object tracking is discussed in <a name="Fusion15_Zea_ref1" href="#talk4-Fusion15_Zea">[10]</a>.</p>
+
 <h3 id="references-3">References</h3>
-<ol class="bibliography">
-<li><a class="bibanchor" name="talk4-Fusion15_Zea"></a><div class="bibentry"><div class="bibtitle">Exploiting Clutter: Negative Information for Enhanced Extended Object Tracking</div><p class="bibauthor">Antonio Zea, Florian Faion, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 18th International Conference on Information Fusion (Fusion 2015)</span>, Washington D. C., USA</p><p><span class="bibdate">July, 2015</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>Since the last years, Graphics Processing Units (GPUs) have massive parallel execution capabilities even 
-	for non-graphic related applications. The field of nonlinear state estimation is no exception here.
-	Particle Filters have already been successfully ported to GPUs. In this paper, 
-	we propose a GPU-accelerated variant of the Progressive Gaussian Filter (PGF). This allows 
-	us to combine the advantages of the particle flow with the ability to process thousands of 
-	measurements at once in order to improve state estimation quality. To get a meaningful 
-	comparison between its CPU and GPU variants, we additionally propose a likelihood for tracking 
-	a sphere and its extent in 3D based on noisy point measurements. The likelihood considers the 
-	physical relationship between sensor, measurement, and sphere to best exploit the information of the received measurements.
-	We evaluate the GPU implementation of the PGF using the proposed likelihood in combination with tens of thousands of measurements.
-	Although the CPU implementation fully exploits parallelization techniques such as SSE and OpenMP, the GPU-accelerated PGF 
-	reaches speedups over 20 and real-time tracking can nearly be achieved.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Fusion15_Zea,
+
+<ol class="bibliography"><li><span id="talk4-Fusion15_Zea">A. Zea, F. Faion, and U. D. Hanebeck, <b>Exploiting Clutter: Negative Information for Enhanced Extended Object Tracking</b>, in <i>Proceedings of the 18th International Conference on Information Fusion (Fusion 2015)</i>, Washington D. C., USA, Jul. 2015.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexFusion15_Zea"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrFusion15_Zea">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+
+
+    <a target="_blank" href="https://isas.uka.de/Publikationen/Fusion15_Zea.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexFusion15_Zea" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bFusion15_Zea">@inproceedings{Fusion15_Zea,
   author = {Zea, Antonio and Faion, Florian and Hanebeck, Uwe D.},
   title = ,
   booktitle = {Proceedings of the 18th International Conference on Information Fusion (Fusion 2015)},
   year = {2015},
   address = {Washington D. C., USA},
-  month = {jul},
+  month = jul,
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/Fusion15_Zea.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-<li><a class="bibanchor" name="talk4-Fusion13_Faion"></a><div class="bibentry"><div class="bibtitle">Silhouette Measurements for Bayesian Object Tracking in Noisy Point Clouds</div><p class="bibauthor">Florian Faion, Marcus Baum, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)</span>, Istanbul, Turkey</p><p><span class="bibdate">July, 2013</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>In this paper, we consider the problem of jointly tracking the pose
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bFusion15_Zea')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrFusion15_Zea" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Exploiting Clutter: Negative Information for Enhanced Extended Object Tracking</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>Since the last years, Graphics Processing Units (GPUs) have massive parallel execution capabilities even
+	for non-graphic related applications. The field of nonlinear state estimation is no exception here.
+	Particle Filters have already been successfully ported to GPUs. In this paper,
+	we propose a GPU-accelerated variant of the Progressive Gaussian Filter (PGF). This allows
+	us to combine the advantages of the particle flow with the ability to process thousands of
+	measurements at once in order to improve state estimation quality. To get a meaningful
+	comparison between its CPU and GPU variants, we additionally propose a likelihood for tracking
+	a sphere and its extent in 3D based on noisy point measurements. The likelihood considers the
+	physical relationship between sensor, measurement, and sphere to best exploit the information of the received measurements.
+	We evaluate the GPU implementation of the PGF using the proposed likelihood in combination with tens of thousands of measurements.
+	Although the CPU implementation fully exploits parallelization techniques such as SSE and OpenMP, the GPU-accelerated PGF
+	reaches speedups over 20 and real-time tracking can nearly be achieved.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="talk4-Fusion13_Faion">F. Faion, M. Baum, and U. D. Hanebeck, <b>Silhouette Measurements for Bayesian Object Tracking in Noisy Point Clouds</b>, in <i>Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)</i>, Istanbul, Turkey, Jul. 2013.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexFusion13_Faion"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrFusion13_Faion">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+
+
+    <a target="_blank" href="https://isas.uka.de/Publikationen/Fusion13_Faion.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexFusion13_Faion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bFusion13_Faion">@inproceedings{Fusion13_Faion,
+  author = {Faion, Florian and Baum, Marcus and Hanebeck, Uwe D.},
+  title = ,
+  booktitle = {Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)},
+  year = {2013},
+  address = {Istanbul, Turkey},
+  month = jul
+}
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bFusion13_Faion')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrFusion13_Faion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Silhouette Measurements for Bayesian Object Tracking in Noisy Point Clouds</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>In this paper, we consider the problem of jointly tracking the pose
 	and shape of objects based on noisy data from cameras and depth sensors.
 	Our proposed approach formalizes object silhouettes from image data
 	as measurements within a Bayesian estimation framework. Projecting
@@ -429,73 +1185,359 @@ An online adaptation of the hypothesis is discussed in <a href="#talk3-Fusion13_
 	complexity of the general solution to only consider uncertain edges
 	and derive an approximate measurement update. In simulations, we
 	show that the proposed approach dramatically improves point-cloud-based
-	estimators, especially in the presence of high noise.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Fusion13_Faion,
-  author = {Faion, Florian and Baum, Marcus and Hanebeck, Uwe D.},
-  title = ,
-  booktitle = {Proceedings of the 16th International Conference on Information Fusion (Fusion 2013)},
-  year = {2013},
-  address = {Istanbul, Turkey},
-  month = {jul},
-}
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/Fusion13_Faion.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-</ol>
+	estimators, especially in the presence of high noise.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li></ol>
+
 <p style="margin-top:40px"> </p>
+
 <div class="heading_bg"><div class="heading_bg"><h1 id="additional-material-1">Additional Material</h1></div></div>
+
 <h2 id="covariance-intersection">Covariance Intersection</h2>
-<p>Optimality of <em>Covariance Intersection</em> (CI) has been proven in <a href="#CI-SPL15_Reinhardt">(Reinhardt, Noack, Arambel, &amp; Hanebeck, 2015)</a>. The otimal weight can be computed in closed form for low-dimensional matrices, as shown in <a href="#CI-Fusion12_Reinhardt-FastCI">(Reinhardt, Noack, &amp; Hanebeck, 2012)</a>.</p>
+<p>Optimality of <em>Covariance Intersection</em> (CI) has been proven in <a name="SPL15_Reinhardt_ref1" href="#CI-SPL15_Reinhardt">[11]</a>. The otimal weight can be computed in closed form for low-dimensional matrices, as shown in <a name="Fusion12_Reinhardt-FastCI_ref1" href="#CI-Fusion12_Reinhardt-FastCI">[12]</a>.</p>
+
 <p>In many applications, CI is too conservative as extremal correlations seldom occur. Alternatives are <em>Ellipsoidal Intersection</em> and its extension <em>Inverse Covariance Intersection</em> (under review).</p>
+
 <h3 id="references-4">References</h3>
-<ol class="bibliography">
-<li><a class="bibanchor" name="CI-SPL15_Reinhardt"></a><div class="bibentry"><div class="bibtitle">Minimum Covariance Bounds for the Fusion under Unknown Correlations</div><p class="bibauthor">Marc Reinhardt, Benjamin Noack, Pablo O. Arambel, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">In IEEE Signal Processing Letters</span>, vol. 22</p><p><span class="bibdate">September, 2015</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>One of the key challenges in distributed linear estimation is the systematic fusion of estimates. While the fusion gains that minimize the mean squared error of the fused estimate for known correlations have been established, no analogous statement could be obtained so far for unknown correlations. In this contribution, we derive the gains that minimize the bound on the true covariance of the fused estimate and prove that Covariance Intersection (CI) is the optimal bounding algorithm for two estimates under completely unknown correlations. When combining three or more variables, the CI equations are not necessarily optimal, as shown by a counterexample.</p></div><div class="purebibtexentry"><pre class="purebibtex">@article{SPL15_Reinhardt,
+
+<ol class="bibliography"><li><span id="CI-SPL15_Reinhardt">M. Reinhardt, B. Noack, P. O. Arambel, and U. D. Hanebeck, <b>Minimum Covariance Bounds for the Fusion under Unknown Correlations</b>, <i>IEEE Signal Processing Letters</i>, vol. 22, no. 9, pp. 1210–1214, Sep. 2015.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexSPL15_Reinhardt"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrSPL15_Reinhardt">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+    <a target="_blank" href="http://dx.doi.org/10.1109/LSP.2015.2390417" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> www
+    </a>
+
+
+
+    <a target="_blank" href="https://isas.uka.de/Publikationen/SPL15_Reinhardt.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexSPL15_Reinhardt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bSPL15_Reinhardt">@article{SPL15_Reinhardt,
   title = ,
   author = {Reinhardt, Marc and Noack, Benjamin and Arambel, Pablo O. and Hanebeck, Uwe D.},
   journal = {IEEE Signal Processing Letters},
   year = {2015},
-  month = {sep},
+  month = sep,
   number = {9},
   pages = {1210 -- 1214},
   volume = {22},
   doi = {10.1109/LSP.2015.2390417},
-  url = {<a target="_blank" href="http://dx.doi.org/10.1109/LSP.2015.2390417">http://dx.doi.org/10.1109/LSP.2015.2390417</a>},
+  url = {http://dx.doi.org/10.1109/LSP.2015.2390417}
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/SPL15_Reinhardt.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink"><a target="_blank" href="http://dx.doi.org/10.1109/LSP.2015.2390417"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> www</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-<li><a class="bibanchor" name="CI-Fusion12_Reinhardt-FastCI"></a><div class="bibentry"><div class="bibtitle">Closed-form Optimization of Covariance Intersection for Low-dimensional Matrices</div><p class="bibauthor">Marc Reinhardt, Benjamin Noack, and Uwe D. Hanebeck </p><p><span class="bibbooktitle">Proceedings of the 15th International Conference on Information Fusion (Fusion 2012)</span>, Singapore</p><p><span class="bibdate">July, 2012</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>The fusion under unknown correlations is an important technique in sensor-network information processing as the cross-correlations between different estimates remain often unknown to the nodes. Covariance intersection is a wide-spread and efficient algorithm to fuse estimates under such uncertain conditions. Although different optimization criteria have been developed, the trace or determinant minimization of the fused covariance matrix seems to be most meaningful. However, this minimization requires numeric solutions of a convex optimization problem. We derive an algorithm to reduce this nonlinear optimization to the well-known polynomial root-finding problem. This allows us to present closed-form solutions for the determinant criterion when the dimension of the occurring covariance matrices is at most 4 and for the trace criterion when the dimension of the covariance matrices is at most 3. We demonstrate the effectiveness of the approach by means of a speed evaluation.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Fusion12_Reinhardt-FastCI,
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bSPL15_Reinhardt')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrSPL15_Reinhardt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Minimum Covariance Bounds for the Fusion under Unknown Correlations</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>One of the key challenges in distributed linear estimation is the systematic fusion of estimates. While the fusion gains that minimize the mean squared error of the fused estimate for known correlations have been established, no analogous statement could be obtained so far for unknown correlations. In this contribution, we derive the gains that minimize the bound on the true covariance of the fused estimate and prove that Covariance Intersection (CI) is the optimal bounding algorithm for two estimates under completely unknown correlations. When combining three or more variables, the CI equations are not necessarily optimal, as shown by a counterexample.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="CI-Fusion12_Reinhardt-FastCI">M. Reinhardt, B. Noack, and U. D. Hanebeck, <b>Closed-form Optimization of Covariance Intersection for Low-dimensional Matrices</b>, in <i>Proceedings of the 15th International Conference on Information Fusion (Fusion 2012)</i>, Singapore, Jul. 2012.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexFusion12_Reinhardt-FastCI"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrFusion12_Reinhardt-FastCI">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+
+
+    <a target="_blank" href="https://isas.uka.de/Publikationen/Fusion12_Reinhardt-FastCI.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexFusion12_Reinhardt-FastCI" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bFusion12_Reinhardt-FastCI">@inproceedings{Fusion12_Reinhardt-FastCI,
   title = ,
   author = {Reinhardt, Marc and Noack, Benjamin and Hanebeck, Uwe D.},
   booktitle = {Proceedings of the 15th International Conference on Information Fusion (Fusion 2012)},
   year = {2012},
   address = {Singapore},
-  month = {jul},
+  month = jul,
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink"><a target="_blank" href="http://isas.uka.de/Publikationen/Fusion12_Reinhardt-FastCI.pdf"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf</a></li><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-</ol>
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bFusion12_Reinhardt-FastCI')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrFusion12_Reinhardt-FastCI" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Closed-form Optimization of Covariance Intersection for Low-dimensional Matrices</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>The fusion under unknown correlations is an important technique in sensor-network information processing as the cross-correlations between different estimates remain often unknown to the nodes. Covariance intersection is a wide-spread and efficient algorithm to fuse estimates under such uncertain conditions. Although different optimization criteria have been developed, the trace or determinant minimization of the fused covariance matrix seems to be most meaningful. However, this minimization requires numeric solutions of a convex optimization problem. We derive an algorithm to reduce this nonlinear optimization to the well-known polynomial root-finding problem. This allows us to present closed-form solutions for the determinant criterion when the dimension of the occurring covariance matrices is at most 4 and for the trace criterion when the dimension of the covariance matrices is at most 3. We demonstrate the effectiveness of the approach by means of a speed evaluation.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li></ol>
+
 <hr />
+
 <h2 id="slam">SLAM</h2>
-<p>For Kalman-filter based SLAM method, the information form of the Kalman filter can be used. In place of the joint covariance matrix, the information matrix is considered, which is the invserse of the covariance matrix and is sparse in typical SLAM applications. Details can be found in <a href="#SLAM-Bailey2011">(Bailey et al., 2011)</a> and <a href="#SLAM-Capitan2009">(Capitán, Merino, Caballero, &amp; Ollero, 2009)</a>.</p>
+
+<p>For Kalman-filter based SLAM method, the information form of the Kalman filter can be used. In place of the joint covariance matrix, the information matrix is considered, which is the invserse of the covariance matrix and is sparse in typical SLAM applications. Details can be found in <a name="Bailey2011_ref1" href="#SLAM-Bailey2011">[13]</a> and <a name="Capitan2009_ref1" href="#SLAM-Capitan2009">[14]</a>.</p>
+
 <h3 id="references-5">References</h3>
-<ol class="bibliography">
-<li><a class="bibanchor" name="SLAM-Bailey2011"></a><div class="bibentry"><div class="bibtitle">Decentralised Cooperative Localisation for Heterogeneous Teams of Mobile Robots</div><p class="bibauthor">Tim Bailey, Mitch Bryson, Hua Mu, John Vial, Lachlan McCalman, and Hugh Durrant-Whyte </p><p><span class="bibbooktitle">Proceedings of the 2011 IEEE International Conference on Robotics and Automation (ICRA 2011)</span>, Shanghai, China</p><p><span class="bibdate">May, 2011</span></p><div class="bibentry-details"><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Bailey2011,
+
+<ol class="bibliography"><li><span id="SLAM-Bailey2011">T. Bailey, M. Bryson, H. Mu, J. Vial, L. McCalman, and H. Durrant-Whyte, <b>Decentralised Cooperative Localisation for Heterogeneous Teams of Mobile Robots</b>, in <i>Proceedings of the 2011 IEEE International Conference on Robotics and Automation (ICRA 2011)</i>, Shanghai, China, May 2011.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexBailey2011"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+
+
+
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexBailey2011" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bBailey2011">@inproceedings{Bailey2011,
   title = ,
   author = {Bailey, Tim and Bryson, Mitch and Mu, Hua and Vial, John and McCalman, Lachlan and Durrant-Whyte, Hugh},
   booktitle = {Proceedings of the 2011 IEEE International Conference on Robotics and Automation (ICRA 2011)},
   year = {2011},
   address = {Shanghai, China},
-  month = {may},
+  month = may,
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-<li><a class="bibanchor" name="SLAM-Capitan2009"></a><div class="bibentry"><div class="bibtitle">Delayed-state Information Filter for Cooperative Decentralized Tracking</div><p class="bibauthor">J. Capitán, L. Merino, F. Caballero, and A. Ollero </p><p><span class="bibbooktitle">Proceedings of the 2009 IEEE International Conference on Robotics and Automation (ICRA 2009)</span>, Kobe, Japan</p><p><span class="bibdate">May, 2009</span></p><div class="bibentry-details"><div class="bibentry-abstract"><span class="bibentry-label">Abstract: </span> <p>This paper presents a decentralized data fusion approach to perform cooperative perception with data gathered from heterogeneous sensors, which can be static or carried by robots. Particularly, a Decentralized Delayed-State Extended Information Filter (DDSEIF) is described, where full state trajectories are considered to fuse the information. This permits to obtain an estimation equal to that obtained by a centralized system, and allows delays and latency in the communications. The sparseness of the information matrix maintains the communications overhead at a reasonable level. The method is applied to cooperative tracking and some results in disaster management scenarios are shown. In this kind of scenarios the target might move in both open field and indoor areas, so fusion of data provided by heterogeneous sensors is beneficial.</p></div><div class="purebibtexentry"><pre class="purebibtex">@inproceedings{Capitan2009,
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bBailey2011')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrBailey2011" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Decentralised Cooperative Localisation for Heterogeneous Teams of Mobile Robots</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="SLAM-Capitan2009">J. Capitán, L. Merino, F. Caballero, and A. Ollero, <b>Delayed-state Information Filter for Cooperative Decentralized Tracking</b>, in <i>Proceedings of the 2009 IEEE International Conference on Robotics and Automation (ICRA 2009)</i>, Kobe, Japan, May 2009.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexCapitan2009"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrCapitan2009">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+
+
+
+
+
+
+</div>
+
+
+<div class="modal fade" id="MbibtexCapitan2009" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bCapitan2009">@inproceedings{Capitan2009,
   title = ,
   author = {Capit{\'{a}}n, J. and Merino, L. and Caballero, F. and Ollero, A.},
   booktitle = {Proceedings of the 2009 IEEE International Conference on Robotics and Automation (ICRA 2009)},
   year = {2009},
   address = {Kobe, Japan},
-  month = {may},
+  month = may,
 }
-</pre><div class="select_all">select all</div></div></div><ul class="biblinks"><li class="biblink bibmore"><span class="arrowdown"></span> more</li></ul></div></li>
-</ol>
-        </div>    
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bCapitan2009')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrCapitan2009" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Delayed-state Information Filter for Cooperative Decentralized Tracking</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>This paper presents a decentralized data fusion approach to perform cooperative perception with data gathered from heterogeneous sensors, which can be static or carried by robots. Particularly, a Decentralized Delayed-State Extended Information Filter (DDSEIF) is described, where full state trajectories are considered to fuse the information. This permits to obtain an estimation equal to that obtained by a centralized system, and allows delays and latency in the communications. The sparseness of the information matrix maintains the communications overhead at a reasonable level. The method is applied to cooperative tracking and some results in disaster management scenarios are shown. In this kind of scenarios the target might move in both open field and indoor areas, so fusion of data provided by heterogeneous sensors is beneficial.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li></ol>
+
+
+        </div>
     </div>
 </div>
+
 
 </div>
 
@@ -561,7 +1603,7 @@ An online adaptation of the hypothesis is discussed in <a href="#talk3-Fusion13_
                               <li><a href="https://de.linkedin.com/in/benjaminnoack" target="_blank">linkedin</a></li>
                           
                       </ul>
-                      <small> last modified 17/11/2018</small>
+                      <small> last modified 27/11/2018</small>
                 </div>
 
 

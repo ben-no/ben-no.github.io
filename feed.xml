@@ -6,9 +6,24 @@
 </description>
     <link>https://www.bennoack.net/</link>
     <atom:link href="https://www.bennoack.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Jan 2019 23:27:45 +0100</pubDate>
-    <lastBuildDate>Thu, 17 Jan 2019 23:27:45 +0100</lastBuildDate>
+    <pubDate>Thu, 21 Feb 2019 12:29:52 +0100</pubDate>
+    <lastBuildDate>Thu, 21 Feb 2019 12:29:52 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Ecc2019</title>
+        <description>&lt;p&gt;Two Papers for the European Control Conference in Neaples have been accepted.&lt;/p&gt;
+
+&lt;!--more--&gt;
+</description>
+        <pubDate>Wed, 20 Feb 2019 00:00:00 +0100</pubDate>
+        <link>https://www.bennoack.net/posts/2019/02/20/ECC2019/</link>
+        <guid isPermaLink="true">https://www.bennoack.net/posts/2019/02/20/ECC2019/</guid>
+        
+        
+        <category>conferences</category>
+        
+      </item>
     
       <item>
         <title>PowTec article</title>
@@ -132,19 +147,6 @@
         
         
         <category>articles</category>
-        
-      </item>
-    
-      <item>
-        <title>IFAC Wolrd Congress</title>
-        <description>&lt;p&gt;Our paper for the 20th IFAC World Congress in Toulouse, France, has been accepted.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 27 Feb 2017 00:00:00 +0100</pubDate>
-        <link>https://www.bennoack.net/posts/2017/02/27/IFAC2017/</link>
-        <guid isPermaLink="true">https://www.bennoack.net/posts/2017/02/27/IFAC2017/</guid>
-        
-        
-        <category>conferences</category>
         
       </item>
     

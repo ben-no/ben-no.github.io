@@ -6,9 +6,24 @@
 </description>
     <link>https://www.bennoack.net/</link>
     <atom:link href="https://www.bennoack.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Feb 2019 12:29:52 +0100</pubDate>
-    <lastBuildDate>Thu, 21 Feb 2019 12:29:52 +0100</lastBuildDate>
+    <pubDate>Sun, 21 Apr 2019 20:37:10 +0200</pubDate>
+    <lastBuildDate>Sun, 21 Apr 2019 20:37:10 +0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Mfi2019</title>
+        <description>&lt;p&gt;Two Papers for the MFI Conference in Taipei have been accepted.&lt;/p&gt;
+
+&lt;!--more--&gt;
+</description>
+        <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
+        <link>https://www.bennoack.net/posts/2019/03/22/MFI2019/</link>
+        <guid isPermaLink="true">https://www.bennoack.net/posts/2019/03/22/MFI2019/</guid>
+        
+        
+        <category>conferences</category>
+        
+      </item>
     
       <item>
         <title>Ecc2019</title>
@@ -134,19 +149,6 @@
         
         
         <category>conferences</category>
-        
-      </item>
-    
-      <item>
-        <title>Automatica article</title>
-        <description>&lt;p&gt;Automatica article “Decentralized Data Fusion with Inverse Covariance Intersection” added.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 02 Mar 2017 00:00:00 +0100</pubDate>
-        <link>https://www.bennoack.net/posts/2017/03/02/Automatica/</link>
-        <guid isPermaLink="true">https://www.bennoack.net/posts/2017/03/02/Automatica/</guid>
-        
-        
-        <category>articles</category>
         
       </item>
     

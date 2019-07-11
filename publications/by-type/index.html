@@ -768,7 +768,101 @@ This book focuses on a comprehensive study of state estimation techniques in cen
 
 </li></ol>
 <h2 id="article">journal articles</h2>
-<ol class="bibliography"><li><span id="PowTec18_Pieper">C. Pieper, F. Pfaff, G. Maier, H. Kruggel-Emden, S. Wirtz, B. Noack, R. Gruna, V. Scherer, U. D. Hanebeck, T. Längle, and J. Beyerer, <b>Numerical Modelling of an Optical Belt Sorter Using a DEM–CFD Approach Coupled with Particle Tracking and Comparison with Experiments</b>, <i>Powder Technology</i>, vol. 370, pp. 181–193, Dec. 2018.</span><br />
+<ol class="bibliography"><li><span id="LCSS19_Schmitt">E. J. Schmitt, B. Noack, W. Krippner, and U. D. Hanebeck, <b>Gaussianity-Preserving Event-Based State Estimation with an FIR-Based Stochastic Trigger</b>, <i>IEEE Control Systems Letters</i>, vol. 3, no. 3, pp. 769–774, Jul. 2019.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexLCSS19_Schmitt"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+    
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrLCSS19_Schmitt">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+    
+
+    
+    <a target="_blank" href="https://doi.org/10.1109/LCSYS.2019.2918024" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> www
+    </a>
+    
+
+    
+    <a target="_blank" href="https://isas.iar.kit.edu/pdf/LCSS19_Schmitt.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+    
+
+</div>
+
+
+<div class="modal fade" id="MbibtexLCSS19_Schmitt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bLCSS19_Schmitt">@article{LCSS19_Schmitt,
+  author = {Schmitt, Eva Julia and Noack, Benjamin and Krippner, Wolfgang and Hanebeck, Uwe D.},
+  title = {{Gaussianity-Preserving Event-Based State Estimation with an FIR-Based Stochastic Trigger}},
+  journal = {IEEE Control Systems Letters},
+  issn = {2475-1456},
+  volume = {3},
+  number = {3},
+  pages = {769--774},
+  month = jul,
+  year = {2019},
+  doi = {10.1109/LCSYS.2019.2918024},
+  url = {https://doi.org/10.1109/LCSYS.2019.2918024},
+}
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bLCSS19_Schmitt')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrLCSS19_Schmitt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Gaussianity-Preserving Event-Based State Estimation with an FIR-Based Stochastic Trigger</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>With modern communication technology, sensors, estimators, and controllers can be pushed apart to distribute 
+  intelligence over wide distances. Instead of congesting channels by periodic data transmissions, smart sensors can decide 
+  on their own whether data are worth transmitting. This paper studies event-based transmissions from sensor to estimator. 
+  The sensor-side event trigger conveys usable information even if no transmission is triggered. In the absence of data, 
+  such implicit information can still be exploited by the remote Kalman filter. For this purpose, an easy-to-implement 
+  triggering mechanism is proposed based on a Finite Impulse Response prediction that is compared against a stochastic 
+  decision variable. By the aid of the stochastic event trigger, the implicit information retains a Gaussian representation 
+  and can easily be processed by the Kalman filter. The parameters for the stochastic trigger are retrieved from the 
+  Finite Impulse Response filter, which contributes to reducing the communication rate significantly, as shown in simulations.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="PowTec18_Pieper">C. Pieper, F. Pfaff, G. Maier, H. Kruggel-Emden, S. Wirtz, B. Noack, R. Gruna, V. Scherer, U. D. Hanebeck, T. Längle, and J. Beyerer, <b>Numerical Modelling of an Optical Belt Sorter Using a DEM–CFD Approach Coupled with Particle Tracking and Comparison with Experiments</b>, <i>Powder Technology</i>, vol. 370, pp. 181–193, Dec. 2018.</span><br />
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
     
 
@@ -1699,16 +1793,255 @@ inverse covariance intersection method, fusion results prove to be more accurate
 
 </li></ol>
 <h2 id="inproceedings">peer-reviewed conference papers</h2>
-<ol class="bibliography"><li><span id="ECC19_Radtke">S. Radtke, B. Noack, and U. D. Hanebeck, <b>Distributed Estimation with Unequal State Vectors using Deterministic Sample-based Fusion (to appear)</b>, in <i>Proceedings of the 2019 European Control Conference (ECC 2019)</i>, Naples, Italy, Jun. 2019.</span><br />
+<ol class="bibliography"><li><span id="Fusion19_Radtke">S. Radtke, B. Noack, and U. D. Hanebeck, <b>Consistent Fusion in Networks Using Square-root Decompositions of Correlations</b>, in <i>Proceedings of the 22nd International Conference on Information Fusion (Fusion 2019)</i>, Ottawa, Canada, Jul. 2019.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexFusion19_Radtke"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+    
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrFusion19_Radtke">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+    
+
+    
+
+    
+    <a target="_blank" href="https://isas.iar.kit.edu/pdf/Fusion19_Radtke.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+    
+
+</div>
+
+
+<div class="modal fade" id="MbibtexFusion19_Radtke" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bFusion19_Radtke">@inproceedings{Fusion19_Radtke,
+  author = {Radtke, Susanne and Noack, Benjamin and Hanebeck, Uwe D.},
+  title = {{Consistent Fusion in Networks Using Square-root Decompositions of Correlations}},
+  booktitle = {Proceedings of the 22nd International Conference on Information Fusion (Fusion 2019)},
+  year = {2019},
+  address = {Ottawa, Canada},
+  month = jul,
+}
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bFusion19_Radtke')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrFusion19_Radtke" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Consistent Fusion in Networks Using Square-root Decompositions of Correlations</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>Sensor networks allow robust and precise estimation by fusing estimates from several distributed sensor nodes. Because of the often limited communication resources, a trade-off between the amount of information communicated and the quality of the fusion result has to be made. On the one hand, obtaining the optimal fusion result often needs an infeasible amount of additional information, but on the other hand, conservative methods usually lead to more pessimistic results in comparison. This paper proposes a square root decomposition of the incorporated noise terms to reconstruct the cross-covariance matrices between sensor nodes. To save communication bandwidth, a residual is defined that allows bounding of the cross-covariance matrix with a reduced number of noise terms. The consistency of the proposed method is demonstrated by two simulation examples featuring a linear and a nonlinear setup and is compared with other state-of-the-art fusion methods.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="Fusion19_Noack">B. Noack, U. Orguner, and U. D. Hanebeck, <b>Nonlinear Decentralized Data Fusion with Generalized Inverse Covariance Intersection</b>, in <i>Proceedings of the 22nd International Conference on Information Fusion (Fusion 2019)</i>, Ottawa, Canada, Jul. 2019.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexFusion19_Noack"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+    
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrFusion19_Noack">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+    
+
+    
+
+    
+    <a target="_blank" href="https://isas.iar.kit.edu/pdf/Fusion19_Noack.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+    
+
+</div>
+
+
+<div class="modal fade" id="MbibtexFusion19_Noack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bFusion19_Noack">@inproceedings{Fusion19_Noack,
+  author = {Noack, Benjamin and Orguner, Umut and Hanebeck, Uwe D.},
+  title = {{Nonlinear Decentralized Data Fusion with Generalized Inverse Covariance Intersection}},
+  booktitle = {Proceedings of the 22nd International Conference on Information Fusion (Fusion 2019)},
+  year = {2019},
+  address = {Ottawa, Canada},
+  month = jul,
+}
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bFusion19_Noack')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrFusion19_Noack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Nonlinear Decentralized Data Fusion with Generalized Inverse Covariance Intersection</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>Decentralized data fusion is a challenging task even for linear estimation problems. Nonlinear estimation renders data fusion even more difficult as dependencies among the nonlinear estimates require complicated parameterizations. It is nearly impossible to reconstruct or keep track of dependencies. Therefore, conservative approaches have become a popular solution to nonlinear data fusion. As a generalization of Covariance Intersection, exponential mixture densities have been widely applied for nonlinear fusion. However, this approach inherits the conservativeness of Covariance Intersection. For this reason, the less conservative fusion rule Inverse Covariance Intersection is studied in this paper and also generalized to nonlinear data fusion. This generalization employs a conservative approximation of the common information shared by the estimates to be fused. This bound of the common information is subtracted from the fusion result. In doing so, less conservative fusion results can be attained as an empirical analysis demonstrates.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="Fusion19_Kronauer">T. Kronauer, F. Pfaff, B. Noack, W. Tian, G. Maier, and U. D. Hanebeck, <b>Feature-Aided Multitarget Tracking for Optical Belt Sorters</b>, in <i>Proceedings of the 22nd International Conference on Information Fusion (Fusion 2019)</i>, Ottawa, Canada, Jul. 2019.</span><br />
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    
+
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexFusion19_Kronauer"><img src="/images/bibtex_white.svg" width="40" /></button>
+
+    
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrFusion19_Kronauer">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+    
+
+    
+
+    
+    <a target="_blank" href="https://isas.iar.kit.edu/pdf/Fusion19_Kronauer.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
+    
+
+</div>
+
+
+<div class="modal fade" id="MbibtexFusion19_Kronauer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="/images/bibtex.png" />
+      </div>
+      <div class="modal-body">
+        <pre id="bFusion19_Kronauer">@inproceedings{Fusion19_Kronauer,
+  author = {Kronauer, Tobias and Pfaff, Florian and Noack, Benjamin and Tian, Wei and Maier, Georg and Hanebeck, Uwe D.},
+  title = {{Feature-Aided Multitarget Tracking for Optical Belt Sorters}},
+  booktitle = {Proceedings of the 22nd International Conference on Information Fusion (Fusion 2019)},
+  year = {2019},
+  address = {Ottawa, Canada},
+  month = jul,
+}
+</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" onclick="copyToClipboard('bFusion19_Kronauer')">Copy To Clipboard</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="MabstrFusion19_Kronauer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Feature-Aided Multitarget Tracking for Optical Belt Sorters</h5>
+      </div>
+      <div class="modal-body">
+        <b>Abstract — </b>Industrial optical belt sorters are highly versatile in sorting bulk material or food, especially if mechanical properties are not sufficient for an adequate sorting quality. In previous works, we could show that the sorting quality can be enhanced by replacing the line scan camera, which is normally used, with an area scan camera. By performing multitarget tracking within the field of view, the precision of the utilized separation mechanism can be enhanced. The employed kinematics-based multitarget tracking crucially depends on the ability to associate detection hypotheses of the same particle across multiple frames. In this work, we propose a procedure to incorporate the visual similarity of the detected particles into the kinematics-based multitarget tracking that is generic and evaluates the visual similarity independent of the kinematics. For evaluating the visual similarity, we use the Kernelized Correlation Filter, the Large Margin Nearest Neighbor method and the Normalized Cross Correlation. Although no clear superiority for any of the visual similarity measures mentioned above could be determined, an improvement of all considered error metrics was attained.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+<li><span id="ECC19_Radtke">S. Radtke, B. Noack, and U. D. Hanebeck, <b>Distributed Estimation with Unequal State Vectors using Deterministic Sample-based Fusion</b>, in <i>Proceedings of the 2019 European Control Conference (ECC 2019)</i>, Naples, Italy, Jun. 2019.</span><br />
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
     
 
     <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexECC19_Radtke"><img src="/images/bibtex_white.svg" width="40" /></button>
 
     
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrECC19_Radtke">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+    
 
     
 
+    
+    <a target="_blank" href="https://isas.iar.kit.edu/pdf/ECC19_Radtke.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
     
 
 </div>
@@ -1726,8 +2059,8 @@ inverse covariance intersection method, fusion results prove to be more accurate
   author = {Radtke, Susanne and Noack, Benjamin and Hanebeck, Uwe D.},
   booktitle = {Proceedings of the 2019 European Control Conference (ECC 2019)},
   month = jun,
-  title = {Distributed Estimation with Unequal State Vectors using Deterministic Sample-based Fusion (to appear)},
-  year = {2019}
+  title = {Distributed Estimation with Unequal State Vectors using Deterministic Sample-based Fusion},
+  year = {2019},
 }
 </pre>
       </div>
@@ -1743,10 +2076,24 @@ inverse covariance intersection method, fusion results prove to be more accurate
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="myModalLabel">Distributed Estimation with Unequal State Vectors using Deterministic Sample-based Fusion (to appear)</h5>
+        <h5 class="modal-title" id="myModalLabel">Distributed Estimation with Unequal State Vectors using Deterministic Sample-based Fusion</h5>
       </div>
       <div class="modal-body">
-        <b>Abstract — </b>
+        <b>Abstract — </b>Distributing workload between sensor nodes is a
+practical solution to monitor large-scale phenomena. In doing
+so, the system can be split into smaller subsystems that can
+be estimated and controlled more easily. While current state-of-
+the-art fusion methods for distributed estimation assume the
+fusion of estimates referring to the full dimension of the state,
+little effort has been made to account for the fusion of unequal
+state vectors referring to smaller subsystems of the full system.
+In this paper, a novel method to fuse overlapping state vectors
+using a deterministic sample-based fusion method is proposed.
+These deterministic samples can be used to account for the
+correlated and uncorrelated noise terms and are therefore able
+to reconstruct the joint covariance matrix in a distributed
+fashion. The performance of the proposed fusion method is
+compared to other state-of-the-art methods.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -1768,16 +2115,24 @@ inverse covariance intersection method, fusion results prove to be more accurate
 
 
 </li>
-<li><span id="ECC19_Li">K. Li, D. Frisch, B. Noack, and U. Hanebeck, <b>Geometry-Driven Deterministic Sampling for Nonlinear Bingham Filtering (to appear)</b>, in <i>Proceedings of the 2019 European Control Conference (ECC 2019)</i>, Naples, Italy, Jun. 2019.</span><br />
+<li><span id="ECC19_Li">K. Li, D. Frisch, B. Noack, and U. Hanebeck, <b>Geometry-Driven Deterministic Sampling for Nonlinear Bingham Filtering</b>, in <i>Proceedings of the 2019 European Control Conference (ECC 2019)</i>, Naples, Italy, Jun. 2019.</span><br />
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
     
 
     <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexECC19_Li"><img src="/images/bibtex_white.svg" width="40" /></button>
 
     
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrECC19_Li">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+    
 
     
 
+    
+    <a target="_blank" href="https://isas.iar.kit.edu/pdf/ECC19_Li.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
     
 
 </div>
@@ -1795,8 +2150,8 @@ inverse covariance intersection method, fusion results prove to be more accurate
   author = {Li, Kailai and Frisch, Daniel and Noack, Benjamin and Hanebeck, Uwe},
   booktitle = {Proceedings of the 2019 European Control Conference (ECC 2019)},
   month = jun,
-  title = {Geometry-Driven Deterministic Sampling for Nonlinear Bingham Filtering (to appear)},
-  year = {2019}
+  title = {Geometry-Driven Deterministic Sampling for Nonlinear Bingham Filtering},
+  year = {2019},
 }
 </pre>
       </div>
@@ -1812,10 +2167,28 @@ inverse covariance intersection method, fusion results prove to be more accurate
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="myModalLabel">Geometry-Driven Deterministic Sampling for Nonlinear Bingham Filtering (to appear)</h5>
+        <h5 class="modal-title" id="myModalLabel">Geometry-Driven Deterministic Sampling for Nonlinear Bingham Filtering</h5>
       </div>
       <div class="modal-body">
-        <b>Abstract — </b>
+        <b>Abstract — </b>We propose a geometry-driven deterministic sampling
+method for Bingham distributions in arbitrary dimensions.
+With flexibly adjustable sampling sizes, the novel scheme
+can generate equally weighted samples that satisfy requirements
+of the unscented transform and approximate higher-order
+shape information of the Bingham distribution. By leveraging
+retraction techniques from Riemannian geometry, the sigma
+points are constrained to preserve the second-order moment.
+Meanwhile, samples in each principal direction are located in a
+way that minimizes a distance measure between the on-tangentplane
+Dirac mixtures and the underlying on-manifold density.
+For that, the modified Cram´er–von Mises distance based on
+the localized cumulative distribution (LCD) is employed. We
+further integrate the proposed approach into a quaternionbased
+orientation estimation framework. Compared to the
+existing unscented sampling approach drawing only fixed and
+limited numbers of sigma points, simulation results show that
+the proposed scheme enables better accuracy and robustness
+for nonlinear Bingham filtering.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -1837,16 +2210,24 @@ inverse covariance intersection method, fusion results prove to be more accurate
 
 
 </li>
-<li><span id="MFI19_Oezgen">S. Özgen, S. Kohn, B. Noack, and U. D. Hanebeck, <b>State Estimation with Model-Mismatch-Based Secrecy against Eavesdroppers (to appear)</b>, in <i>Proceedings of the 2019 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2019)</i>, Taipei, Taiwan, May 2019.</span><br />
+<li><span id="MFI19_Oezgen">S. Özgen, S. Kohn, B. Noack, and U. D. Hanebeck, <b>State Estimation with Model-Mismatch-Based Secrecy against Eavesdroppers</b>, in <i>Proceedings of the 2019 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2019)</i>, Taipei, Taiwan, May 2019.</span><br />
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
     
 
     <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexMFI19_Oezgen"><img src="/images/bibtex_white.svg" width="40" /></button>
 
     
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrMFI19_Oezgen">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+    
 
     
 
+    
+    <a target="_blank" href="https://isas.iar.kit.edu/pdf/MFI19_Oezgen.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
     
 
 </div>
@@ -1860,12 +2241,12 @@ inverse covariance intersection method, fusion results prove to be more accurate
       </div>
       <div class="modal-body">
         <pre id="bMFI19_Oezgen">@inproceedings{MFI19_Oezgen,
-  address = {Taipei, Taiwan},
-  author = {\"{O}zgen, Selim and Kohn, Saskia and Noack, Benjamin and Hanebeck, Uwe D.},
+  author = {Özgen, Selim and Kohn, Saskia and Noack, Benjamin and Hanebeck, Uwe D.},
+  title = {{State Estimation with Model-Mismatch-Based Secrecy against Eavesdroppers}},
   booktitle = {Proceedings of the 2019 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2019)},
+  year = {2019},
+  address = {Taipei, Taiwan},
   month = may,
-  title = {State Estimation with Model-Mismatch-Based Secrecy against Eavesdroppers (to appear)},
-  year = {2019}
 }
 </pre>
       </div>
@@ -1881,10 +2262,10 @@ inverse covariance intersection method, fusion results prove to be more accurate
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="myModalLabel">State Estimation with Model-Mismatch-Based Secrecy against Eavesdroppers (to appear)</h5>
+        <h5 class="modal-title" id="myModalLabel">State Estimation with Model-Mismatch-Based Secrecy against Eavesdroppers</h5>
       </div>
       <div class="modal-body">
-        <b>Abstract — </b>
+        <b>Abstract — </b>This study takes into consideration remote state estimation, where the state of a system is to be shared with a number of authorized users for any purpose (e.g., tracking, control), in the presence of eavesdroppers. We propose a novel control-theoretic secrecy mechanism to securely transmit the state estimate among the authorized users in the system. Moreover, as there isn’t any cryptographic mechanism applied to the shared information in the conventional sense, it is not possible for the eavesdroppers to understand that the state estimate is hidden. A use-case of the proposed secrecy mechanism for a target tracking example is also demonstrated.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -1906,16 +2287,24 @@ inverse covariance intersection method, fusion results prove to be more accurate
 
 
 </li>
-<li><span id="MFI19_Radtke">S. Radtke, K. Li, B. Noack, and U. D. Hanebeck, <b>Comparative Study of Track-to-Track Fusion Methods for Cooperative Tracking with Bearing-only Measurements (to appear)</b>, in <i>Proceedings of the 2019 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2019)</i>, Taipei, Taiwan, May 2019.</span><br />
+<li><span id="MFI19_Radtke">S. Radtke, K. Li, B. Noack, and U. D. Hanebeck, <b>Comparative Study of Track-to-Track Fusion Methods for Cooperative Tracking with Bearing-only Measurements</b>, in <i>Proceedings of the 2019 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2019)</i>, Taipei, Taiwan, May 2019.</span><br />
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
     
 
     <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MbibtexMFI19_Radtke"><img src="/images/bibtex_white.svg" width="40" /></button>
 
     
+    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#MabstrMFI19_Radtke">
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> Abstract
+    </button>
+    
 
     
 
+    
+    <a target="_blank" href="https://isas.iar.kit.edu/pdf/MFI19_Radtke.pdf" class="btn btn-primary btn-xs">
+          <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> pdf
+    </a>
     
 
 </div>
@@ -1929,12 +2318,12 @@ inverse covariance intersection method, fusion results prove to be more accurate
       </div>
       <div class="modal-body">
         <pre id="bMFI19_Radtke">@inproceedings{MFI19_Radtke,
-  address = {Taipei, Taiwan},
   author = {Radtke, Susanne and Li, Kailai and Noack, Benjamin and Hanebeck, Uwe D.},
+  title = {{Comparative Study of Track-to-Track Fusion Methods for Cooperative Tracking with Bearing-only Measurements}},
   booktitle = {Proceedings of the 2019 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI 2019)},
+  year = {2019},
+  address = {Taipei, Taiwan},
   month = may,
-  title = {Comparative Study of Track-to-Track Fusion Methods for Cooperative Tracking with Bearing-only Measurements (to appear)},
-  year = {2019}
 }
 </pre>
       </div>
@@ -1950,10 +2339,19 @@ inverse covariance intersection method, fusion results prove to be more accurate
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="myModalLabel">Comparative Study of Track-to-Track Fusion Methods for Cooperative Tracking with Bearing-only Measurements (to appear)</h5>
+        <h5 class="modal-title" id="myModalLabel">Comparative Study of Track-to-Track Fusion Methods for Cooperative Tracking with Bearing-only Measurements</h5>
       </div>
       <div class="modal-body">
-        <b>Abstract — </b>
+        <b>Abstract — </b>Using a network of spatially distributed sensors to track a moving object can be a challenging task. 
+  In applications with limited communication between sensor nodes and packet loss, it may be impossible to process 
+  measurements from these distributed sensor nodes in a central unit. Therefore, it is often necessary to use only 
+  the locally available measurements at the sensor nodes and afterwards merge all local tracks into one consistent result. 
+  In this paper, several different track-to-track fusion algorithms are compared to cooperatively track a moving object 
+  using only bearing measurements. It is shown that the Sample-based Fusion that uses a set of deterministic samples to 
+  reconstruct the cross-covariances is a suitable fusion algorithm for the considered setup. Furthermore, it provides 
+  the means to efficiently keep track of the cross-covariances between sensor nodes and therefore outperforms 
+  conservative methods. The proposed approach is also tested in a real-world indoor localization setup using 
+  bearings-only acoustic measurements from three microphone arrays.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -6986,7 +7384,7 @@ example.
                               <li><a href="https://de.linkedin.com/in/benjaminnoack" target="_blank">linkedin</a></li>
                           
                       </ul>
-                      <small> last modified 21/04/2019</small>
+                      <small> last modified 11/07/2019</small>
                 </div>
 
 

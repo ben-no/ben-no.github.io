@@ -6,9 +6,54 @@
 </description>
     <link>https://www.bennoack.net/</link>
     <atom:link href="https://www.bennoack.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 24 Oct 2019 16:31:59 +0200</pubDate>
-    <lastBuildDate>Thu, 24 Oct 2019 16:31:59 +0200</lastBuildDate>
+    <pubDate>Thu, 27 Feb 2020 11:53:55 +0100</pubDate>
+    <lastBuildDate>Thu, 27 Feb 2020 11:53:55 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Ifac2020</title>
+        <description>&lt;p&gt;Three papers for the IFAC World Congress in Berlin, Germany, have been accepted.&lt;/p&gt;
+
+&lt;!--more--&gt;
+</description>
+        <pubDate>Thu, 27 Feb 2020 00:00:00 +0100</pubDate>
+        <link>https://www.bennoack.net/posts/2020/02/27/IFAC2020/</link>
+        <guid isPermaLink="true">https://www.bennoack.net/posts/2020/02/27/IFAC2020/</guid>
+        
+        
+        <category>conferences</category>
+        
+      </item>
+    
+      <item>
+        <title>At2020</title>
+        <description>&lt;p&gt;Two articles for Automatisierungstechnik has been accepted.&lt;/p&gt;
+
+&lt;!--more--&gt;
+</description>
+        <pubDate>Wed, 15 Jan 2020 00:00:00 +0100</pubDate>
+        <link>https://www.bennoack.net/posts/2020/01/15/AT2020/</link>
+        <guid isPermaLink="true">https://www.bennoack.net/posts/2020/01/15/AT2020/</guid>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>Tie2020</title>
+        <description>&lt;p&gt;Our article for the IEEE Transactions on Industrial Electronics has been accepted.&lt;/p&gt;
+
+&lt;!--more--&gt;
+</description>
+        <pubDate>Tue, 14 Jan 2020 00:00:00 +0100</pubDate>
+        <link>https://www.bennoack.net/posts/2020/01/14/TIE2020/</link>
+        <guid isPermaLink="true">https://www.bennoack.net/posts/2020/01/14/TIE2020/</guid>
+        
+        
+        <category>articles</category>
+        
+      </item>
     
       <item>
         <title>Lcss2019</title>
@@ -109,47 +154,6 @@
         <pubDate>Tue, 01 May 2018 00:00:00 +0200</pubDate>
         <link>https://www.bennoack.net/posts/2018/05/01/FUSION2018/</link>
         <guid isPermaLink="true">https://www.bennoack.net/posts/2018/05/01/FUSION2018/</guid>
-        
-        
-        <category>conferences</category>
-        
-      </item>
-    
-      <item>
-        <title>Sensors article</title>
-        <description>&lt;p&gt;Our article for the Sensors journal has been accepted.&lt;/p&gt;
-
-&lt;!--more--&gt;
-</description>
-        <pubDate>Tue, 27 Mar 2018 00:00:00 +0200</pubDate>
-        <link>https://www.bennoack.net/posts/2018/03/27/Sensors/</link>
-        <guid isPermaLink="true">https://www.bennoack.net/posts/2018/03/27/Sensors/</guid>
-        
-        
-        <category>articles</category>
-        
-      </item>
-    
-      <item>
-        <title>Rtip</title>
-        <description>&lt;p&gt;Our article for the Journal of Real-Time Image Processing has been accepted.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 02 Oct 2017 00:00:00 +0200</pubDate>
-        <link>https://www.bennoack.net/posts/2017/10/02/RTIP/</link>
-        <guid isPermaLink="true">https://www.bennoack.net/posts/2017/10/02/RTIP/</guid>
-        
-        
-        <category>articles</category>
-        
-      </item>
-    
-      <item>
-        <title>Mfi</title>
-        <description>&lt;p&gt;Three papers for the MFI conference in Daegu, Korea, have been accepted.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 18 Sep 2017 00:00:00 +0200</pubDate>
-        <link>https://www.bennoack.net/posts/2017/09/18/MFI/</link>
-        <guid isPermaLink="true">https://www.bennoack.net/posts/2017/09/18/MFI/</guid>
         
         
         <category>conferences</category>

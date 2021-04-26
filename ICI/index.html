@@ -235,53 +235,54 @@
 
 <h2 id="fusion-rule">Fusion rule</h2>
 
-<p>Two estimates <code class="MathJax_Preview">\mvec{x}_\sA</code><script type="math/tex">\mvec{x}_\sA</script> and <code class="MathJax_Preview">\mvec{x}_\sB</code><script type="math/tex">\mvec{x}_\sB</script> with corresponding error covariance matrices <code class="MathJax_Preview">\mat{C}_\sA</code><script type="math/tex">\mat{C}_\sA</script> and <code class="MathJax_Preview">\mat{C}_\sB</code><script type="math/tex">\mat{C}_\sB</script> can be fused with ICI according to</p>
+<p>Two estimates \(\mvec{x}_\sA\) and \(\mvec{x}_\sB\) with corresponding error covariance matrices \(\mat{C}_\sA\) and \(\mat{C}_\sB\) can be fused with ICI according to</p>
 
-<pre class="MathJax_Preview"><code>\begin{align}
+\[\begin{align}
    \mvec{x}_\ICI &amp;= \mat{K}_\ICI\,\mvec{x}_\sA + \mat{L}_\ICI\,\mvec{x}_\sB \ ,\\
    \mat{C}_\ICI\inv &amp;= \mat{C}_\sA\inv + \mat{C}_\sB\inv - \left( \omega \mat{C}_\sA + (1-\omega)\mat{C}_\sB\right)\inv \ .
-\end{align}</code></pre>
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{align}
-   \mvec{x}_\ICI &= \mat{K}_\ICI\,\mvec{x}_\sA + \mat{L}_\ICI\,\mvec{x}_\sB \ ,\\
-   \mat{C}_\ICI\inv &= \mat{C}_\sA\inv + \mat{C}_\sB\inv - \left( \omega \mat{C}_\sA + (1-\omega)\mat{C}_\sB\right)\inv \ .
-\end{align} %]]></script>
+\end{align}\]
 
-<p>The fusion gains <code class="MathJax_Preview">\mat{K}_\ICI</code><script type="math/tex">\mat{K}_\ICI</script> and <code class="MathJax_Preview">\mat{L}_\ICI</code><script type="math/tex">\mat{L}_\ICI</script> are given by</p>
+<p>The fusion gains \(\mat{K}_\ICI\) and \(\mat{L}_\ICI\) are given by</p>
 
-<pre class="MathJax_Preview"><code>\begin{align}
+\[\begin{align}
    \mat{K}_\ICI &amp;= \mat{C}_\ICI \left(\mat{C}_\sA\inv -\omega \big( \omega \mat{C}_\sA + (1-\omega)\mat{C}_\sB\right)\inv  \big) ,\\
    \mat{L}_\ICI &amp;= \mat{C}_\ICI \big(\mat{C}_\sB\inv -(1-\omega) \left( \omega \mat{C}_\sA + (1-\omega)\mat{C}_\sB\right)\inv  \big) \ .
-\end{align}</code></pre>
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{align}
-   \mat{K}_\ICI &= \mat{C}_\ICI \left(\mat{C}_\sA\inv -\omega \big( \omega \mat{C}_\sA + (1-\omega)\mat{C}_\sB\right)\inv  \big) ,\\
-   \mat{L}_\ICI &= \mat{C}_\ICI \big(\mat{C}_\sB\inv -(1-\omega) \left( \omega \mat{C}_\sA + (1-\omega)\mat{C}_\sB\right)\inv  \big) \ .
-\end{align} %]]></script>
+\end{align}\]
 
 <p>A simple Matlab implementation can be downloaded.</p>
 
 <h2 id="matlab-code">Matlab code</h2>
 
 <figure class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="k">function</span> <span class="p">[</span><span class="n">c</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">omega</span><span class="p">]</span> <span class="o">=</span> <span class="n">ICI</span><span class="p">(</span><span class="n">xA</span><span class="p">,</span><span class="n">CA</span><span class="p">,</span><span class="n">xB</span><span class="p">,</span><span class="n">CB</span><span class="p">)</span>
-<span class="c1">% Inverse Covariance Intersection </span>
-<span class="c1">%</span>
-<span class="c1">% This function implements the ICI algorithm </span>
-<span class="c1">% and fuses two estimates (xA,CA) and (xB,CB). </span>
-<span class="c1">% It provides the fusion result (c,C) and the </span>
-<span class="c1">% value of omega, which minimizes the trace of C. </span>
+<span class="c1">% Inverse Covariance Intersection 
+</span>
+<span class="c1">%
+</span>
+<span class="c1">% This function implements the ICI algorithm 
+</span>
+<span class="c1">% and fuses two estimates (xA,CA) and (xB,CB). 
+</span>
+<span class="c1">% It provides the fusion result (c,C) and the 
+</span>
+<span class="c1">% value of omega, which minimizes the trace of C. 
+</span>
 
-<span class="n">f</span> <span class="o">=</span> <span class="o">@</span><span class="p">(</span><span class="n">w</span><span class="p">)</span><span class="nb">trace</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CA</span><span class="p">)</span><span class="o">+</span><span class="k">...</span>
+<span class="n">f</span> <span class="o">=</span> <span class="o">@</span><span class="p">(</span><span class="n">w</span><span class="p">)</span><span class="nb">trace</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CA</span><span class="p">)</span><span class="o">+</span><span class="k">...</span><span class="c">
+</span>
         <span class="nb">inv</span><span class="p">(</span><span class="n">CB</span><span class="p">)</span><span class="o">-</span><span class="nb">inv</span><span class="p">(</span><span class="n">w</span><span class="o">*</span><span class="n">CA</span><span class="o">+</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">w</span><span class="p">)</span><span class="o">*</span><span class="n">CB</span><span class="p">)));</span>
 
 <span class="n">omega</span> <span class="o">=</span> <span class="nb">fminbnd</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="nb">optimset</span><span class="p">(</span><span class="s1">'Display'</span><span class="p">,</span><span class="s1">'off'</span><span class="p">));</span>
-<span class="n">C</span> <span class="o">=</span> <span class="nb">inv</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CA</span><span class="p">)</span><span class="o">+</span><span class="nb">inv</span><span class="p">(</span><span class="n">CB</span><span class="p">)</span><span class="o">-</span><span class="k">...</span>
+<span class="n">C</span> <span class="o">=</span> <span class="nb">inv</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CA</span><span class="p">)</span><span class="o">+</span><span class="nb">inv</span><span class="p">(</span><span class="n">CB</span><span class="p">)</span><span class="o">-</span><span class="k">...</span><span class="c">
+</span>
         <span class="nb">inv</span><span class="p">(</span><span class="n">omega</span><span class="o">*</span><span class="n">CA</span><span class="o">+</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omega</span><span class="p">)</span><span class="o">*</span><span class="n">CB</span><span class="p">));</span>
 
-<span class="c1">% computations of the gains</span>
-<span class="n">KICI</span> <span class="o">=</span> <span class="n">C</span><span class="o">*</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CA</span><span class="p">)</span><span class="o">-</span><span class="k">...</span>
+<span class="c1">% computations of the gains
+</span>
+<span class="n">KICI</span> <span class="o">=</span> <span class="n">C</span><span class="o">*</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CA</span><span class="p">)</span><span class="o">-</span><span class="k">...</span><span class="c">
+</span>
         <span class="n">omega</span><span class="o">*</span><span class="nb">inv</span><span class="p">(</span><span class="n">omega</span><span class="o">*</span><span class="n">CA</span><span class="o">+</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omega</span><span class="p">)</span><span class="o">*</span><span class="n">CB</span><span class="p">));</span>
-<span class="n">LICI</span> <span class="o">=</span> <span class="n">C</span><span class="o">*</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CB</span><span class="p">)</span><span class="o">-</span><span class="k">...</span>
+<span class="n">LICI</span> <span class="o">=</span> <span class="n">C</span><span class="o">*</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CB</span><span class="p">)</span><span class="o">-</span><span class="k">...</span><span class="c">
+</span>
         <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omega</span><span class="p">)</span><span class="o">*</span><span class="nb">inv</span><span class="p">(</span><span class="n">omega</span><span class="o">*</span><span class="n">CA</span><span class="o">+</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omega</span><span class="p">)</span><span class="o">*</span><span class="n">CB</span><span class="p">));</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="n">KICI</span><span class="o">*</span><span class="n">xA</span> <span class="o">+</span> <span class="n">LICI</span><span class="o">*</span><span class="n">xB</span><span class="p">;</span></code></pre></figure>
@@ -418,7 +419,7 @@
                     <h4>links</h4>
                       <ul class="list-unstyled">
                           
-                              <li><a href="https://isas.iar.kit.edu" target="_blank">ISAS lab</a></li>
+                              <li><a href="https://ams.ovgu.de" target="_blank">AMS group</a></li>
                           
                               <li><a href="https://scholar.google.de/citations?user=PmRJJN4AAAAJ&hl" target="_blank">google scholar</a></li>
                           
@@ -427,7 +428,7 @@
                               <li><a href="https://de.linkedin.com/in/benjaminnoack" target="_blank">linkedin</a></li>
                           
                       </ul>
-                      <small> last modified 30/05/2020</small>
+                      <small> last modified 26/04/2021</small>
                 </div>
 
 

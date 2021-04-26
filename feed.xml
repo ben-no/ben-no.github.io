@@ -6,9 +6,22 @@
 </description>
     <link>https://www.bennoack.net/</link>
     <atom:link href="https://www.bennoack.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 Jan 2021 13:31:08 +0100</pubDate>
-    <lastBuildDate>Tue, 12 Jan 2021 13:31:08 +0100</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Mon, 26 Apr 2021 22:18:27 +0200</pubDate>
+    <lastBuildDate>Mon, 26 Apr 2021 22:18:27 +0200</lastBuildDate>
+    <generator>Jekyll v3.9.1</generator>
+    
+      <item>
+        <title>New position at the Otto von Guericke University, Magdeburg.</title>
+        <description>&lt;p&gt;I became a Professor at the Otto von Guericke University, Magdeburg.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Mar 2021 00:00:00 +0100</pubDate>
+        <link>https://www.bennoack.net/posts/2021/03/01/Professor/</link>
+        <guid isPermaLink="true">https://www.bennoack.net/posts/2021/03/01/Professor/</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Lcss2020</title>
@@ -142,19 +155,6 @@
         
         
         <category>conferences</category>
-        
-      </item>
-    
-      <item>
-        <title>PowTec article</title>
-        <description>&lt;p&gt;Our article for the Powder Technology journal has been accepted.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 04 Sep 2018 00:00:00 +0200</pubDate>
-        <link>https://www.bennoack.net/posts/2018/09/04/PowTec/</link>
-        <guid isPermaLink="true">https://www.bennoack.net/posts/2018/09/04/PowTec/</guid>
-        
-        
-        <category>articles</category>
         
       </item>
     

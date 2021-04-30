@@ -254,35 +254,24 @@
 <h2 id="matlab-code">Matlab code</h2>
 
 <figure class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="k">function</span> <span class="p">[</span><span class="n">c</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">omega</span><span class="p">]</span> <span class="o">=</span> <span class="n">ICI</span><span class="p">(</span><span class="n">xA</span><span class="p">,</span><span class="n">CA</span><span class="p">,</span><span class="n">xB</span><span class="p">,</span><span class="n">CB</span><span class="p">)</span>
-<span class="c1">% Inverse Covariance Intersection 
-</span>
-<span class="c1">%
-</span>
-<span class="c1">% This function implements the ICI algorithm 
-</span>
-<span class="c1">% and fuses two estimates (xA,CA) and (xB,CB). 
-</span>
-<span class="c1">% It provides the fusion result (c,C) and the 
-</span>
-<span class="c1">% value of omega, which minimizes the trace of C. 
-</span>
+<span class="c1">% Inverse Covariance Intersection </span>
+<span class="c1">%</span>
+<span class="c1">% This function implements the ICI algorithm </span>
+<span class="c1">% and fuses two estimates (xA,CA) and (xB,CB). </span>
+<span class="c1">% It provides the fusion result (c,C) and the </span>
+<span class="c1">% value of omega, which minimizes the trace of C. </span>
 
-<span class="n">f</span> <span class="o">=</span> <span class="o">@</span><span class="p">(</span><span class="n">w</span><span class="p">)</span><span class="nb">trace</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CA</span><span class="p">)</span><span class="o">+</span><span class="k">...</span><span class="c">
-</span>
+<span class="n">f</span> <span class="o">=</span> <span class="o">@</span><span class="p">(</span><span class="n">w</span><span class="p">)</span><span class="nb">trace</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CA</span><span class="p">)</span><span class="o">+</span><span class="k">...</span>
         <span class="nb">inv</span><span class="p">(</span><span class="n">CB</span><span class="p">)</span><span class="o">-</span><span class="nb">inv</span><span class="p">(</span><span class="n">w</span><span class="o">*</span><span class="n">CA</span><span class="o">+</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">w</span><span class="p">)</span><span class="o">*</span><span class="n">CB</span><span class="p">)));</span>
 
 <span class="n">omega</span> <span class="o">=</span> <span class="nb">fminbnd</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="nb">optimset</span><span class="p">(</span><span class="s1">'Display'</span><span class="p">,</span><span class="s1">'off'</span><span class="p">));</span>
-<span class="n">C</span> <span class="o">=</span> <span class="nb">inv</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CA</span><span class="p">)</span><span class="o">+</span><span class="nb">inv</span><span class="p">(</span><span class="n">CB</span><span class="p">)</span><span class="o">-</span><span class="k">...</span><span class="c">
-</span>
+<span class="n">C</span> <span class="o">=</span> <span class="nb">inv</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CA</span><span class="p">)</span><span class="o">+</span><span class="nb">inv</span><span class="p">(</span><span class="n">CB</span><span class="p">)</span><span class="o">-</span><span class="k">...</span>
         <span class="nb">inv</span><span class="p">(</span><span class="n">omega</span><span class="o">*</span><span class="n">CA</span><span class="o">+</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omega</span><span class="p">)</span><span class="o">*</span><span class="n">CB</span><span class="p">));</span>
 
-<span class="c1">% computations of the gains
-</span>
-<span class="n">KICI</span> <span class="o">=</span> <span class="n">C</span><span class="o">*</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CA</span><span class="p">)</span><span class="o">-</span><span class="k">...</span><span class="c">
-</span>
+<span class="c1">% computations of the gains</span>
+<span class="n">KICI</span> <span class="o">=</span> <span class="n">C</span><span class="o">*</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CA</span><span class="p">)</span><span class="o">-</span><span class="k">...</span>
         <span class="n">omega</span><span class="o">*</span><span class="nb">inv</span><span class="p">(</span><span class="n">omega</span><span class="o">*</span><span class="n">CA</span><span class="o">+</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omega</span><span class="p">)</span><span class="o">*</span><span class="n">CB</span><span class="p">));</span>
-<span class="n">LICI</span> <span class="o">=</span> <span class="n">C</span><span class="o">*</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CB</span><span class="p">)</span><span class="o">-</span><span class="k">...</span><span class="c">
-</span>
+<span class="n">LICI</span> <span class="o">=</span> <span class="n">C</span><span class="o">*</span><span class="p">(</span><span class="nb">inv</span><span class="p">(</span><span class="n">CB</span><span class="p">)</span><span class="o">-</span><span class="k">...</span>
         <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omega</span><span class="p">)</span><span class="o">*</span><span class="nb">inv</span><span class="p">(</span><span class="n">omega</span><span class="o">*</span><span class="n">CA</span><span class="o">+</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">omega</span><span class="p">)</span><span class="o">*</span><span class="n">CB</span><span class="p">));</span>
 
 <span class="n">c</span> <span class="o">=</span> <span class="n">KICI</span><span class="o">*</span><span class="n">xA</span> <span class="o">+</span> <span class="n">LICI</span><span class="o">*</span><span class="n">xB</span><span class="p">;</span></code></pre></figure>
@@ -428,7 +417,7 @@
                               <li><a href="https://de.linkedin.com/in/benjaminnoack" target="_blank">linkedin</a></li>
                           
                       </ul>
-                      <small> last modified 26/04/2021</small>
+                      <small> last modified 30/04/2021</small>
                 </div>
 
 
